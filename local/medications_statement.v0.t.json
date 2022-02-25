@@ -21,7 +21,7 @@
       "custodian_namespace" : "",
       "sem_ver" : "0.1.3",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "6fd8744cd702c28b1673391d271bf0b4",
+      "MD5-CAM-1.0.1" : "63caab45c44d75b9e995de5121a3cc74",
       "PARENT:MD5-CAM-1.0.1" : "006E9F209FD9F3691A5B9EFF0BAC3B5B"
     },
     "details" : {
@@ -658,10 +658,10 @@
                               "rmTypeName" : "TERMINOLOGY_CODE",
                               "occurrences" : "0..1",
                               "terminologyId" : {
-                                "value" : "temp -FHIR list"
+                                "value" : "SNOMED-CT-drugs-not-taken-completed"
                               },
                               "constraint" : [ "ac0.10" ],
-                              "selectedTerminologies" : [ "temp -FHIR list" ]
+                              "selectedTerminologies" : [ "SNOMED-CT-drugs-not-taken-completed" ]
                             } ]
                           } ],
                           "attributeTuples" : [ ]
@@ -890,11 +890,11 @@
         "temp" : {
           "ac0.4" : "terminology://fhir.hl7.org/ValueSet/$expand?url=http://snomed.info/sct?fhir_vs=ecl/%3C%3C404684003&activeOnly=true"
         },
-        "temp -FHIR list" : {
-          "ac0.10" : "terminology://fhir.hl7.org/ValueSet/$expand?url=http://snomed.info/sct?fhir_vs=ecl/%3C%3C404684003&activeOnly=true"
-        },
         "SNOMED-CT-route-of-administration-value" : {
           "ac0.5" : "terminology://fhir.hl7.org/ValueSet/$expand?url=http://snomed.info/sct?fhir_vs=ecl/%3C284009009&activeOnly=true"
+        },
+        "SNOMED-CT-drugs-not-taken-completed" : {
+          "ac0.10" : "terminology://fhir.hl7.org/ValueSet/$expand?url=http://snomed.info/sct?fhir_vs=ecl/%3C266710000&activeOnly=true"
         }
       },
       "terminologyExtracts" : { },
