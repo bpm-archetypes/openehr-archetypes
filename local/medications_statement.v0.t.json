@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.1.5",
+      "sem_ver" : "0.1.6",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "87f93f658f1e7e6622b2ec839a6b98ad",
+      "MD5-CAM-1.0.1" : "f97ace8c646265ce35bec3ce42739184",
       "PARENT:MD5-CAM-1.0.1" : "006E9F209FD9F3691A5B9EFF0BAC3B5B"
     },
     "details" : {
@@ -664,11 +664,6 @@
                               "selectedTerminologies" : [ "SNOMED-CT-drugs-not-taken-completed" ]
                             } ]
                           } ],
-                          "attributeTuples" : [ ]
-                        }, {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "DV_URI",
-                          "attributes" : [ ],
                           "attributeTuples" : [ ]
                         } ]
                       } ],
