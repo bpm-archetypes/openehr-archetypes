@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.3.0",
+      "sem_ver" : "0.4.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "d16df6bc818c98863e973b8ae9842aee",
+      "MD5-CAM-1.0.1" : "91abfdbc49aad316b0451eb154d6dca2",
       "PARENT:MD5-CAM-1.0.1" : "A198E225F67F0E4A49653AC9C6EBCC0A"
     },
     "details" : {
@@ -313,8 +313,8 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "EVALUATION",
-          "occurrences" : "0..1",
-          "nodeId" : "at0001.2",
+          "occurrences" : "0..*",
+          "nodeId" : "at0003.2",
           "attributes" : [ ],
           "attributeTuples" : [ ],
           "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-exclusion_specific-001.v1",
@@ -511,23 +511,221 @@
       "@type" : "C_COMPLEX_OBJECT",
       "rmTypeName" : "EVALUATION",
       "nodeId" : "at0000.1",
-      "attributes" : [ ],
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "data",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0002.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "name",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "local"
+                      },
+                      "constraint" : [ "ac0.12" ],
+                      "selectedTerminologies" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0011.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
       "attributeTuples" : [ ]
     },
     "terminology" : {
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "en" : { },
-        "nb" : { },
-        "pt-br" : { },
-        "de" : { },
-        "sv" : { },
-        "fr" : { }
+        "en" : {
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Global exclusion of problems/diagnoses",
+            "description" : "Overall statement of exclusion of all problems or diagnoses at the time of recording."
+          },
+          "ac0.12" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.12",
+            "description" : ""
+          }
+        },
+        "nb" : {
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Overordnet eksklusjon av problemer/diagnoser",
+            "description" : "Overordnet eksklusjonsutsagn om alle problemer eller diagnoser ved registreringstidspunktet."
+          },
+          "ac0.12" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.12",
+            "description" : ""
+          }
+        },
+        "pt-br" : {
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Exclusão global de problemas / diagnósticos",
+            "description" : "Declaração geral de exclusão de todos os problemas ou diagnósticos no momento da gravação."
+          },
+          "ac0.12" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.12",
+            "description" : ""
+          }
+        },
+        "de" : {
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Allgemeiner Ausschluss von Problemen/Diagnosen",
+            "description" : "Zur Dokumentation einer Gesamterklärung zum Ausschluss über alle Erkrankungen oder Diagnosen zum Zeitpunkt der Dokumentation."
+          },
+          "ac0.12" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.12",
+            "description" : ""
+          }
+        },
+        "sv" : {
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Generellt uteslutande av problem/diagnoser",
+            "description" : "*Overall statement of exclusion of all problems or diagnoses at the time of recording.(en)"
+          },
+          "ac0.12" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.12",
+            "description" : ""
+          }
+        },
+        "fr" : {
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Exclusion globale des problèmes/diagnostics",
+            "description" : "Une déclaration globale d'exclusion de tous les problèmes ou diagnostics au moment de l'enregistrement."
+          },
+          "ac0.12" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.12",
+            "description" : ""
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
-      "valueSets" : { }
+      "valueSets" : {
+        "ac0.1" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.1",
+          "members" : [ "at0003", "at0004", "at0005", "at0006", "at0007" ]
+        },
+        "ac0.2" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.2",
+          "members" : [ "at0003", "at0004", "at0005", "at0006", "at0007" ]
+        },
+        "ac0.3" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.3",
+          "members" : [ "at0003", "at0005", "at0006", "at0007" ]
+        },
+        "ac0.4" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.4",
+          "members" : [ "at0003", "at0005", "at0006", "at0007" ]
+        },
+        "ac0.5" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.5",
+          "members" : [ "at0003", "at0005", "at0007" ]
+        },
+        "ac0.6" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.6",
+          "members" : [ "at0003", "at0005", "at0007" ]
+        },
+        "ac0.7" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.7",
+          "members" : [ "at0003", "at0007" ]
+        },
+        "ac0.8" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.8",
+          "members" : [ "at0003", "at0007" ]
+        },
+        "ac0.9" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.9",
+          "members" : [ "at0003" ]
+        },
+        "ac0.10" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.10",
+          "members" : [ "at0003" ]
+        },
+        "ac0.11" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.11",
+          "members" : [ "at0003" ]
+        },
+        "ac0.12" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.12",
+          "members" : [ "at0003" ]
+        }
+      }
     },
     "adlVersion" : "1.4",
     "buildUid" : "d7bd414b-824b-4271-b19c-bfd7b610757b",
@@ -882,13 +1080,6 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
-              "nodeId" : "at0009.1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
               "nodeId" : "at0012.1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
@@ -904,13 +1095,32 @@
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0003.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0005.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "value",
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_DATE_TIME",
-                  "attributes" : [ ],
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "local"
+                      },
+                      "constraint" : [ "ac0.2" ],
+                      "selectedTerminologies" : [ ]
+                    } ]
+                  } ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
@@ -925,8 +1135,42 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0073.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "local"
+                      },
+                      "constraint" : [ "ac0.3" ],
+                      "selectedTerminologies" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0069.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0009.1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             }, {
@@ -951,29 +1195,6 @@
           } ],
           "attributeTuples" : [ ]
         } ]
-      }, {
-        "@type" : "C_ATTRIBUTE",
-        "rmAttributeName" : "protocol",
-        "children" : [ {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ITEM_TREE",
-          "nodeId" : "at0032",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "items",
-            "children" : [ {
-              "@type" : "C_ARCHETYPE_ROOT",
-              "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..1",
-              "nodeId" : "at0071.1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ],
-              "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-tnm-001.v1",
-              "referenceType" : "archetypeOverlay"
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        } ]
       } ],
       "attributeTuples" : [ ]
     },
@@ -981,19 +1202,188 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "es" : { },
-        "es-ar" : { },
-        "de" : { },
-        "en" : { },
-        "ar-sy" : { },
-        "pt-br" : { },
-        "nb" : { },
-        "sv" : { },
-        "ko" : { },
-        "fi" : { },
-        "it" : { },
-        "nl" : { },
-        "zh" : { }
+        "es" : {
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : ""
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : ""
+          }
+        },
+        "es-ar" : {
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : ""
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : ""
+          }
+        },
+        "de" : {
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : ""
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : ""
+          }
+        },
+        "en" : {
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.2",
+            "description" : ""
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.3",
+            "description" : ""
+          }
+        },
+        "ar-sy" : {
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : ""
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : ""
+          }
+        },
+        "pt-br" : {
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : ""
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : ""
+          }
+        },
+        "nb" : {
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : ""
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : ""
+          }
+        },
+        "sv" : {
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : ""
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : ""
+          }
+        },
+        "ko" : {
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : ""
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : ""
+          }
+        },
+        "fi" : {
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : ""
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : ""
+          }
+        },
+        "it" : {
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : ""
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : ""
+          }
+        },
+        "nl" : {
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : ""
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : ""
+          }
+        },
+        "zh" : {
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : ""
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : ""
+          }
+        }
       },
       "termBindings" : {
         "temp - snomed" : {
@@ -1001,7 +1391,18 @@
         }
       },
       "terminologyExtracts" : { },
-      "valueSets" : { }
+      "valueSets" : {
+        "ac0.2" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.2",
+          "members" : [ "at0047", "at0048", "at0049" ]
+        },
+        "ac0.3" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.3",
+          "members" : [ "at0074", "at0075", "at0076" ]
+        }
+      }
     },
     "adlVersion" : "1.4",
     "buildUid" : "3dad3e6a-4444-4069-b22b-aed20b9c7377",
@@ -1371,6 +1772,34 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0064.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "ac0.4" ],
+                  "selectedTerminologies" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
           "occurrences" : "0..0",
           "nodeId" : "at0055.1",
           "attributes" : [ {
@@ -1423,6 +1852,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
             "description" : ""
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
+            "description" : ""
           }
         },
         "sl" : {
@@ -1430,6 +1865,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
+            "description" : ""
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
             "description" : ""
           }
         },
@@ -1439,6 +1880,12 @@
             "text" : "(Synthesized)",
             "code" : "ac0.2",
             "description" : ""
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.4",
+            "description" : ""
           }
         },
         "nb" : {
@@ -1446,6 +1893,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
+            "description" : ""
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
             "description" : ""
           }
         },
@@ -1455,6 +1908,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
             "description" : ""
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
+            "description" : ""
           }
         },
         "de" : {
@@ -1462,6 +1921,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
+            "description" : ""
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
             "description" : ""
           }
         },
@@ -1471,6 +1936,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
             "description" : ""
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
+            "description" : ""
           }
         },
         "sv" : {
@@ -1478,6 +1949,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
+            "description" : ""
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
             "description" : ""
           }
         }
@@ -1493,6 +1970,16 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.2",
           "members" : [ "at0062", "at0056", "at0057", "at0058", "at0059", "at0060", "at0063" ]
+        },
+        "ac0.3" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.3",
+          "members" : [ "at0067", "at0068", "at0069", "at0070", "at0071", "at0072", "at0073", "at0074", "at0080", "at0081", "at0075", "at0076", "at0082", "at0077", "at0078", "at0079" ]
+        },
+        "ac0.4" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.4",
+          "members" : [ "at0067", "at0068", "at0069", "at0070", "at0071", "at0072", "at0073", "at0074", "at0080", "at0081", "at0075", "at0076", "at0082", "at0077", "at0078", "at0079" ]
         }
       }
     },
@@ -1615,7 +2102,145 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "D1662AD27A4C70E12528D7CF2AA78BDB"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Darstellung eines klinischen, kontext- oder zeitspezifischen Attributs für ein bestimmtes Problem oder eine bestimmte Diagnose.\r\n",
+          "keywords" : [ "Problem", "Aktiv", "Inaktiv", "Status", "Episode", "Diagnose", "Attribut", "Merkmal" ],
+          "use" : "Zur Darstellung eines kontext- oder zeitspezifischen Attributs, welches weitere Details liefert, die zum Zeitpunkt der Erfassung, oder im klinischen Kontext in dem das Problem, oder die Diagnose erfasst wurde, relevant ist. Das Attribut könnte zu einer anderen Zeit, oder in einem anderen klinischen Kontext, nicht angemessen sein.\r\n\r\nDieser Archetyp wurde entworfen, um in den SLOT \"Status\" des EVALUATION.problem_diagnosis Archetyps eingefügt zu werden. Die Absicht des EVALUATION.problem_diagnosis Archetyps ist es alle Informationen zu beinhalten, die in allen Kontexten relevant sein könnten. Dieser Archetyp hingegen soll nur Informationen beschreiben, welche vom Verwendungskontext abhängen. \r\n\r\nWICHTIGE ANMERKUNG ZUM IMPLEMENTIEREN DES ARCHETYPS:\r\n-Es ist weder die Absicht, noch wird impliziert, dass irgendein, oder alle Attribute in dem gleichen Kontext, oder in dem gleichen Zeitraum genutzt werden sollten. Im Gegensatz zu dem üblichen Design von Archetypen, wurde dieser Archetyp absichtlich so konzipiert, dass oft genutzte Merkmale an einer Stelle gesammelt werden können. Dies gewährleistet eine einfache Standardisierung eines sonst sehr chaotischen Bereiches der klinischen Praxis. Es ist uns bewusst, dass die Datenelemente in diesem Archetyp viele verschiedene Konzepte, und teilweise auch konkurrierende Konzepte, einschließen. Dies wurde hauptsächlich gemacht um die Notwendigkeit von mehreren, meist nur wenige Elemente beinhaltenden, Attribut-Archetypen zu vermeiden.\r\n\r\n-Manche Datenelemente sind unter Umständen widersprüchlich, wenn sie gleichzeitig in demselben Kontext genutzt werden. Zum Beispiel würde die Nutzung eines \"Inaktiven\" Problems, zusammen mit einer \"Andauernden\" Episode keinen Sinn ergeben. Aus diesem Grund sollten diese Status-Attribute mit hoher Sorgfalt genutzt werden. Sie können zwar variabel angewandt werden, aber in dem praktischen Gebrauch kann die Interoperabilität nur gewährleistet werden, wenn die Richtlinien innerhalb der klinischen Gemeinschaft in welcher das Archetyp-Paar \"Problem/Diagnose\" und \"Problem/Diagnose Attribut\" geteilt wird, klar definiert sind.\r\n\r\nFür eine vollständige DRG-Codierung sind die DRG-bezogenen Datenelemente dieses Archetyps in Kombination mit Datenelementen anderer Archetypen erforderlich.\r\n\r\n",
+          "misuse" : "Nicht zur Darstellung einer Differentialdiagnose - nutze den Archetyp EVALUATION.differential_diagnosis für diesen Zweck.\r\n\r\nNicht zur Darstellung der diagnostischen Sicherheit - nutze das Datenelement \"Diagnostische Sicherheit\" innerhalb des EVALUATION.problem/diagnosis Archetyps für diesen Zweck.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "Att registrera en klinisk kontextspecifik eller tidsspecifik kvalificering för ett specifikt problem eller diagnos.",
+          "keywords" : [ "problem", "aktiva", "inaktiv", "status", "episod", "diagnos" ],
+          "use" : "Används för att registrera en relevant kontextspecifik eller tidsspecifik kvalificering som ger ytterligare detaljer som är relevanta vid registreringstidpunkten eller inom det kliniska sammanhang där ett problem eller en diagnos registreras. Kvalificeringen kanske inte är lämplig vid en annan tidpunkt eller i ett annat kliniskt sammanhang.\r\n\r\nDenna arketyp är utformad för att inkluderas i Status SLOT i EVALUATION.problem_diagnosis arketyp. Syftet är att EVALUATION.problem_diagnosis-arketypen ska innehålla all information som gäller i alla sammanhang, i motsats till den här arketypen som endast beskriver information som beror på användningssammanhanget.\r\n\r\nVIKTIGA ANMÄRKNINGAR FÖR GENOMFÖRANDE:\r\n- Det är inte avsett eller underförstått att någon eller alla av dessa kvalificeringar ska användas inom samma sammanhang eller tidsperiod. Till skillnad från den vanliga utformningen av arketyper har denna arketyp avsiktligt utformats för att samla ett antal vanliga kvalificeringar på ett ställe i ett försök att försöka göra en enkel standardisering inom ett mycket rörigt område av klinisk praxis. Det erkänns att dataelementen i denna arketyp omfattar många olika, och ibland till och med konkurrerande, begrepp. Detta har huvudsakligen gjorts för att förhindra behovet av flera arketyper av kvalificerare, var och en innehåller endast ett eller två dataelement.\r\n- Vissa av dessa dataelement är potentiellt direkt motstridiga om de används samtidigt inom samma sammanhang, till exempel vore det inte meningsfullt att ha ett \"inaktivt\" problem tillsammans med en episod som är \"pågående\". Därför bör dessa statuskvalificeringar användas med yttersta försiktighet, eftersom de tillämpas på olika sätt i praktiken och interoperabilitet inte kan garanteras om inte riktlinjerna för användning definieras tydligt inom den kliniska gemenskap där arketyperna 'Problem/Diagnos' och 'Problem/Diagnos kvalificering' kan delas.\r\n\r\nFull DRG-kodning kräver DRG-relaterade dataelement från denna arketyp i kombination med dataelement från andra arketyper.",
+          "misuse" : "Inte utformad för att representera en differentialdiagnos - använd arketypen EVALUATION.differential_diagnosis för detta ändamål.\r\n\r\nInte utformad för att representera diagnostisk säkerhet - använd dataelementet 'Diagnostisk säkerhet' inom EVALUATION.problem_diagnosis-arketypen.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ko" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ko"
+          },
+          "purpose" : "특정 문제 또는 진단을 위한 임상 문맥-특징적인 또는 시간-특징적인 한정자(qualifier)를 기록하기 위함.",
+          "keywords" : [ "문제", "활성", "비활성", "상태", "에피소드", "진단" ],
+          "use" : "어떤 문제 또는 진단을 기록하는 경우, 임상 문맥을 기록하는 시점 또는 그 안에서 관계되는 추가적인 상세내용을 제공하는 관련된 문맥-특징적인 또는 시간-특징적인 한정자를 기록하는데 사용. 한정자가 다른 시간이나 임상 문맥에서는 부적당할 수도 있음.\r\n\r\n이 아키타입은 EVALUATION.problem_diagnosis archetype 내의 Status SLOT에 포함하도록 설계됨. 의도는 이 아카타입이 사용되는 문맥에 따르는 정보만을 기술하는 것과 반대로 모든 문맥에 적용되는 모든 정보를 포함하는 EVALUATION.problem_diagnosis archetype을 위한 것임.\r\n\r\n구현을 위한 중요 사항:\r\n- 이것은 이 한정자 일부 또는 전부가 같은 문맥 또는 같은 시간의 기간 내에 사용되어야 하는 것을 의도하거나 의미하지 않음. 일반적인 아키타입 설계와 다르게, 이 아카타입은 매우 복잡한 임상 실무 영역 내에서 간단히 표준화하기 위한 노력으로 많은 공통 한정자를 한 곳에 수집하기 위해 의도적으로 설계됨. 이 아키타입에 포함된 데이터 엘리먼트는 많은 상이한 그리고 때때로 심지어 경쟁적인 개념을 포괄하는 것으로 인정됨. 이것은 주로 오직 하나 또는 2개의 데이터 엘리먼트를 포함하는 여러 개의 한정자 아키타입을 필요로 하지 않도록 함. \r\n- 몇몇의 이런 데이터 엘리먼트는 같은 문맥에서 동시에 사용된다면 잠재적으로 직접적으로 충돌하는데, 예를 들어, '진행중'인 어떤 에피소드와 함께 '비활성' 문제를 가지는 것은 이치에 맞지 않음. 이와 같이, 이 상태 한정자는 실무에서 매우 다양하게 적용되는 것처럼 극단적인 진료환경에서 함께 사용되어야 하고, 사용 지침이 'Problem/Diagnosis'와 'Problem/Diagnosis qualifier' archetype 쌍이 공유될 수도 있는 임상 커뮤니티 내에서 명확하게 정의되어야 상호운용성을 보장할 수 있음.\r\n\r\n완전한 DRG 코딩은 다른 아키타입의 데이터 엘리먼트와 조합해서 이 아키타입의 DRG와 관련된 데이터 엘리먼트를 요구할 것임.",
+          "misuse" : "감별진단을 표현하는데 사용하지 않아야 함 - 이 목적을 위해서는 EVALUATION.differential_diagnosis archetype를 사용해야 함.\r\n\r\n진단의 확실성(certainty)를 표현하기 위해 사용하지 않아야 함 - EVALUATION.problem_diagnosis archetype 내의 'Diagnostic certainty' 데이터 엘리먼트를 사용해야 함.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere en kontekstspesifikk eller tidsspesifikk kvalifikator for et problem eller en diagnose.",
+          "keywords" : [ "problem", "aktivt", "inaktivt", "status", "episode", "tilstand", "aktiv", "inaktiv", "remisjon", "kronisk", "akutt" ],
+          "use" : "Brukes for å registrere en kontekstspesifikk eller tidsspesifikk kvalifikator som gir ytterligere detaljer som er relevante på tidspunktet man registrerer et problem eller en diagnose. Kvalifikatoren er ikke nødvendigvis passende på et annet tidspunkt eller i en annen klinisk sammenheng.\r\n\r\nDenne arketypen skal brukes i SLOTet \"Status\" i arketypen EVALUATION.problem_diagnosis (Problem/diagnose). Intensjonen er at EVALUATION.problem_diagnosis-arketypen skal inneholde all informasjonen som gjelder i alle sammenhenger, i motsetning til denne arketypen som skal inneholde informasjonen som avhenger av brukssammenheng.\r\n\r\nVIKTIG INFORMASJON FOR IMPLEMENTERING:\r\n- Det er ikke meningen eller implisert at alle disse kvalifikatorene skal brukes i den samme sammenhengen eller det samme tidsperioden. I motsetning til den vanlige måten å lage arketyper på, er denne arketypen laget for å samle flere vanlige kvalifikatorer på ett sted for å forsøksvis oppnå et visst nivå av standardisering innenfor et ganske innfløkt område av klinisk praksis. Det erkjennes at dataelementene i denne arketypen omfatter mange forskjellige, og til dels også konkurrerende, konsepter. Dette ble gjort hovedsakelig for å unngå behov for å ha mange arketyper for kvalifikatorer, der hver av dem kun inneholder ett eller to dataelementer.\r\n- Noen av disse dataelementene er potensielt direkte motstridende dersom de brukes samtidig og i den samme sammenhengen. For eksempel gir det ikke mening å ha et \"inaktivt\" problem innenfor en \"pågående\" episode. Av den grunn bør disse kvalifikatorene brukes med stor omhu, siden de i praksis vil brukes for varierende formål, og interoperabilitet kan ikke garanteres med mindre det er definert klare retningslinjer for bruk innenfor de kliniske omstendighetene der \"Problem/diagnose\"- og \"Problem/diagnose-kvalifikatorer\"-arketypeparet brukes.\r\n\r\nFullstendig DRG-koding vil kreve DRG-relaterte dataelementer fra denne arketypen, i kombinasjon med elementer fra andre arketyper.",
+          "misuse" : "Brukes ikke for å representere differensialdiagnoser. Bruk arketypen EVALUATION.differential_diagnosis for dette formålet.\r\n\r\nBrukes ikke for å representere diagnostisk sikkerhet. Bruk elementet \"Diagnostisk sikkerhet\" i arketypen EVALUATION.problem_diagnosis.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para gravar um contexto clínico específico ou qualificador de tempo específico para um problema ou diagnóstico específico.",
+          "keywords" : [ "problema", "ativo", "inativo", "estado", "episódio", "diagnóstico" ],
+          "use" : "Use para gravar um qualificador de contexto específico ou tempo específico relevante que forneça detalhes adicionais de ou de e que sejam relevantes no momento do registro de um problema ou diagnóstico, ou dentro do contexto clínico onde é registrado, mas que pode não ser apropriado em outro tempo ou em outro contexto clínico.\r\n\r\nEste arquétipo foi projetado para ser incluído no slot Estado no arquétipo EVALUATION.problem_diagnosis archetype. A intenção é que o arquétipo EVALUATION.problem_diagnosis mantenha todas as informações que se aplicam em todos os contextos, em contraste com esse arquétipo que descreve apenas as informações que dependem do contexto de uso.\r\n\r\nNOTAS IMPORTANTES PARA IMPLEMENTAÇÃO:\r\n- Não é intencional ou implícito que algum ou todos esses qualificadores devam ser usados dentro do mesmo contexto ou período de tempo. Em contraste com o design usual de arquétipos, esse arquétipo foi deliberadamente projetado para coletar uma série de qualificadores comuns em um único lugar, em um esforço para tentar alguma padronização simples dentro de uma área muito confusa da prática clínica. Reconhece-se que os elementos de dados contidos neste arquétipo abrangem muitos conceitos diferentes e às vezes até concorrentes. Isso foi feito principalmente para evitar a necessidade de vários arquétipos de qualificadores, cada um contendo apenas um ou dois elementos de dados.\r\n- Alguns desses elementos de dados são potencialmente conflitantes se usados simultaneamente dentro do mesmo contexto, por exemplo, não faria sentido ter um problema 'inativo' junto com um Episódio 'em andamento'. Assim, esses qualificadores de status devem ser usados com extremo cuidado, pois são aplicados na prática e a interoperabilidade não pode ser assegurada, a menos que as diretrizes de uso estejam claramente definidas na comunidade clínica na qual o par de arquétipos 'Problema / Diagnóstico' e 'Qualificador do Problema / Diagnóstico' pode ser compartilhado.\r\n\r\nA codificação DRG completa vai exigir os elementos de dados DRG deste arquétipo em combinação com elementos de dados de outros arquétipos.",
+          "misuse" : "Não deve ser usado para representar um diagnóstico diferencial - use o arquétipo EVALUATION.differential_diagnosis para este fim.\r\n\r\nNão deve ser usado para representar certeza diagnóstica - use elemento de dado \"Certeza de diagnóstico\" no arquétipo EVALUATION.problem_diagnosis.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record a clinical context-specific or time-specific qualifier for a specified problem or diagnosis.",
+          "keywords" : [ "problem", "active", "inactive", "status", "episode", "diagnosis" ],
+          "use" : "Use to record a relevant context-specific or time-specific qualifier that provides additional detail which is relevant at the time of recording or within the clinical context where a problem or diagnosis is recorded. The qualifier may not be appropriate at another time or in another clinical context. \r\n\r\nThis archetype is designed to be included in Status SLOT in the EVALUATION.problem_diagnosis archetype. The intent is for the EVALUATION.problem_diagnosis archetype to hold all of the information that applies in all contexts, in contrast to this archetype describing only information that depends on the context of use.\r\n\r\nIMPORTANT NOTES FOR IMPLEMENTATION: \r\n- It is not intended or implied that any or all of these qualifiers should be used within the same context or period of time. In contrast to the usual design of archetypes, this archetype has been deliberately designed to collect a number of common qualifiers into one place in an effort to attempt some simple standardisation within a very messy area of clinical practice. It is acknowledged that the data elements contained in this archetype embrace many different, and sometimes even competing, concepts. This has been done mainly to prevent the need for multiple qualifier archetypes, each containing only one or two data elements. \r\n- Some of these data elements are potentially directly conflicting if used simultaneously within the same context, for example it would not make sense to have an 'inactive' problem together with an Episode that is 'ongoing'. As such, these status qualifiers should be used with extreme care as they are variably applied in practice and interoperability cannot be assured unless usage guidelines are clearly defined within the clinical community in which the 'Problem/Diagnosis' and 'Problem/Diagnosis qualifier' archetype pair may be shared. \r\n\r\nFull DRG coding will require the DRG-related data elements from this archetype in combination with data elements from other archetypes.",
+          "misuse" : "Not to be used to represent a differential diagnosis - use the archetype EVALUATION.differential_diagnosis for this purpose.\r\n\r\nNot to be used to represent diagnostic certainty - use the 'Diagnostic certainty' data element within the EVALUATION.problem_diagnosis archetype.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sl"
+          },
+          "purpose" : "Za zapisovanje različnih statusov, ki se ponavadi uporablja za aplikacijskimi in kliničnimi sporočili, ki so odvisna od definirane vsebine\r\n\r\n",
+          "keywords" : [ "problem", "aktiven", "ni aktiven" ],
+          "use" : "Za dodeljevanje pravic EVALUATION.problem_diagnosis.v1 archetype, dodaja informacije za povezovanje. ",
+          "misuse" : "It should not be assumed that these qualifiers are safely interoperable unless further definition and alignment is agreed between all sharing parties. A problem which has been defined as 'Inactive' during a hospital admission cannot be assumed to be regarded as 'Inactive' in a primary care setting , where a much longer term perspective is being taken. Similarly terms such as Initial, Interim and Final, whilst helpful to the human observer are unlikely to be precisely enough defined to be safely computable e.g. for decision support. ",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "it" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "it"
+          },
+          "purpose" : "Registrare un qualificatore specifico del contesto clinico o temporale per un problema o una diagnosi specifici.",
+          "keywords" : [ "problema, attivo, inattivo, stato, episodio, diagnosi" ],
+          "use" : "Usato per registrare un qualificatore specifico del contesto o del tempo che fornisca ulteriori dettagli rilevanti al momento della registrazione o nell'ambito del contesto clinico in cui viene registrato un problema o una diagnosi. Il qualificatore potrebbe non essere appropriato in un altro momento o in un altro contesto clinico.\r\n\r\nQuesto archetipo è progettato per essere incluso in Status SLOT nell'archetipo di EVALUATION.problem_diagnosis. L'intento è che l'archetipo EVALUATION.problem_diagnosis contenga tutte le informazioni che si applicano in tutti i contesti, a differenza di questo archetipo che descrive solo le informazioni che dipendono dal contesto d'uso.\r\n\r\nNOTE IMPORTANTI PER L'IMPLEMENTAZIONE:\r\n- Non è inteso o implicito che uno o tutti questi qualificatori debbano essere utilizzati nello stesso contesto o periodo di tempo. In contrasto con il design abituale degli archetipi, questo archetipo è stato deliberatamente progettato per raccogliere una serie di qualificatori comuni in un unico luogo nel tentativo di tentare una semplice standardizzazione all'interno di un'area molto disordinata della pratica clinica. Si riconosce che i dati contenuti in questo archetipo abbracciano molti concetti diversi, e a volte anche in competizione tra loro. Questo è stato fatto principalmente per evitare la necessità di molteplici archetipi di qualificatori, ognuno dei quali contenente solo uno o due data element.\r\n- Alcuni di questi data element sono potenzialmente in conflitto diretto se utilizzati contemporaneamente all'interno dello stesso contesto, ad esempio non avrebbe senso avere un problema \"inattivo\" insieme ad un Episodio \"in corso\". In quanto tali, questi qualificatori di stato dovrebbero essere utilizzati con estrema cautela in quanto sono applicati in modo variabile nella pratica e l'interoperabilità non può essere garantita a meno che le linee guida di utilizzo non siano chiaramente definite all'interno della comunità clinica in cui la coppia di archetipi \"Problema/Diagnosi\" e \"Qualificatore di problema/diagnosi\" possono essere condivisi.\r\n\r\nLa codifica DRG completa richiederà che i data element relativi al DRG di questo archetipo siano combinati con data element di altri archetipi.",
+          "misuse" : "Da non utilizzare per rappresentare una diagnosi differenziale - utilizzare a questo scopo l'archetipo EVALUATION.differential_diagnosis.\r\n\r\nDa non utilizzare per rappresentare la certezza diagnostica - utilizzare l'elemento di dati \"Certezza diagnostica\" all'interno dell'archetipo EVALUATION.problem_diagnosis.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "zh" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "zh"
+          },
+          "purpose" : "*To record a clinical context-specific or time-specific qualifier for a specified problem or diagnosis.(en)",
+          "keywords" : [ "*problem(en)", "*active(en)", "*inactive(en)", "*status(en)", "*episode(en)", "*diagnosis(en)" ],
+          "use" : "*Use to record a relevant context-specific or time-specific qualifier that provides additional detail which is relevant at the time of recording or within the clinical context where a problem or diagnosis is recorded. The qualifier may not be appropriate at another time or in another clinical context. \r\n\r\nThis archetype is designed to be included in Status SLOT in the EVALUATION.problem_diagnosis archetype. The intent is for the EVALUATION.problem_diagnosis archetype to hold all of the information that applies in all contexts, in contrast to this archetype describing only information that depends on the context of use.\r\n\r\nIMPORTANT NOTES FOR IMPLEMENTATION: \r\n- It is not intended or implied that any or all of these qualifiers should be used within the same context or period of time. In contrast to the usual design of archetypes, this archetype has been deliberately designed to collect a number of common qualifiers into one place in an effort to attempt some simple standardisation within a very messy area of clinical practice. It is acknowledged that the data elements contained in this archetype embrace many different, and sometimes even competing, concepts. This has been done mainly to prevent the need for multiple qualifier archetypes, each containing only one or two data elements. \r\n- Some of these data elements are potentially directly conflicting if used simultaneously within the same context, for example it would not make sense to have an 'inactive' problem together with an Episode that is 'ongoing'. As such, these status qualifiers should be used with extreme care as they are variably applied in practice and interoperability cannot be assured unless usage guidelines are clearly defined within the clinical community in which the 'Problem/Diagnosis' and 'Problem/Diagnosis qualifier' archetype pair may be shared. \r\n\r\nFull DRG coding will require the DRG-related data elements from this archetype in combination with data elements from other archetypes.(en)",
+          "misuse" : "*Not to be used to represent a differential diagnosis - use the archetype EVALUATION.differential_diagnosis for this purpose.\r\n\r\nNot to be used to represent diagnostic certainty - use the 'Diagnostic certainty' data element within the EVALUATION.problem_diagnosis archetype.(en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.problem_qualifier.v1",
     "differential" : true,
@@ -2442,213 +3067,6 @@
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "ff088ac3-75f2-4053-b6b5-cff4926e6be1",
-    "description" : {
-      "@type" : "RESOURCE_DESCRIPTION",
-      "originalAuthor" : { },
-      "otherContributors" : [ ],
-      "ipAcknowledgements" : { },
-      "references" : { },
-      "conversionDetails" : { },
-      "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "48BA7281FAFAD1B5D72DD78E6D2A3E85"
-      },
-      "details" : { }
-    },
-    "parentArchetypeId" : "openEHR-EHR-CLUSTER.tnm.v1",
-    "differential" : true,
-    "archetypeId" : {
-      "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-CLUSTER.ovl-tnm-001.v1"
-    },
-    "definition" : {
-      "@type" : "C_COMPLEX_OBJECT",
-      "rmTypeName" : "CLUSTER",
-      "nodeId" : "at0000.1",
-      "attributes" : [ {
-        "@type" : "C_ATTRIBUTE",
-        "rmAttributeName" : "items",
-        "children" : [ {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "nodeId" : "at0001.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "1..1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "defining_code",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "TERMINOLOGY_CODE",
-                  "occurrences" : "0..1",
-                  "terminologyId" : {
-                    "value" : "Temp -snomed"
-                  },
-                  "constraint" : [ "ac0.1" ],
-                  "selectedTerminologies" : [ "Temp -snomed" ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0002.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0026.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_BOOLEAN",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_BOOLEAN",
-                  "rmTypeName" : "BOOLEAN",
-                  "occurrences" : "1..1",
-                  "constraint" : [ true ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0027.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_BOOLEAN",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_BOOLEAN",
-                  "rmTypeName" : "BOOLEAN",
-                  "occurrences" : "1..1",
-                  "constraint" : [ true ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0028.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_BOOLEAN",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_BOOLEAN",
-                  "rmTypeName" : "BOOLEAN",
-                  "occurrences" : "1..1",
-                  "constraint" : [ true ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0032.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        } ]
-      } ],
-      "attributeTuples" : [ ]
-    },
-    "terminology" : {
-      "@type" : "ARCHETYPE_TERMINOLOGY",
-      "conceptCode" : "at0000",
-      "termDefinitions" : {
-        "en" : { },
-        "nb" : { },
-        "de" : { }
-      },
-      "termBindings" : {
-        "Temp -snomed" : {
-          "ac0.1" : "terminology://fhir.hl7.org/ValueSet/$expand?url=http://snomed.info/sct?fhir_vs=ecl/%3C%3C404684003&activeOnly=true"
-        }
-      },
-      "terminologyExtracts" : { },
-      "valueSets" : { }
-    },
-    "adlVersion" : "1.4",
-    "buildUid" : "412f5cad-ddad-4fe4-87ac-21d21bddc86c",
-    "rmName" : "openehr",
-    "rmRelease" : "1.1.0",
-    "generated" : true,
-    "otherMetaData" : { },
-    "originalLanguage" : {
-      "terminologyId" : {
-        "value" : "ISO_639-1"
-      },
-      "codeString" : "en"
-    },
-    "translations" : [ {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "de"
-      },
-      "author" : {
-        "name" : "Natalia Strauch, Vebjørn Arntzen",
-        "organisation" : "Medizinische Hochschule Hannover, Oslo University Hospital",
-        "email" : "Strauch.Natalia@mh-hannover.de, varntzen@ous-hf.no"
-      },
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "nb"
-      },
-      "author" : {
-        "name" : "Vebjørn Arntzen, Sabine Leh",
-        "organisation" : "Oslo University Hospital HF, Helse Bergen HF",
-        "email" : "varntzen@ous-hf.no"
-      },
-      "otherDetails" : { }
-    } ]
-  }, {
-    "@type" : "TEMPLATE_OVERLAY",
     "uid" : "68a4c1d8-0fb2-4d01-8e27-e6ed17eb1bee",
     "description" : {
       "@type" : "RESOURCE_DESCRIPTION",
@@ -2660,7 +3078,70 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "FD31B6A3D7C0FE6280E39084A789BA00"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Dokumentation einer Aussage über den Ausschluss eines bestimmten Problems/Diagnose, familiäre Krankengeschichte, Medikation, Verfahren, Nebenwirkung oder eines anderen klinischen Ereignisses, das entweder derzeit nicht vorliegt oder in der Vergangenheit nicht vorgelegen hat. \r\n",
+          "keywords" : [ "Ausschluss", "ausschließen", "Verneinung", "Nichtvorhandensein", "Fehlen", "Abwesenheit" ],
+          "use" : "Zur Dokumentation einer Ausschluss eines bestimmten Problems/Diagnose, familiäre Krankengeschichte, Medikation, Verfahren, Nebenwirkung oder eines anderen klinischen Ereignisses, das entweder derzeit nicht vorliegt oder in der Vergangenheit nicht vorgelegen hat.\r\n\r\nDieser Archetyp wurde entwickelt, um eine eindeutige Aussage über den Ausschluss eines medizinischen Sachverhalts aus der Krankenakte zu erfassen. Dieses Vorgehen ist der Verwendung von Flags oder Terminologien, zur Dokumentation eines Ausschlusses/von Verneinungen, vorzuziehen. \r\n\r\nDas Daten Element \"ausgeschlossene Kategorie\" ermöglicht die Dokumentation und die Zuordnung einer einzelnen spezifischen Aussage. Die unterschiedlichen spezifischen Kategorien, die zur Laufzeit über einen „Name Constraint“ eingeschränkt werden, identifizieren die unterschiedlichen Ausschlüsse. Die Einschränkung der Bezeichnungen der Items kann während der Template-Modellierung oder während der Laufzeit in einer Softwareanwendung anhand des „Name Constraints“ vorgenommen werden. \r\n\r\nJeder spezifische Ausschluss sollte in einer separaten Instanz des Archetyps dokumentiert werden. Zum Beispiel sollte die Dokumentation von \"keine bekannte Penicillin V Unverträglichkeit\", \"keine bekannten Unverträglichkeiten gegenüber Cephalosporine\" und \"keine Kenntnisse über Herzkrankheiten in der Familie\" in 3 getrennten Instanzen in diesem Archetyp erfolgen.\r\n\r\nZu beachten ist, dass Äußerungen zu z.B. ausgeschlossenen Erkrankungen nur zum Zeitpunkt der Aufnahme als aktuell und korrekt angesehen werden können. Es ist möglich, dass ein Datensatz angegeben wird, dass eine Person KEINE KENNTNIS über eine Vorgeschichte eines bestimmten Problems oder einer bestimmten Diagnose hat (unter Verwendung einer Ausschlussaussage), während gleichzeitig der Nachweis der ersten Erfahrung mit dem gleichen Problem oder der gleichen Diagnose aufgezeichnet (unter Verwendung des Archetyps EVALUATION.problem_diagnosis) wird. In zukünftigen Aufzeichnungen von der Person kann der Verlauf des Problems oder der Diagnose in der Problemliste gespeichert sein.\r\n",
+          "misuse" : "Nicht für die Dokumentation von allen ausgeschlossenen Problemen oder Diagnosen, Medikamenten, Verfahren, familiärer Krankengeschichte, Nebenwirkungen oder anderen klinischen Ereignissen verwenden - Bitte verwenden Sie für diesen Zweck den Archetyp EVALUATION.exclusion_global.\r\n\r\nNicht für die Dokumentation von einer ausgeschlossenen Komponente der körperlichen Untersuchung verwenden - Bitte verwenden Sie für diesen Zweck den Archetyp CLUSTER.exclusion_exam innerhalb des entsprechenden OBSERVATION oder CLUSTER Archetyps.\r\n\r\nNicht für die Dokumentation des Ausschlusses von Symptomen verwenden - Bitte verwenden Sie für diesen Zweck den Archetyp CLUSTER.exclusion_symptom innerhalb des entsprechenden OBSERVATION or CLUSTER Archetyps.\r\n\r\nNicht für die Dokumentation von fehlenden Informationen verwenden - Bitte verwenden Sie für diesen Zweck den Archetyp EVALUATION.absence.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "Att utesluta specifik problem/diagnoser, ärftlighet, läkemedel, ingrepp, biverkningar eller annat, som antingen inte föreligger nu eller som inte har uppträtt tidigare.",
+          "keywords" : [ "utesluta, exkludera, avsaknad" ],
+          "use" : "Används för att utesluta specifik problem/diagnoser, ärftlighet, läkemedel, ingrepp, biverkningar eller annat, som antingen inte föreligger nu eller som inte har uppträtt tidigare.",
+          "misuse" : "Ska inte användas för att generellt utesluta alla problem/diagnoser, ärftlighet, läkemedel, ingrepp, biverkningar eller annat. Använd då i stället arketypen EVALUATION.exclusion_global.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere et utsagn om eksklusjon av en spesifikk problem/diagnose, familiær sykdom, legemiddel, prosedyre, overfølsomhet eller andre kliniske konsepter som ikke er tilstede hos et individ, enten i nåtid eller fortid.",
+          "keywords" : [ "eksklusjon, negasjon, utelukke, utelukkelse, fravær" ],
+          "use" : "Brukes til å registrere et utsagn om eksklusjon av en spesifikk problem/diagnose, familiær sykdom, legemiddel, prosedyre, overfølsomhet eller andre kliniske konsepter som ikke er tilstede hos et individ, enten i nåtid eller fortid.\r\n\r\nArketypen er laget spesifikt for kunne uttrykke klart og tydelig en spesifikk utelukkelse av en type klinisk konsept fra journalen. Denne tilnærmingen er valgt i stedet for å basere seg på flagg eller terminologi for å uttrykke negasjon.\r\n\r\nDataelementet \"Ekskludert konsept\" brukes til å registrere et enkelt spesifikt utsagn. De forskjellige typene utsagn som er listet opp i elementets runtime name constraint navngir de forskjellige spesifikke eksklusjonene. En runtime name constraint kan brukes enten under templatmodellering eller i en applikasjon.\r\n\r\nHvert enkelt eksklusjon registreres i en egen instans av denne arketypen. Man registrerer for eksempel \"Ingen tidligere overfølsomhetsreaksjon til penicillin V\", \"Ingen tidligere overfølsomhetsreaksjoner til cefalosporiner\", \"Ingen kjent hjertesykdom i familien\" i tre ulike instanser av denne arketypen.\r\n\r\nMerk at eksklusjonsutsagn kun kan regnes som aktuelle og pålitelige på det tidspunktet de registreres. Et journalnotat kan gjerne uttrykke at et individ ikke har for eksempel diabetes i sin sykehistorie (ved hjelp av et eksklusjonsutsagn) i den samme konsultasjonen der det for første gang registreres en faktisk diabetes (ved hjelp av arketypen EVALUATION.problem_diagnosis). I senere journalnotater kan individet ha diabetes som del av sin kjente historikk.",
+          "misuse" : "Brukes ikke for å registrere et eksklusjonsutsagn for alle problemer eller diagnoser, tilstander i familien, legemidler, prosedyrer, overfølsomhetsreaksjoner eller andre kliniske elementer - bruk arketypen EVALUATION.exclusion_global for dette formålet.\r\n\r\nBrukes ikke for å registrere eksklusjon av noen komponent av en fysisk undersøkelse - bruk arketypen CLUSTER.exclusion_exam i en passende OBSERVATION- eller CLUSTER-arketype.\r\n\r\nBrukes ikke for å registrere eksklusjon av symptomer, bruke arketypen CLUSTER.exclusion_symptom i en passende OBSERVATION eller CLUSTER arketype.\r\n\r\nBrukes ikke denne arketypen for registrering av fravær av infomasjon - bruk arketypen EVALUATION.absence for dette formålet.",
+          "copyright" : "© Nasjonal IKT HF, openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record a statement of exclusion about a specific Problem/diagnosis, Family history, Medication, Procedure, Adverse reaction or other clinical item that is either not currently present, or have not been present in the past.",
+          "keywords" : [ "exclusion, negation, rule out, rule-out, r/o, absence" ],
+          "use" : "Use to record a statement of exclusion of a specific Problem/diagnosis, Family history, Medication, Procedure, Adverse reaction or other clinical item that is either not currently present, or have not been present in the past.\r\n\r\nThis archetype has been specifically designed to make a clear and unambiguous statement of a specific exclusion of a type of clinical item from the health record. This approach is used in preference to relying on flags or terminology to express negation.\r\n\r\nThe data element 'Excluded concept' allows for recording of a single specific statement. The different specific concepts listed in the \"Excluded concept' run-time name constraint identifies the different specific exclusions. This name constraint can be applied during template modelling or at run-time within a software application.\r\n\r\nEach specific exclusion should be recorded in a separate instance of this archetype. For example: record 'no past history of adverse reaction to penicillin V', 'no past history of adverse reaction to cephalosporins' and 'no known family history of heart disease' in 3 separately constrained instances of this archetype.\r\n\r\nPlease note that exclusion statements can only be considered to be current and accurate at the point-in-time of recording. It is possible for a record to be able to state that an individual has NO KNOWN history of a specific problem or diagnosis (using an exclusion statement) at the same consultation as recording the evidence of their first experience of the same problem or diagnosis (using the EVALUATION.problem_diagnosis archetype). In future record statements, the individual may have a KNOWN history of the problem or diagnosis recorded in their problem list.",
+          "misuse" : "Not to be used to record the exclusion of all problems or diagnoses, medications, procedures, family history, adverse reactions or other clinical items - use the EVALUATION.exclusion_global archetype for this purpose.\r\n\r\nNot to be used to record the exclusion of any component of a physical examination - use the CLUSTER.exclusion_exam archetype within an appropriate OBSERVATION or CLUSTER archetype.\r\n\r\nNot to be used to record the exclusion of symptoms use the CLUSTER.exclusion_symptom archetype within an appropriate OBSERVATION or CLUSTER archetype.\r\n\r\nNot to be used to record the absence of information - use the EVALUATION.absense archetype for this purpose.",
+          "copyright" : "© Nasjonal IKT HF, openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-EVALUATION.exclusion_specific.v1",
     "differential" : true,
@@ -2685,8 +3166,50 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0002.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "defaultValue" : {
+                    "value" : "\"No known history of\"",
+                    "@type" : "DV_TEXT"
+                  },
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
               "nodeId" : "at0003.1",
               "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "name",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "local"
+                      },
+                      "constraint" : [ "ac0.5" ],
+                      "selectedTerminologies" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              }, {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "value",
                 "children" : [ {
@@ -2705,28 +3228,6 @@
                       },
                       "constraint" : [ "ac0.3" ],
                       "selectedTerminologies" : [ "Temp - snomed" ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
-              }, {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "name",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_CODED_TEXT",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "defining_code",
-                    "children" : [ {
-                      "@type" : "C_TERMINOLOGY_CODE",
-                      "rmTypeName" : "TERMINOLOGY_CODE",
-                      "occurrences" : "1..1",
-                      "terminologyId" : {
-                        "value" : "local"
-                      },
-                      "constraint" : [ "ac0.5" ],
-                      "selectedTerminologies" : [ ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
