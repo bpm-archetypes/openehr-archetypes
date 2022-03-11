@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.4.1",
+      "sem_ver" : "0.4.2",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "f7466bd59877049a88b113b27028afbb",
+      "MD5-CAM-1.0.1" : "e75059443b53066b5d16301169d6a147",
       "PARENT:MD5-CAM-1.0.1" : "41914AB89EC39C22523B4461C349BB17"
     },
     "details" : {
@@ -563,10 +563,10 @@
                       "rmTypeName" : "TERMINOLOGY_CODE",
                       "occurrences" : "0..1",
                       "terminologyId" : {
-                        "value" : "SNOMED-CT-allergies"
+                        "value" : "SNOMED-CT-allergens"
                       },
                       "constraint" : [ "ac0.5" ],
-                      "selectedTerminologies" : [ "SNOMED-CT-allergies" ]
+                      "selectedTerminologies" : [ "SNOMED-CT-allergens" ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -1078,11 +1078,11 @@
         "SNOMED-CT-clinical-findings" : {
           "ac0.6" : "terminology://fhir.hl7.org/ValueSet/$expand?url=http://snomed.info/sct?fhir_vs=ecl/%3C%3C404684003&activeOnly=true"
         },
-        "SNOMED-CT-allergies" : {
-          "ac0.5" : "terminology://fhir.hl7.org/ValueSet/$expand?url=http://snomed.info/sct?fhir_vs=ecl/%3C105590001%3AR246075003%3D%3C420134006&activeOnly=true"
-        },
         "SNOMED-CT-manifiestions(TEMP)" : {
           "ac0.12" : "terminology://fhir.hl7.org/ValueSet/$expand?url=http://snomed.info/sct?fhir_vs=ecl/%28%3C%20404684003%3A%3E%3E42752001%3D%3C%3C419076005%29MINUS%28%3C404684003%3A246075003%3D%2A%29&activeOnly=true"
+        },
+        "SNOMED-CT-allergens" : {
+          "ac0.5" : "terminology://fhir.hl7.org/ValueSet/$expand?url=http://snomed.info/sct?fhir_vs=ecl/%3C%20255640000%20OR%20%3C%20115668003%20OR%20%3C%20373782009%20OR%20%3C%20410942007%20OR%20%3C%20762766007%20OR%20%3C%20260769002&activeOnly=true"
         }
       },
       "terminologyExtracts" : { },
