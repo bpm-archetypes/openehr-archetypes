@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.4.3",
+      "sem_ver" : "0.4.4",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "ff3a3a3960c9d4a9096a87b73c119b83",
+      "MD5-CAM-1.0.1" : "a7cdfb8133d2eb790f213489552519e0",
       "PARENT:MD5-CAM-1.0.1" : "41914AB89EC39C22523B4461C349BB17"
     },
     "details" : {
@@ -1488,7 +1488,11 @@
     "annotations" : {
       "@type" : "RESOURCE_ANNOTATIONS",
       "documentation" : {
-        "en" : { }
+        "en" : {
+          "" : {
+            "validation" : "required_without:{{ /content[openEHR-EHR-SECTION.adverse_reaction_list.v0]/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v1]allergies.adverse_reaction_list.adverse_reaction_risk }}|prohibits:{{ /content[openEHR-EHR-SECTION.adverse_reaction_list.v0]/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v1]allergies.adverse_reaction_list.adverse_reaction_risk }}"
+          }
+        }
       }
     },
     "parentArchetypeId" : "openEHR-EHR-EVALUATION.exclusion_global.v1",
