@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.1.0",
+      "sem_ver" : "0.2.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "279b7d8c6b8ad0991e6f42873fe09b7a",
+      "MD5-CAM-1.0.1" : "767eaa8e59c84f8faa0186d82bde2bfe",
       "PARENT:MD5-CAM-1.0.1" : "7D30D55E7A5136F665655E293645D5E6"
     },
     "details" : {
@@ -155,7 +155,9 @@
       "ipAcknowledgements" : { },
       "references" : { },
       "conversionDetails" : { },
-      "otherDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "CC297465A592B5BE0321B62E37D9E7EE"
+      },
       "details" : {
         "de" : {
           "@type" : "RESOURCE_DESCRIPTION_ITEM",
@@ -423,7 +425,6 @@
                 }, {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
-                  "occurrences" : "0..0",
                   "nodeId" : "at0030.1",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
@@ -436,12 +437,13 @@
                         "rmAttributeName" : "defining_code",
                         "children" : [ {
                           "@type" : "C_TERMINOLOGY_CODE",
-                          "rmTypeName" : "CODE_PHRASE",
+                          "rmTypeName" : "TERMINOLOGY_CODE",
                           "occurrences" : "1..1",
                           "terminologyId" : {
                             "value" : "local"
                           },
-                          "constraint" : [ "at0083", "at0084" ]
+                          "constraint" : [ "ac0.3" ],
+                          "selectedTerminologies" : [ ]
                         } ]
                       } ],
                       "attributeTuples" : [ ]
@@ -784,7 +786,6 @@
                 }, {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
-                  "occurrences" : "0..0",
                   "nodeId" : "at0110.1",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
@@ -792,26 +793,16 @@
                     "children" : [ {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "DV_QUANTITY",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "property",
-                        "children" : [ {
-                          "@type" : "C_TERMINOLOGY_CODE",
-                          "terminologyId" : {
-                            "value" : "openehr"
-                          },
-                          "constraint" : [ "382" ]
-                        } ]
-                      } ],
+                      "attributes" : [ ],
                       "attributeTuples" : [ {
                         "@type" : "C_ATTRIBUTE_TUPLE",
                         "members" : [ {
                           "@type" : "C_ATTRIBUTE",
-                          "rmAttributeName" : "magnitude",
+                          "rmAttributeName" : "units",
                           "children" : [ ]
                         }, {
                           "@type" : "C_ATTRIBUTE",
-                          "rmAttributeName" : "units",
+                          "rmAttributeName" : "magnitude",
                           "children" : [ ]
                         }, {
                           "@type" : "C_ATTRIBUTE",
@@ -821,7 +812,12 @@
                         "tuples" : [ {
                           "@type" : "C_PRIMITIVE_TUPLE",
                           "members" : [ {
+                            "@type" : "C_STRING",
+                            "rmTypeName" : "STRING",
+                            "constraint" : [ "1/wk" ]
+                          }, {
                             "@type" : "C_REAL",
+                            "rmTypeName" : "REAL",
                             "constraint" : [ {
                               "lower" : 0.0,
                               "upper" : 7.0,
@@ -831,10 +827,8 @@
                               "upperUnbounded" : false
                             } ]
                           }, {
-                            "@type" : "C_STRING",
-                            "constraint" : [ "1/wk" ]
-                          }, {
                             "@type" : "C_INTEGER",
+                            "rmTypeName" : "INTEGER",
                             "constraint" : [ {
                               "lower" : 0,
                               "upper" : 0,
@@ -847,7 +841,12 @@
                         }, {
                           "@type" : "C_PRIMITIVE_TUPLE",
                           "members" : [ {
+                            "@type" : "C_STRING",
+                            "rmTypeName" : "STRING",
+                            "constraint" : [ "1/mo" ]
+                          }, {
                             "@type" : "C_REAL",
+                            "rmTypeName" : "REAL",
                             "constraint" : [ {
                               "lower" : 0.0,
                               "upper" : 31.0,
@@ -857,10 +856,8 @@
                               "upperUnbounded" : false
                             } ]
                           }, {
-                            "@type" : "C_STRING",
-                            "constraint" : [ "1/mo" ]
-                          }, {
                             "@type" : "C_INTEGER",
+                            "rmTypeName" : "INTEGER",
                             "constraint" : [ {
                               "lower" : 0,
                               "upper" : 0,
@@ -878,7 +875,6 @@
                 }, {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
-                  "occurrences" : "0..0",
                   "nodeId" : "at0023.1",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
@@ -886,26 +882,16 @@
                     "children" : [ {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "DV_QUANTITY",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "property",
-                        "children" : [ {
-                          "@type" : "C_TERMINOLOGY_CODE",
-                          "terminologyId" : {
-                            "value" : "openehr"
-                          },
-                          "constraint" : [ "382" ]
-                        } ]
-                      } ],
+                      "attributes" : [ ],
                       "attributeTuples" : [ {
                         "@type" : "C_ATTRIBUTE_TUPLE",
                         "members" : [ {
                           "@type" : "C_ATTRIBUTE",
-                          "rmAttributeName" : "magnitude",
+                          "rmAttributeName" : "units",
                           "children" : [ ]
                         }, {
                           "@type" : "C_ATTRIBUTE",
-                          "rmAttributeName" : "units",
+                          "rmAttributeName" : "magnitude",
                           "children" : [ ]
                         }, {
                           "@type" : "C_ATTRIBUTE",
@@ -915,19 +901,22 @@
                         "tuples" : [ {
                           "@type" : "C_PRIMITIVE_TUPLE",
                           "members" : [ {
-                            "@type" : "C_REAL",
-                            "constraint" : [ {
-                              "lower" : 0.0,
-                              "lowerIncluded" : true,
-                              "upperIncluded" : false,
-                              "lowerUnbounded" : false,
-                              "upperUnbounded" : true
-                            } ]
-                          }, {
                             "@type" : "C_STRING",
+                            "rmTypeName" : "STRING",
                             "constraint" : [ "1/d" ]
                           }, {
+                            "@type" : "C_REAL",
+                            "rmTypeName" : "REAL",
+                            "constraint" : [ {
+                              "lower" : 0.0,
+                              "lowerIncluded" : true,
+                              "upperIncluded" : false,
+                              "lowerUnbounded" : false,
+                              "upperUnbounded" : true
+                            } ]
+                          }, {
                             "@type" : "C_INTEGER",
+                            "rmTypeName" : "INTEGER",
                             "constraint" : [ {
                               "lower" : 1,
                               "upper" : 1,
@@ -940,19 +929,22 @@
                         }, {
                           "@type" : "C_PRIMITIVE_TUPLE",
                           "members" : [ {
-                            "@type" : "C_REAL",
-                            "constraint" : [ {
-                              "lower" : 0.0,
-                              "lowerIncluded" : true,
-                              "upperIncluded" : false,
-                              "lowerUnbounded" : false,
-                              "upperUnbounded" : true
-                            } ]
-                          }, {
                             "@type" : "C_STRING",
+                            "rmTypeName" : "STRING",
                             "constraint" : [ "1/wk" ]
                           }, {
+                            "@type" : "C_REAL",
+                            "rmTypeName" : "REAL",
+                            "constraint" : [ {
+                              "lower" : 0.0,
+                              "lowerIncluded" : true,
+                              "upperIncluded" : false,
+                              "lowerUnbounded" : false,
+                              "upperUnbounded" : true
+                            } ]
+                          }, {
                             "@type" : "C_INTEGER",
+                            "rmTypeName" : "INTEGER",
                             "constraint" : [ {
                               "lower" : 1,
                               "upper" : 1,
@@ -965,7 +957,12 @@
                         }, {
                           "@type" : "C_PRIMITIVE_TUPLE",
                           "members" : [ {
+                            "@type" : "C_STRING",
+                            "rmTypeName" : "STRING",
+                            "constraint" : [ "1/mo" ]
+                          }, {
                             "@type" : "C_REAL",
+                            "rmTypeName" : "REAL",
                             "constraint" : [ {
                               "lower" : 0.0,
                               "lowerIncluded" : true,
@@ -974,10 +971,8 @@
                               "upperUnbounded" : true
                             } ]
                           }, {
-                            "@type" : "C_STRING",
-                            "constraint" : [ "1/mo" ]
-                          }, {
                             "@type" : "C_INTEGER",
+                            "rmTypeName" : "INTEGER",
                             "constraint" : [ {
                               "lower" : 1,
                               "upper" : 1,
@@ -1359,6 +1354,12 @@
             "text" : "(Synthesized)",
             "code" : "ac0.2",
             "description" : ""
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.3",
+            "description" : ""
           }
         },
         "nb" : {
@@ -1366,6 +1367,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
+            "description" : ""
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
             "description" : ""
           }
         },
@@ -1375,6 +1382,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
             "description" : ""
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : ""
           }
         },
         "de" : {
@@ -1382,6 +1395,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
+            "description" : ""
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
             "description" : ""
           }
         },
@@ -1391,6 +1410,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
             "description" : ""
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : ""
           }
         },
         "nl" : {
@@ -1398,6 +1423,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
+            "description" : ""
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
             "description" : ""
           }
         }
@@ -1414,6 +1445,11 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.2",
           "members" : [ "at0003", "at0005", "at0006" ]
+        },
+        "ac0.3" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.3",
+          "members" : [ "at0083", "at0084" ]
         }
       }
     },
