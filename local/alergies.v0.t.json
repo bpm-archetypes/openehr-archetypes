@@ -21,7 +21,7 @@
       "custodian_namespace" : "",
       "sem_ver" : "0.4.6",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "8280980958d0d80c03c1a263ac99ee5e",
+      "MD5-CAM-1.0.1" : "1c3c3bc2391ffb2a6208e0463aa7a11e",
       "PARENT:MD5-CAM-1.0.1" : "41914AB89EC39C22523B4461C349BB17"
     },
     "details" : {
@@ -890,10 +890,10 @@
                           "rmTypeName" : "TERMINOLOGY_CODE",
                           "occurrences" : "0..1",
                           "terminologyId" : {
-                            "value" : "SNOMED-CT-manifiestions(TEMP)"
+                            "value" : "SNOMED-CT-route-of-exposure"
                           },
                           "constraint" : [ "ac0.12" ],
-                          "selectedTerminologies" : [ "SNOMED-CT-manifiestions(TEMP)" ]
+                          "selectedTerminologies" : [ "SNOMED-CT-route-of-exposure" ]
                         } ]
                       } ],
                       "attributeTuples" : [ ]
@@ -1105,11 +1105,11 @@
         "SNOMED-CT-allergies" : {
           "ac0.5" : "terminology://fhir.hl7.org/ValueSet/$expand?url=http://snomed.info/sct?fhir_vs=ecl/%3C105590001%3AR246075003%3D%3C420134006&activeOnly=true"
         },
-        "SNOMED-CT-manifiestions(TEMP)" : {
-          "ac0.12" : "terminology://fhir.hl7.org/ValueSet/$expand?url=http://snomed.info/sct?fhir_vs=ecl/%28%3C%20404684003%3A%3E%3E42752001%3D%3C%3C419076005%29MINUS%28%3C404684003%3A246075003%3D%2A%29&activeOnly=true"
-        },
         "SNOMED-CT-clinical-finding" : {
           "ac0.6" : "terminology://fhir.hl7.org/ValueSet/$expand?url=http://snomed.info/sct?fhir_vs=ecl/%3C%20404684003&activeOnly=true"
+        },
+        "SNOMED-CT-route-of-exposure" : {
+          "ac0.12" : "terminology://fhir.hl7.org/ValueSet/$expand?url=http://snomed.info/sct?fhir_vs=ecl/%3C%20284009009&activeOnly=true"
         }
       },
       "terminologyExtracts" : { },
@@ -1542,28 +1542,6 @@
               "nodeId" : "at0002.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "name",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_CODED_TEXT",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "defining_code",
-                    "children" : [ {
-                      "@type" : "C_TERMINOLOGY_CODE",
-                      "rmTypeName" : "TERMINOLOGY_CODE",
-                      "occurrences" : "1..1",
-                      "terminologyId" : {
-                        "value" : "local"
-                      },
-                      "constraint" : [ "ac0.40" ],
-                      "selectedTerminologies" : [ ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
-              }, {
-                "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "value",
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
@@ -1586,6 +1564,28 @@
                         "code" : "1234",
                         "value" : "TODO"
                       } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "name",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "local"
+                      },
+                      "constraint" : [ "ac0.48" ],
+                      "selectedTerminologies" : [ ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -1617,10 +1617,10 @@
             "text" : "Global exclusion of adverse reactions",
             "description" : "Overall statement of exclusion about all adverse reactions at the time of recording."
           },
-          "ac0.40" : {
+          "ac0.48" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.40",
+            "code" : "ac0.48",
             "description" : ""
           }
         },
@@ -1631,10 +1631,10 @@
             "text" : "Overordnet eksklusjon av overfølsomhetsreaksjoner",
             "description" : "Overordnet eksklusjonsutsagn om alle overfølsomhetsreaksjoner ved registreringstidspunktet."
           },
-          "ac0.40" : {
+          "ac0.48" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.40",
+            "code" : "ac0.48",
             "description" : ""
           }
         },
@@ -1645,10 +1645,10 @@
             "text" : "Exclusão global de reações adversas",
             "description" : "Declaração geral de exclusão sobre todas as reações adversas no momento do registro."
           },
-          "ac0.40" : {
+          "ac0.48" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.40",
+            "code" : "ac0.48",
             "description" : ""
           }
         },
@@ -1659,10 +1659,10 @@
             "text" : "Allgemeiner Ausschluss von unerwünschten Nebenwirkungen",
             "description" : "Zur Dokumentation einer Gesamterklärung zum Ausschluss aller unerwünschten Nebenwirkungen zum Zeitpunkt der Aufzeichnung."
           },
-          "ac0.40" : {
+          "ac0.48" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.40",
+            "code" : "ac0.48",
             "description" : ""
           }
         },
@@ -1673,10 +1673,10 @@
             "text" : "Generellt uteslutande av biverkningar",
             "description" : "*Overall statement of exclusion about all adverse reactions at the time of recording.(en)"
           },
-          "ac0.40" : {
+          "ac0.48" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.40",
+            "code" : "ac0.48",
             "description" : ""
           }
         },
@@ -1687,10 +1687,10 @@
             "text" : "Exclusion globale des effets indésirables",
             "description" : "Déclaration globale d'exclusion concernant tous les effets indésirables au moment de l'enregistrement."
           },
-          "ac0.40" : {
+          "ac0.48" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.40",
+            "code" : "ac0.48",
             "description" : ""
           }
         }
@@ -1896,6 +1896,46 @@
         "ac0.40" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.40",
+          "members" : [ "at0007" ]
+        },
+        "ac0.41" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.41",
+          "members" : [ "at0007" ]
+        },
+        "ac0.42" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.42",
+          "members" : [ "at0007" ]
+        },
+        "ac0.43" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.43",
+          "members" : [ "at0007" ]
+        },
+        "ac0.44" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.44",
+          "members" : [ "at0007" ]
+        },
+        "ac0.45" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.45",
+          "members" : [ "at0007" ]
+        },
+        "ac0.46" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.46",
+          "members" : [ "at0007" ]
+        },
+        "ac0.47" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.47",
+          "members" : [ "at0007" ]
+        },
+        "ac0.48" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.48",
           "members" : [ "at0007" ]
         }
       }
