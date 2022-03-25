@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.3.2",
+      "sem_ver" : "0.3.3",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "69c274786e3bb119a8d44eb63207e4fb",
+      "MD5-CAM-1.0.1" : "6a6e74398cddf9b09c521fce9e0bf19d",
       "PARENT:MD5-CAM-1.0.1" : "006E9F209FD9F3691A5B9EFF0BAC3B5B"
     },
     "details" : {
@@ -658,10 +658,10 @@
                               "rmTypeName" : "TERMINOLOGY_CODE",
                               "occurrences" : "0..1",
                               "terminologyId" : {
-                                "value" : "SNOMED-CT-drugs-not-taken-completed"
+                                "value" : "SNOMEDCT-drugs-not-taken-completed"
                               },
                               "constraint" : [ "ac0.10" ],
-                              "selectedTerminologies" : [ "SNOMED-CT-drugs-not-taken-completed" ]
+                              "selectedTerminologies" : [ "SNOMEDCT-drugs-not-taken-completed" ]
                             } ]
                           } ],
                           "attributeTuples" : [ ]
@@ -843,9 +843,6 @@
         }
       },
       "termBindings" : {
-        "SNOMED-CT-drugs-not-taken-completed" : {
-          "ac0.10" : "terminology://fhir.hl7.org/ValueSet/$expand?url=http://snomed.info/sct?fhir_vs=ecl/%3C266710000&activeOnly=true"
-        },
         "SNOMED-CT-drug-or-medicament_leaf-nodes" : {
           "ac0.1" : "terminology://fhir.hl7.org/ValueSet/$expand?url=http://snomed.info/sct?fhir_vs=ecl/%3C%20410942007%20MINUS%20%3E%28%3C410942007%29&activeOnly=true"
         },
@@ -854,6 +851,9 @@
         },
         "SNOMEDCT-route-of-exposure" : {
           "ac0.11" : "terminology://fhir.hl7.org/ValueSet/$expand?url=http://snomed.info/sct?fhir_vs=ecl/%3C%20284009009&activeOnly=true"
+        },
+        "SNOMEDCT-drugs-not-taken-completed" : {
+          "ac0.10" : "terminology://fhir.hl7.org/ValueSet/$expand?url=http://snomed.info/sct?fhir_vs=ecl/%3C%20266710000&activeOnly=true"
         }
       },
       "terminologyExtracts" : { },
