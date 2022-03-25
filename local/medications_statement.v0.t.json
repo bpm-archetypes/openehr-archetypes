@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.3.1",
+      "sem_ver" : "0.3.2",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "f4e6b34731dfa5ed720c410b962546c8",
+      "MD5-CAM-1.0.1" : "69c274786e3bb119a8d44eb63207e4fb",
       "PARENT:MD5-CAM-1.0.1" : "006E9F209FD9F3691A5B9EFF0BAC3B5B"
     },
     "details" : {
@@ -593,7 +593,19 @@
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "DV_CODED_TEXT",
                           "occurrences" : "1..1",
-                          "attributes" : [ ],
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "defining_code",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "TERMINOLOGY_CODE",
+                              "terminologyId" : {
+                                "value" : "SNOMEDCT-route-of-exposure"
+                              },
+                              "constraint" : [ "ac0.11" ],
+                              "selectedTerminologies" : [ "SNOMEDCT-route-of-exposure" ]
+                            } ]
+                          } ],
                           "attributeTuples" : [ ]
                         } ]
                       } ],
@@ -839,6 +851,9 @@
         },
         "SNOMED-CT-clinical-finding" : {
           "ac0.4" : "terminology://fhir.hl7.org/ValueSet/$expand?url=http://snomed.info/sct?fhir_vs=ecl/%3C404684003&activeOnly=true"
+        },
+        "SNOMEDCT-route-of-exposure" : {
+          "ac0.11" : "terminology://fhir.hl7.org/ValueSet/$expand?url=http://snomed.info/sct?fhir_vs=ecl/%3C%20284009009&activeOnly=true"
         }
       },
       "terminologyExtracts" : { },
