@@ -21,7 +21,7 @@
       "custodian_namespace" : "",
       "sem_ver" : "0.4.1",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "5b6e1f57559b92009d437c1c65a21d1e",
+      "MD5-CAM-1.0.1" : "1ff588c5e847b669ada91907e87d7a63",
       "PARENT:MD5-CAM-1.0.1" : "A198E225F67F0E4A49653AC9C6EBCC0A"
     },
     "details" : {
@@ -1594,7 +1594,8 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "62823A86BC1C2B02574125E21F5DECCB"
+        "PARENT:MD5-CAM-1.0.1" : "62823A86BC1C2B02574125E21F5DECCB",
+        "ip_acknowledgements" : "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org."
       },
       "details" : {
         "de" : {
@@ -1753,10 +1754,10 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "Temp - snomed"
+                    "value" : "SNOMEDCT-body-structure"
                   },
                   "constraint" : [ "ac0.1" ],
-                  "selectedTerminologies" : [ "Temp - snomed" ]
+                  "selectedTerminologies" : [ "SNOMEDCT-body-structure" ]
                 } ]
               } ],
               "attributeTuples" : [ ]
@@ -1961,8 +1962,8 @@
         }
       },
       "termBindings" : {
-        "Temp - snomed" : {
-          "ac0.1" : "terminology://fhir.hl7.org/ValueSet/$expand?url=http://snomed.info/sct?fhir_vs=ecl/%3C%3C404684003&activeOnly=true"
+        "SNOMEDCT-body-structure" : {
+          "ac0.1" : "terminology://fhir.hl7.org/ValueSet/$expand?url=http://snomed.info/sct?fhir_vs=ecl/%3C%20442083009&activeOnly=true"
         }
       },
       "terminologyExtracts" : { },
