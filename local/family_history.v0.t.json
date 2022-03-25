@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.4.3",
+      "sem_ver" : "0.4.4",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "0cc694e2259b9f3079581e554f5dfbc4",
+      "MD5-CAM-1.0.1" : "01845cb030ab88ae1bd0f4c76b1ba117",
       "PARENT:MD5-CAM-1.0.1" : "9A5E23F53786AAE75946A1E3EF5D46EE"
     },
     "details" : {
@@ -561,10 +561,10 @@
                               "rmTypeName" : "TERMINOLOGY_CODE",
                               "occurrences" : "0..1",
                               "terminologyId" : {
-                                "value" : "SNOMED-CT-clinical-findings"
+                                "value" : "SNOMEDCT-disease"
                               },
                               "constraint" : [ "ac0.2" ],
-                              "selectedTerminologies" : [ "SNOMED-CT-clinical-findings" ]
+                              "selectedTerminologies" : [ "SNOMEDCT-disease" ]
                             } ]
                           } ],
                           "attributeTuples" : [ ]
@@ -752,8 +752,8 @@
         "SNOMED-CT" : {
           "at0000.1" : "term:SNOMED-CT(20160131)::57177007"
         },
-        "SNOMED-CT-clinical-findings" : {
-          "ac0.2" : "terminology://fhir.hl7.org/ValueSet/$expand?url=http://snomed.info/sct?fhir_vs=ecl/%3C%3C404684003&activeOnly=true"
+        "SNOMEDCT-disease" : {
+          "ac0.2" : "terminology://fhir.hl7.org/ValueSet/$expand?url=http://snomed.info/sct?fhir_vs=ecl/%3C%2064572001&activeOnly=true"
         }
       },
       "terminologyExtracts" : { },
