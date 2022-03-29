@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.5.1",
+      "sem_ver" : "0.6.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "7571838fcbbf26f425b374c9aba4c048",
+      "MD5-CAM-1.0.1" : "5f08d186dbfad989aa4fc82e612cdcc9",
       "PARENT:MD5-CAM-1.0.1" : "9A5E23F53786AAE75946A1E3EF5D46EE"
     },
     "details" : {
@@ -991,7 +991,24 @@
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_CODED_TEXT",
                   "occurrences" : "1..1",
-                  "attributes" : [ ],
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "terminologyId" : {
+                        "value" : "SNOMED-CT"
+                      },
+                      "constraint" : [ ],
+                      "selectedTerminologies" : [ "SNOMED-CT" ],
+                      "includedExternalTerminologyCodes" : [ {
+                        "terminologyId" : "SNOMED-CT",
+                        "code" : "160266009",
+                        "value" : "No family history of clinical finding"
+                      } ]
+                    } ]
+                  } ],
                   "attributeTuples" : [ ]
                 } ]
               }, {
@@ -1010,7 +1027,7 @@
                       "terminologyId" : {
                         "value" : "local"
                       },
-                      "constraint" : [ "ac0.36" ],
+                      "constraint" : [ "ac0.44" ],
                       "selectedTerminologies" : [ ]
                     } ]
                   } ],
@@ -1043,10 +1060,10 @@
             "text" : "Global exclusion of family history",
             "description" : "Overall statement of exclusion of all significant health-related problems in relatives or family members of the individual at the time of recording."
           },
-          "ac0.36" : {
+          "ac0.44" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.36",
+            "code" : "ac0.44",
             "description" : ""
           }
         },
@@ -1057,10 +1074,10 @@
             "text" : "Overordnet eksklusjon av familiære sykdommer",
             "description" : "Overordnet eksklusjonsutsagn om alle betydningsfulle helserelaterte problemer hos familiemedlemmer eller slektninger av individet ved registreringstidspunktet."
           },
-          "ac0.36" : {
+          "ac0.44" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.36",
+            "code" : "ac0.44",
             "description" : ""
           }
         },
@@ -1071,10 +1088,10 @@
             "text" : "Exclusão global da história familiar",
             "description" : "Declaração geral de exclusão de todos os problemas significativos relacionados à saúde em parentes ou familiares do indivíduo no momento da gravação."
           },
-          "ac0.36" : {
+          "ac0.44" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.36",
+            "code" : "ac0.44",
             "description" : ""
           }
         },
@@ -1085,10 +1102,10 @@
             "text" : "Allgemeiner Ausschluss von Familienanamnese",
             "description" : "Zur Dokumentation einer Gesamterklärung zum Ausschluss über alle wichtigen gesundheitlichen Problemen bei Verwandten oder Familienmitgliedern des Patienten zum Zeitpunkt der Dokumentation."
           },
-          "ac0.36" : {
+          "ac0.44" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.36",
+            "code" : "ac0.44",
             "description" : ""
           }
         },
@@ -1099,10 +1116,10 @@
             "text" : "Generellt uteslutande av ärftlighet",
             "description" : "*Overall statement of exclusion of all significant health-related problems in relatives or family members of the individual at the time of recording.(en)"
           },
-          "ac0.36" : {
+          "ac0.44" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.36",
+            "code" : "ac0.44",
             "description" : ""
           }
         },
@@ -1113,10 +1130,10 @@
             "text" : "Exclusion globale de l'histoire familiale",
             "description" : "Déclaration globale d'exclusion de tous les problèmes de santé importants chez les parents ou les membres de la famille de la personne au moment de l'enregistrement."
           },
-          "ac0.36" : {
+          "ac0.44" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.36",
+            "code" : "ac0.44",
             "description" : ""
           }
         }
@@ -1302,6 +1319,46 @@
         "ac0.36" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.36",
+          "members" : [ "at0004" ]
+        },
+        "ac0.37" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.37",
+          "members" : [ "at0004" ]
+        },
+        "ac0.38" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.38",
+          "members" : [ "at0004" ]
+        },
+        "ac0.39" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.39",
+          "members" : [ "at0004" ]
+        },
+        "ac0.40" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.40",
+          "members" : [ "at0004" ]
+        },
+        "ac0.41" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.41",
+          "members" : [ "at0004" ]
+        },
+        "ac0.42" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.42",
+          "members" : [ "at0004" ]
+        },
+        "ac0.43" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.43",
+          "members" : [ "at0004" ]
+        },
+        "ac0.44" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.44",
           "members" : [ "at0004" ]
         }
       }
