@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.5.0",
+      "sem_ver" : "0.5.1",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "770f713ee8766131848fc9f19ca3bd91",
+      "MD5-CAM-1.0.1" : "7571838fcbbf26f425b374c9aba4c048",
       "PARENT:MD5-CAM-1.0.1" : "9A5E23F53786AAE75946A1E3EF5D46EE"
     },
     "details" : {
@@ -986,6 +986,16 @@
               "nodeId" : "at0002.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "name",
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
@@ -1000,7 +1010,7 @@
                       "terminologyId" : {
                         "value" : "local"
                       },
-                      "constraint" : [ "ac0.30" ],
+                      "constraint" : [ "ac0.36" ],
                       "selectedTerminologies" : [ ]
                     } ]
                   } ],
@@ -1033,10 +1043,10 @@
             "text" : "Global exclusion of family history",
             "description" : "Overall statement of exclusion of all significant health-related problems in relatives or family members of the individual at the time of recording."
           },
-          "ac0.30" : {
+          "ac0.36" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.30",
+            "code" : "ac0.36",
             "description" : ""
           }
         },
@@ -1047,10 +1057,10 @@
             "text" : "Overordnet eksklusjon av familiære sykdommer",
             "description" : "Overordnet eksklusjonsutsagn om alle betydningsfulle helserelaterte problemer hos familiemedlemmer eller slektninger av individet ved registreringstidspunktet."
           },
-          "ac0.30" : {
+          "ac0.36" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.30",
+            "code" : "ac0.36",
             "description" : ""
           }
         },
@@ -1061,10 +1071,10 @@
             "text" : "Exclusão global da história familiar",
             "description" : "Declaração geral de exclusão de todos os problemas significativos relacionados à saúde em parentes ou familiares do indivíduo no momento da gravação."
           },
-          "ac0.30" : {
+          "ac0.36" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.30",
+            "code" : "ac0.36",
             "description" : ""
           }
         },
@@ -1075,10 +1085,10 @@
             "text" : "Allgemeiner Ausschluss von Familienanamnese",
             "description" : "Zur Dokumentation einer Gesamterklärung zum Ausschluss über alle wichtigen gesundheitlichen Problemen bei Verwandten oder Familienmitgliedern des Patienten zum Zeitpunkt der Dokumentation."
           },
-          "ac0.30" : {
+          "ac0.36" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.30",
+            "code" : "ac0.36",
             "description" : ""
           }
         },
@@ -1089,10 +1099,10 @@
             "text" : "Generellt uteslutande av ärftlighet",
             "description" : "*Overall statement of exclusion of all significant health-related problems in relatives or family members of the individual at the time of recording.(en)"
           },
-          "ac0.30" : {
+          "ac0.36" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.30",
+            "code" : "ac0.36",
             "description" : ""
           }
         },
@@ -1103,10 +1113,10 @@
             "text" : "Exclusion globale de l'histoire familiale",
             "description" : "Déclaration globale d'exclusion de tous les problèmes de santé importants chez les parents ou les membres de la famille de la personne au moment de l'enregistrement."
           },
-          "ac0.30" : {
+          "ac0.36" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.30",
+            "code" : "ac0.36",
             "description" : ""
           }
         }
@@ -1262,6 +1272,36 @@
         "ac0.30" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.30",
+          "members" : [ "at0004" ]
+        },
+        "ac0.31" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.31",
+          "members" : [ "at0004" ]
+        },
+        "ac0.32" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.32",
+          "members" : [ "at0004" ]
+        },
+        "ac0.33" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.33",
+          "members" : [ "at0004" ]
+        },
+        "ac0.34" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.34",
+          "members" : [ "at0004" ]
+        },
+        "ac0.35" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.35",
+          "members" : [ "at0004" ]
+        },
+        "ac0.36" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.36",
           "members" : [ "at0004" ]
         }
       }
