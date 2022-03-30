@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.1.0",
+      "sem_ver" : "0.1.1",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "7464bdea366ed1b1763ddd28b6ba966c",
+      "MD5-CAM-1.0.1" : "881fe97d9480d10b892d4d960fc118ec",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -578,6 +578,12 @@
       },
       "details" : { }
     },
+    "annotations" : {
+      "@type" : "RESOURCE_ANNOTATIONS",
+      "documentation" : {
+        "en" : { }
+      }
+    },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.symptom_sign.v1",
     "differential" : true,
     "archetypeId" : {
@@ -588,21 +594,244 @@
       "@type" : "C_COMPLEX_OBJECT",
       "rmTypeName" : "CLUSTER",
       "nodeId" : "at0000.1",
-      "attributes" : [ ],
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0001.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0151.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "CLUSTER",
+          "occurrences" : "0..1",
+          "nodeId" : "at0165.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0170.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "0..1",
+                      "terminologyId" : {
+                        "value" : "local_terms"
+                      },
+                      "constraint" : [ ],
+                      "selectedTerminologies" : [ "local_terms" ],
+                      "includedExternalTerminologyCodes" : [ {
+                        "terminologyId" : "local_terms",
+                        "code" : "343245235",
+                        "value" : "Yes"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "234235234",
+                        "value" : "No"
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "CLUSTER",
+          "occurrences" : "0..1",
+          "nodeId" : "at0165.2",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0170.2",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "0..1",
+                      "terminologyId" : {
+                        "value" : "local_terms"
+                      },
+                      "constraint" : [ ],
+                      "selectedTerminologies" : [ "local_terms" ],
+                      "includedExternalTerminologyCodes" : [ {
+                        "terminologyId" : "local_terms",
+                        "code" : "343245235",
+                        "value" : "Yes"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "234235234",
+                        "value" : "No"
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "CLUSTER",
+          "nodeId" : "at0190",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0195.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_DURATION",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "CLUSTER",
+          "occurrences" : "0..1",
+          "nodeId" : "at0147.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-anatomical_location-001.v1",
+          "referenceType" : "archetypeOverlay"
+        } ]
+      } ],
       "attributeTuples" : [ ]
     },
     "terminology" : {
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "ar-sy" : { },
-        "en" : { },
-        "de" : { },
-        "nb" : { },
-        "fi" : { },
-        "sv" : { },
-        "pt-br" : { },
-        "nl" : { }
+        "ar-sy" : {
+          "at0165.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0165.1",
+            "text" : "*Precipitating factor (en) (2)",
+            "description" : "*Details about specified factors that are associated with the precipitation of the symptom or sign. (en)",
+            "comment" : "*For example: lying down leads to heartburn; or walking up a hill leads to claudication. (en)"
+          }
+        },
+        "en" : {
+          "at0165.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0165.2",
+            "text" : "Precipitating factor (2)",
+            "description" : "Details about specified factors that are associated with the precipitation of the symptom or sign.",
+            "comment" : "For example: lying down leads to heartburn; or walking up a hill leads to claudication."
+          }
+        },
+        "de" : {
+          "at0165.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0165.1",
+            "text" : "*Precipitating factor (en) (2)",
+            "description" : "*Details about specified factors that are associated with the precipitation of the symptom or sign. (en)",
+            "comment" : "*For example: lying down leads to heartburn; or walking up a hill leads to claudication. (en)"
+          }
+        },
+        "nb" : {
+          "at0165.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0165.1",
+            "text" : "*Precipitating factor (en) (2)",
+            "description" : "*Details about specified factors that are associated with the precipitation of the symptom or sign. (en)",
+            "comment" : "*For example: lying down leads to heartburn; or walking up a hill leads to claudication. (en)"
+          }
+        },
+        "fi" : {
+          "at0165.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0165.1",
+            "text" : "*Precipitating factor (en) (2)",
+            "description" : "*Details about specified factors that are associated with the precipitation of the symptom or sign. (en)",
+            "comment" : "*For example: lying down leads to heartburn; or walking up a hill leads to claudication. (en)"
+          }
+        },
+        "sv" : {
+          "at0165.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0165.1",
+            "text" : "*Precipitating factor (en) (2)",
+            "description" : "*Details about specified factors that are associated with the precipitation of the symptom or sign. (en)",
+            "comment" : "*For example: lying down leads to heartburn; or walking up a hill leads to claudication. (en)"
+          }
+        },
+        "pt-br" : {
+          "at0165.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0165.1",
+            "text" : "*Precipitating factor (en) (2)",
+            "description" : "*Details about specified factors that are associated with the precipitation of the symptom or sign. (en)",
+            "comment" : "*For example: lying down leads to heartburn; or walking up a hill leads to claudication. (en)"
+          }
+        },
+        "nl" : {
+          "at0165.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0165.1",
+            "text" : "*Precipitating factor (en) (2)",
+            "description" : "*Details about specified factors that are associated with the precipitation of the symptom or sign. (en)",
+            "comment" : "*For example: lying down leads to heartburn; or walking up a hill leads to claudication. (en)"
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -716,6 +945,157 @@
         "email" : "joost.holslag@nedap.com"
       },
       "accreditation" : "MD",
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "26183327-13b9-46bb-932c-87c09b3b2a64",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "62823A86BC1C2B02574125E21F5DECCB"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.anatomical_location.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-anatomical_location-001.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "ar-sy" : { },
+        "sl" : { },
+        "en" : { },
+        "nb" : { },
+        "pt-br" : { },
+        "de" : { },
+        "nl" : { },
+        "sv" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "13ee6d25-aa99-4221-bdc1-3c7ee7e58795",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Sarah Ballout",
+        "email" : "ballout.sarah@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Åsa Skagerhult, Linda Aulin",
+        "organisation" : "Region Östergötland, Region Stockholm",
+        "email" : "asa.skagerhult@regionostergotland.se, linda.aulin@sll.se"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Lars Bitsch-Larsen",
+        "organisation" : "Haukeland University Hospital of Bergen, Norway"
+      },
+      "accreditation" : "MD, DEAA, MBA, spec in anesthesia, spec in tropical medicine.",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt-br"
+      },
+      "author" : {
+        "name" : "Osmeire Chamelette Sanzovo",
+        "organisation" : "Hospital Sírio Libanês - SP",
+        "email" : "osmeire.acsanzovo@hsl.org.br"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ar-sy"
+      },
+      "author" : {
+        "name" : "Mona Saleh"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sl"
+      },
+      "author" : {
+        "name" : "Biljana Princic"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nl"
+      },
+      "author" : {
+        "name" : "Michiel Klitsie",
+        "organisation" : "Nedap Healthcare",
+        "email" : "michiel.klitsie@nedap.com"
+      },
       "otherDetails" : { }
     } ]
   } ],
