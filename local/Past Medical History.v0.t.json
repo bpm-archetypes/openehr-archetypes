@@ -21,7 +21,7 @@
       "custodian_namespace" : "",
       "sem_ver" : "0.5.2",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "0c3105c34d4eef0d43e41d1c57d56302",
+      "MD5-CAM-1.0.1" : "928cc49420aa29765dead5f1e31396e1",
       "PARENT:MD5-CAM-1.0.1" : "A198E225F67F0E4A49653AC9C6EBCC0A"
     },
     "details" : {
@@ -538,6 +538,7 @@
                     "children" : [ {
                       "@type" : "C_TERMINOLOGY_CODE",
                       "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "0..1",
                       "terminologyId" : {
                         "value" : "SNOMED-CT"
                       },
@@ -545,8 +546,8 @@
                       "selectedTerminologies" : [ "SNOMED-CT" ],
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "SNOMED-CT",
-                        "code" : "443508001",
-                        "value" : "No history of clinical finding in subject"
+                        "code" : "373572006",
+                        "value" : "Clinical finding absent"
                       } ]
                     } ]
                   } ],
@@ -568,7 +569,7 @@
                       "terminologyId" : {
                         "value" : "local"
                       },
-                      "constraint" : [ "ac0.24" ],
+                      "constraint" : [ "ac0.30" ],
                       "selectedTerminologies" : [ ]
                     } ]
                   } ],
@@ -601,10 +602,10 @@
             "text" : "Global exclusion of problems/diagnoses",
             "description" : "Overall statement of exclusion of all problems or diagnoses at the time of recording."
           },
-          "ac0.24" : {
+          "ac0.30" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.24",
+            "code" : "ac0.30",
             "description" : ""
           }
         },
@@ -615,10 +616,10 @@
             "text" : "Overordnet eksklusjon av problemer/diagnoser",
             "description" : "Overordnet eksklusjonsutsagn om alle problemer eller diagnoser ved registreringstidspunktet."
           },
-          "ac0.24" : {
+          "ac0.30" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.24",
+            "code" : "ac0.30",
             "description" : ""
           }
         },
@@ -629,10 +630,10 @@
             "text" : "Exclusão global de problemas / diagnósticos",
             "description" : "Declaração geral de exclusão de todos os problemas ou diagnósticos no momento da gravação."
           },
-          "ac0.24" : {
+          "ac0.30" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.24",
+            "code" : "ac0.30",
             "description" : ""
           }
         },
@@ -643,10 +644,10 @@
             "text" : "Allgemeiner Ausschluss von Problemen/Diagnosen",
             "description" : "Zur Dokumentation einer Gesamterklärung zum Ausschluss über alle Erkrankungen oder Diagnosen zum Zeitpunkt der Dokumentation."
           },
-          "ac0.24" : {
+          "ac0.30" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.24",
+            "code" : "ac0.30",
             "description" : ""
           }
         },
@@ -657,10 +658,10 @@
             "text" : "Generellt uteslutande av problem/diagnoser",
             "description" : "*Overall statement of exclusion of all problems or diagnoses at the time of recording.(en)"
           },
-          "ac0.24" : {
+          "ac0.30" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.24",
+            "code" : "ac0.30",
             "description" : ""
           }
         },
@@ -671,10 +672,10 @@
             "text" : "Exclusion globale des problèmes/diagnostics",
             "description" : "Une déclaration globale d'exclusion de tous les problèmes ou diagnostics au moment de l'enregistrement."
           },
-          "ac0.24" : {
+          "ac0.30" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.24",
+            "code" : "ac0.30",
             "description" : ""
           }
         }
@@ -800,6 +801,36 @@
         "ac0.24" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.24",
+          "members" : [ "at0003" ]
+        },
+        "ac0.25" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.25",
+          "members" : [ "at0003" ]
+        },
+        "ac0.26" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.26",
+          "members" : [ "at0003" ]
+        },
+        "ac0.27" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.27",
+          "members" : [ "at0003" ]
+        },
+        "ac0.28" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.28",
+          "members" : [ "at0003" ]
+        },
+        "ac0.29" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.29",
+          "members" : [ "at0003" ]
+        },
+        "ac0.30" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.30",
           "members" : [ "at0003" ]
         }
       }
