@@ -49,7 +49,7 @@ This list can be comprised of three types of statements, each represented by spe
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"7b55a8bdc6c843347cc8f0449002c51c">
+		["MD5-CAM-1.0.1"] = <"2ed421ac540400e79fa59f615b20ae35">
 		["build_uid"] = <"cd1df45d-d4e7-4ea1-a489-eca49f05b6d8">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -99,20 +99,20 @@ ontology
 		["de"] = <
 			items = <
 				["at0000"] = <
-					text = <"*Family history (en)">
+					text = <"Familienanamnese">
 					description = <"*Framework for consistent modelling of content within a template for a persistent Family history record. (en)">
 				>
 				["at0007"] = <
-					text = <"*Family history (en)">
+					text = <"Familienanamnese">
 					description = <"*A positive statement about the presence of family health issues. (en)">
 				>
 				["at0008"] = <
-					text = <"*Exclusion statement (en)">
+					text = <"*Ausschlusserklärung (Google)">
 					description = <"*A positive statement about the exclusion of known family history. (en)">
 					comment = <"*For example: 'No known family history'. (en)">
 				>
 				["at0009"] = <
-					text = <"*Absence statement (en)">
+					text = <"*Abwesenheitserklärung (Google)">
 					description = <"*A positive statement that no information is available about family history. (en)">
 					comment = <"*For example: 'No information available about family history'. (en)">
 				>
