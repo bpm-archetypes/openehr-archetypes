@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.1.0",
+      "sem_ver" : "0.2.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "6fa1ff55c5335db834cf3d3ff7e546b2",
+      "MD5-CAM-1.0.1" : "a799f714783f1bab3c06fe24913b5dca",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -490,7 +490,44 @@
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_CODED_TEXT",
                   "occurrences" : "1..1",
-                  "attributes" : [ ],
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "terminologyId" : {
+                        "value" : "local_terms"
+                      },
+                      "constraint" : [ ],
+                      "selectedTerminologies" : [ "local_terms" ],
+                      "includedExternalTerminologyCodes" : [ {
+                        "terminologyId" : "local_terms",
+                        "code" : "1234",
+                        "value" : "Book for Open Reduction Internal Fixation"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "2345",
+                        "value" : "Apply Fiberglass plaster"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "3456",
+                        "value" : "Review back in clinic in 6 weeks"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "4567",
+                        "value" : "Review back in clinic in 2 weeks"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "5678",
+                        "value" : "Remove Fiberglass plaster"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "6789",
+                        "value" : "Refer back to GP for routine care"
+                      } ]
+                    } ]
+                  } ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
