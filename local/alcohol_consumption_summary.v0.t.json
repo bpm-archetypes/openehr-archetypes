@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.5.0",
+      "sem_ver" : "0.5.1",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "14262016a2237637c3452084e61901b9",
+      "MD5-CAM-1.0.1" : "c16bdb6e229a1bb549b21de2a225c72e",
       "PARENT:MD5-CAM-1.0.1" : "7D30D55E7A5136F665655E293645D5E6"
     },
     "details" : {
@@ -381,10 +381,15 @@
                     "rmAttributeName" : "value",
                     "children" : [ {
                       "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "DV_TEXT",
+                      "rmTypeName" : "DV_CODED_TEXT",
+                      "occurrences" : "1..1",
                       "defaultValue" : {
-                        "value" : "Current Episode",
-                        "@type" : "DV_TEXT"
+                        "defining_code" : {
+                          "code_string" : "15240007",
+                          "@type" : "CODE_PHRASE"
+                        },
+                        "value" : "Current",
+                        "@type" : "DV_CODED_TEXT"
                       },
                       "attributes" : [ ],
                       "attributeTuples" : [ ]
@@ -571,7 +576,17 @@
                     "children" : [ {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "DV_QUANTITY",
-                      "attributes" : [ ],
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "property",
+                        "children" : [ {
+                          "@type" : "C_TERMINOLOGY_CODE",
+                          "terminologyId" : {
+                            "value" : "openehr"
+                          },
+                          "constraint" : [ "382" ]
+                        } ]
+                      } ],
                       "attributeTuples" : [ {
                         "@type" : "C_ATTRIBUTE_TUPLE",
                         "members" : [ {
