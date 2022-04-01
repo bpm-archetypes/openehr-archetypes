@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.1.0",
+      "sem_ver" : "0.3.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "25ac00725742abf9818400d88ba25c68",
+      "MD5-CAM-1.0.1" : "3caab8847aa3bb7cdaf0f86d143f4d6f",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -490,7 +490,44 @@
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_CODED_TEXT",
                   "occurrences" : "1..1",
-                  "attributes" : [ ],
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "terminologyId" : {
+                        "value" : "local_terms"
+                      },
+                      "constraint" : [ ],
+                      "selectedTerminologies" : [ "local_terms" ],
+                      "includedExternalTerminologyCodes" : [ {
+                        "terminologyId" : "local_terms",
+                        "code" : "1234",
+                        "value" : "Excise/Biopsy Lesion of Concern"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "2345",
+                        "value" : "Review in Clinic for Full Skin Check in 6 months"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "3456",
+                        "value" : "Review in Clinic for Full Skin Check in 12 months"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "4567",
+                        "value" : "Monitor Lesion with digital photography in 3 months"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "5678",
+                        "value" : "Monitor Lesion with digital photography in 6 months"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "6789",
+                        "value" : "Refer back to GP for routine care"
+                      } ]
+                    } ]
+                  } ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
