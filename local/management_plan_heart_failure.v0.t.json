@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.3.0",
+      "sem_ver" : "0.4.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "b2496fbb5d6d6d9e3007cba0c96afe78",
+      "MD5-CAM-1.0.1" : "60d850330d8cd68d93aab571a229a6a9",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -496,6 +496,7 @@
                     "children" : [ {
                       "@type" : "C_TERMINOLOGY_CODE",
                       "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "0..1",
                       "terminologyId" : {
                         "value" : "local_terms"
                       },
@@ -504,27 +505,27 @@
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "local_terms",
                         "code" : "1234",
-                        "value" : "Excise/Biopsy Lesion of Concern"
+                        "value" : "Admit to hospital"
                       }, {
                         "terminologyId" : "local_terms",
                         "code" : "2345",
-                        "value" : "Review in Clinic for Full Skin Check in 6 months"
+                        "value" : "Continue home monitoring"
                       }, {
                         "terminologyId" : "local_terms",
                         "code" : "3456",
-                        "value" : "Review in Clinic for Full Skin Check in 12 months"
+                        "value" : "Community Nurse home visit"
                       }, {
                         "terminologyId" : "local_terms",
                         "code" : "4567",
-                        "value" : "Monitor Lesion with digital photography in 3 months"
+                        "value" : "Discharge from pathway"
                       }, {
                         "terminologyId" : "local_terms",
                         "code" : "5678",
-                        "value" : "Monitor Lesion with digital photography in 6 months"
+                        "value" : "Book for specialist clinic"
                       }, {
                         "terminologyId" : "local_terms",
                         "code" : "6789",
-                        "value" : "Refer back to GP for routine care"
+                        "value" : "Book for Echocardiogram"
                       } ]
                     } ]
                   } ],
