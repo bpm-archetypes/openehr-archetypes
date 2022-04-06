@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.3.0",
+      "sem_ver" : "0.4.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "35daeae7651d95403aaaaf73174d77b1",
+      "MD5-CAM-1.0.1" : "ec87ad8db874f1bd6319486dadae6bbf",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -893,6 +893,7 @@
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
                   "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
                   "terminologyId" : {
                     "value" : "local_terms"
                   },
@@ -1266,6 +1267,7 @@
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
                   "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
                   "terminologyId" : {
                     "value" : "local_terms"
                   },
@@ -1570,16 +1572,7 @@
           "rmTypeName" : "ELEMENT",
           "occurrences" : "0..0",
           "nodeId" : "at0161.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_DATE_TIME",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
+          "attributes" : [ ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
@@ -1710,6 +1703,20 @@
             "code" : "at0018.3",
             "text" : "Modifying factor (3)",
             "description" : "Detail about how a specific factor effects the identified symptom or sign during this episode."
+          },
+          "at0152.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0152.1",
+            "text" : "When did the pain first start?",
+            "description" : "The onset for this episode of the symptom or sign.",
+            "comment" : "While partial dates are permitted, the exact date and time of onset can be recorded, if appropriate. If this symptom or sign is experienced for the first time or is a re-occurrence, this date is used to represent the onset of this episode. If this symptom or sign is ongoing, this data element may be redundant if it has been recorded previously."
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1",
+            "text" : "Is the pain cyclical with menstruation",
+            "description" : "Narrative description about the pattern of the symptom or sign during this episode.",
+            "comment" : "For example: pain could be described as constant or intermittent."
           }
         },
         "de" : {
@@ -2230,6 +2237,12 @@
         }
       }
     },
+    "annotations" : {
+      "@type" : "RESOURCE_ANNOTATIONS",
+      "documentation" : {
+        "en" : { }
+      }
+    },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.anatomical_location.v1",
     "differential" : true,
     "archetypeId" : {
@@ -2457,6 +2470,13 @@
             "text" : "(Synthesized)",
             "code" : "ac0.4",
             "description" : ""
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "Where is the pain located?",
+            "description" : "Identification of a single physical site either on, or within, the human body.",
+            "comment" : "This data element is the only mandated data point in this archetype and should be used as the primary data point to record an anatomical location with a commonly used name. It is strongly recommended that 'Body site name' be recorded as specifically as is anatomically possible. For example: record 'upper eyelid' rather than recording 'eyelid' with 'upper' as a qualifier; 'fifth rib' rather than 'rib' with a numeric qualifier. Use the other data elements for laterality, aspect, region and anatomical line to provide more detail.\r\n\r\nThis data element should be coded with a terminology capable of triggering decision support, where possible - an appropriate termset for use here could comprise individual concepts or a list of precoordinated terms. Free text should be used only if there is no appropriate terminology available.\r\n\r\nIf body site name is already identified in the parent archetype, then this data element may be redundant. Alternatively, a use case has been identified where the value may be duplicated into this element to support semantic querying using this archetype, rather than the data element within the parent."
           }
         },
         "nb" : {
