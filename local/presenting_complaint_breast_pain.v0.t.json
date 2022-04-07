@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.4.0",
+      "sem_ver" : "0.4.1",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "ec87ad8db874f1bd6319486dadae6bbf",
+      "MD5-CAM-1.0.1" : "2035e7ea21938cc95b93651a14ff8812",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -841,14 +841,7 @@
     "annotations" : {
       "@type" : "RESOURCE_ANNOTATIONS",
       "documentation" : {
-        "en" : {
-          "/items[at0152.1]" : {
-            "question_string" : "When did the pain first start?"
-          },
-          "/items[at0003.1]" : {
-            "question_string" : "Is the pain cyclical with menstruation?"
-          }
-        }
+        "en" : { }
       }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.symptom_sign.v1",
