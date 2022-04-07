@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.2.1",
+      "sem_ver" : "0.3.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "474b1fd7a12f4dcc194a8070c9780655",
+      "MD5-CAM-1.0.1" : "ce1b8b62afca3a71bb4435e01cb0e752",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -539,7 +539,7 @@
                     }, {
                       "@type" : "C_ARCHETYPE_ROOT",
                       "rmTypeName" : "CLUSTER",
-                      "occurrences" : "0..1",
+                      "occurrences" : "1..1",
                       "nodeId" : "at0006.1",
                       "attributes" : [ ],
                       "attributeTuples" : [ ],
@@ -868,7 +868,25 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
               "occurrences" : "1..1",
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
+                  "terminologyId" : {
+                    "value" : "local_terms"
+                  },
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "local_terms" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "local_terms",
+                    "code" : "4324",
+                    "value" : "Skin Lesion"
+                  } ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             } ]
           } ],
@@ -885,11 +903,80 @@
           "rmTypeName" : "ELEMENT",
           "occurrences" : "0..0",
           "nodeId" : "at0002.1",
-          "attributes" : [ ],
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0175.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "ac0.3" ],
+                  "selectedTerminologies" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0186.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "ac0.4" ],
+                  "selectedTerminologies" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "1..1",
           "nodeId" : "at0152.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -905,6 +992,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
           "nodeId" : "at0164.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -1010,6 +1098,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
           "nodeId" : "at0021.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -1027,7 +1116,7 @@
                   "terminologyId" : {
                     "value" : "local"
                   },
-                  "constraint" : [ "ac0.1" ],
+                  "constraint" : [ "ac0.5" ],
                   "selectedTerminologies" : [ ]
                 } ]
               } ],
@@ -1038,7 +1127,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..1",
+          "occurrences" : "0..0",
           "nodeId" : "at0026.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -1110,7 +1199,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..1",
+          "occurrences" : "0..0",
           "nodeId" : "at0189.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -1127,7 +1216,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0180.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -1143,10 +1232,19 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "1..1",
                   "terminologyId" : {
-                    "value" : "local"
+                    "value" : "local_terms"
                   },
-                  "constraint" : [ "ac0.2" ],
-                  "selectedTerminologies" : [ ]
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "local_terms" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "local_terms",
+                    "code" : "438327",
+                    "value" : "Yes - Lesion has been changing size"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "4924329",
+                    "value" : "No - Lesion has NOT been changing size"
+                  } ]
                 } ]
               } ],
               "attributeTuples" : [ ]
@@ -1156,6 +1254,83 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "occurrences" : "1..1",
+          "nodeId" : "at0180.2",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local_terms"
+                  },
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "local_terms" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "local_terms",
+                    "code" : "4234",
+                    "value" : "Yes - Shape has been changing"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "439249",
+                    "value" : "No - Shape has NOT been changing"
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "1..1",
+          "nodeId" : "at0180.3",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local_terms"
+                  },
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "local_terms" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "local_terms",
+                    "code" : "423432",
+                    "value" : "Yes - Lesion is changing in colour"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "9423832",
+                    "value" : "No - Lesion is NOT changing in colour"
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
           "nodeId" : "at0003.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -1172,6 +1347,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "CLUSTER",
+          "occurrences" : "0..0",
           "nodeId" : "at0018.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -1198,6 +1374,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "CLUSTER",
+          "occurrences" : "0..0",
           "nodeId" : "at0165.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -1230,7 +1407,8 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "CLUSTER",
-          "nodeId" : "at0190",
+          "occurrences" : "0..0",
+          "nodeId" : "at0190.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "items",
@@ -1262,7 +1440,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..1",
+          "occurrences" : "0..0",
           "nodeId" : "at0155.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -1281,12 +1459,76 @@
           "rmTypeName" : "ELEMENT",
           "occurrences" : "0..0",
           "nodeId" : "at0037.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0161.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_DATE_TIME",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0057.1",
           "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0031.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_COUNT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "magnitude",
+                "children" : [ {
+                  "@type" : "C_INTEGER",
+                  "rmTypeName" : "INTEGER",
+                  "occurrences" : "1..1",
+                  "constraint" : [ {
+                    "lower" : 0,
+                    "lowerIncluded" : true,
+                    "upperIncluded" : false,
+                    "lowerUnbounded" : false,
+                    "upperUnbounded" : true
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "CLUSTER",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0147.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -1295,7 +1537,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "CLUSTER",
-          "occurrences" : "0..1",
+          "occurrences" : "0..0",
           "nodeId" : "at0063.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -1310,115 +1552,280 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "ar-sy" : {
-          "ac0.1" : {
+          "ac0.3" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
+            "code" : "ac0.3",
             "description" : ""
           },
-          "ac0.2" : {
+          "ac0.4" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.2",
+            "code" : "ac0.4",
             "description" : ""
+          },
+          "ac0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.5",
+            "description" : ""
+          },
+          "at0180.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0180",
+            "text" : "*Progression(en) (2)",
+            "description" : "*Description progression of the symptom or sign at the time of reporting.(en)",
+            "comment" : "*Occurrences of this data element are set to 0..* to allow multiple types of progression to be separated out in a template if desired - for example, severity or frequency.(en)"
+          },
+          "at0180.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0180",
+            "text" : "*Progression(en) (3)",
+            "description" : "*Description progression of the symptom or sign at the time of reporting.(en)",
+            "comment" : "*Occurrences of this data element are set to 0..* to allow multiple types of progression to be separated out in a template if desired - for example, severity or frequency.(en)"
           }
         },
         "en" : {
-          "ac0.1" : {
+          "at0180.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0180.1",
+            "text" : "Has the lesion been changing in size?",
+            "description" : "Description progression of the symptom or sign at the time of reporting.",
+            "comment" : "Occurrences of this data element are set to 0..* to allow multiple types of progression to be separated out in a template if desired - for example, severity or frequency."
+          },
+          "ac0.3" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.1",
+            "code" : "ac0.3",
             "description" : ""
           },
-          "ac0.2" : {
+          "ac0.4" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.2",
+            "code" : "ac0.4",
             "description" : ""
+          },
+          "ac0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.5",
+            "description" : ""
+          },
+          "at0180.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0180.2",
+            "text" : "Has the lesion been changing in shape?",
+            "description" : "Description progression of the symptom or sign at the time of reporting.",
+            "comment" : "Occurrences of this data element are set to 0..* to allow multiple types of progression to be separated out in a template if desired - for example, severity or frequency."
+          },
+          "at0180.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0180.3",
+            "text" : "Has the lesion been changing in colour?",
+            "description" : "Description progression of the symptom or sign at the time of reporting.",
+            "comment" : "Occurrences of this data element are set to 0..* to allow multiple types of progression to be separated out in a template if desired - for example, severity or frequency."
           }
         },
         "de" : {
-          "ac0.1" : {
+          "ac0.3" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
+            "code" : "ac0.3",
             "description" : ""
           },
-          "ac0.2" : {
+          "ac0.4" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.2",
+            "code" : "ac0.4",
             "description" : ""
+          },
+          "ac0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.5",
+            "description" : ""
+          },
+          "at0180.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0180",
+            "text" : "Verlauf (2)",
+            "description" : "Beschreibung des Verlaufs des Symptoms/Krankheitsanzeichens zum Zeitpunkt der Meldung.",
+            "comment" : "Das Auftreten dieses Datenelements ist auf 0...* gesetzt, um bei Bedarf mehrere Arten von Verläufen in einem Template voneinander zu trennen - z.B. Schweregrad oder Häufigkeit."
+          },
+          "at0180.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0180",
+            "text" : "Verlauf (3)",
+            "description" : "Beschreibung des Verlaufs des Symptoms/Krankheitsanzeichens zum Zeitpunkt der Meldung.",
+            "comment" : "Das Auftreten dieses Datenelements ist auf 0...* gesetzt, um bei Bedarf mehrere Arten von Verläufen in einem Template voneinander zu trennen - z.B. Schweregrad oder Häufigkeit."
           }
         },
         "nb" : {
-          "ac0.1" : {
+          "ac0.3" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
+            "code" : "ac0.3",
             "description" : ""
           },
-          "ac0.2" : {
+          "ac0.4" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.2",
+            "code" : "ac0.4",
             "description" : ""
+          },
+          "ac0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.5",
+            "description" : ""
+          },
+          "at0180.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0180",
+            "text" : "Progresjon (2)",
+            "description" : "Beskrivelse av symptomets eller sykdomstegnets progresjon ved rapporteringstidspunktet.",
+            "comment" : "Dataelementet er definert som 0..* for å tillate at flere typer progresjon trekkes ut i et templat om ønsket. For eksempel: alvorlighet eller frekvens."
+          },
+          "at0180.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0180",
+            "text" : "Progresjon (3)",
+            "description" : "Beskrivelse av symptomets eller sykdomstegnets progresjon ved rapporteringstidspunktet.",
+            "comment" : "Dataelementet er definert som 0..* for å tillate at flere typer progresjon trekkes ut i et templat om ønsket. For eksempel: alvorlighet eller frekvens."
           }
         },
         "fi" : {
-          "ac0.1" : {
+          "ac0.3" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
+            "code" : "ac0.3",
             "description" : ""
           },
-          "ac0.2" : {
+          "ac0.4" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.2",
+            "code" : "ac0.4",
             "description" : ""
+          },
+          "ac0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.5",
+            "description" : ""
+          },
+          "at0180.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0180",
+            "text" : "Progressio (2)",
+            "description" : "Description progression of the symptom or sign at the time of reporting.(en)",
+            "comment" : "*Occurrences of this data element are set to 0..* to allow multiple types of progression to be separated out in a template if desired - for example, severity or frequency.(en)"
+          },
+          "at0180.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0180",
+            "text" : "Progressio (3)",
+            "description" : "Description progression of the symptom or sign at the time of reporting.(en)",
+            "comment" : "*Occurrences of this data element are set to 0..* to allow multiple types of progression to be separated out in a template if desired - for example, severity or frequency.(en)"
           }
         },
         "sv" : {
-          "ac0.1" : {
+          "ac0.3" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
+            "code" : "ac0.3",
             "description" : ""
           },
-          "ac0.2" : {
+          "ac0.4" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.2",
+            "code" : "ac0.4",
             "description" : ""
+          },
+          "ac0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.5",
+            "description" : ""
+          },
+          "at0180.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0180",
+            "text" : "Progression (2)",
+            "description" : "Beskrivning av progressionen av symtomet eller tecknet vid rapporteringstidpunkten.",
+            "comment" : "Förekomster i det här fältet är inställda på 0.. * för att tillåta flera typer av progression att separeras i en mall om så önskas, exempelvis svårighetsgrad eller frekvens."
+          },
+          "at0180.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0180",
+            "text" : "Progression (3)",
+            "description" : "Beskrivning av progressionen av symtomet eller tecknet vid rapporteringstidpunkten.",
+            "comment" : "Förekomster i det här fältet är inställda på 0.. * för att tillåta flera typer av progression att separeras i en mall om så önskas, exempelvis svårighetsgrad eller frekvens."
           }
         },
         "pt-br" : {
-          "ac0.1" : {
+          "ac0.3" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
+            "code" : "ac0.3",
             "description" : ""
           },
-          "ac0.2" : {
+          "ac0.4" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.2",
+            "code" : "ac0.4",
             "description" : ""
+          },
+          "ac0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.5",
+            "description" : ""
+          },
+          "at0180.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0180",
+            "text" : "Progressão (2)",
+            "description" : "Descrição da progressão do sintoma ou sinal no momento do relato.",
+            "comment" : "Ocorrências deste elemento de dado são setadas para 0..* para permitir múltiplos tipos de progressão para serem separadas no template se desejado - por exemplo, gravidade ou frequência."
+          },
+          "at0180.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0180",
+            "text" : "Progressão (3)",
+            "description" : "Descrição da progressão do sintoma ou sinal no momento do relato.",
+            "comment" : "Ocorrências deste elemento de dado são setadas para 0..* para permitir múltiplos tipos de progressão para serem separadas no template se desejado - por exemplo, gravidade ou frequência."
           }
         },
         "nl" : {
-          "ac0.1" : {
+          "ac0.3" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
+            "code" : "ac0.3",
             "description" : ""
           },
-          "ac0.2" : {
+          "ac0.4" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.2",
+            "code" : "ac0.4",
             "description" : ""
+          },
+          "ac0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.5",
+            "description" : ""
+          },
+          "at0180.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0180",
+            "text" : "Beloop (2)",
+            "description" : "Beloop van het symptoom op het moment van verslaglegging."
+          },
+          "at0180.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0180",
+            "text" : "Beloop (3)",
+            "description" : "Beloop van het symptoom op het moment van verslaglegging."
           }
         }
       },
@@ -1440,6 +1847,81 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.2",
           "members" : [ "at0183", "at0182", "at0181", "at0184" ]
+        },
+        "ac0.3" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.3",
+          "members" : [ "at0176", "at0178", "at0177" ]
+        },
+        "ac0.4" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.4",
+          "members" : [ "at0187", "at0188" ]
+        },
+        "ac0.5" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.5",
+          "members" : [ "at0023", "at0024", "at0025" ]
+        },
+        "ac0.6" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.6",
+          "members" : [ "at0183", "at0182", "at0181", "at0184" ]
+        },
+        "ac0.7" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.7",
+          "members" : [ "at0183", "at0182", "at0181", "at0184" ]
+        },
+        "ac0.8" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.8",
+          "members" : [ "at0183", "at0182", "at0181", "at0184" ]
+        },
+        "ac0.10" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.10",
+          "members" : [ "at0183", "at0182", "at0181", "at0184" ]
+        },
+        "ac0.11" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.11",
+          "members" : [ "ac0.9" ]
+        },
+        "ac0.12" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.12",
+          "members" : [ "ac0.9" ]
+        },
+        "ac0.14" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.14",
+          "members" : [ "at0183", "at0182", "at0181", "at0184" ]
+        },
+        "ac0.15" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.15",
+          "members" : [ "ac0.13" ]
+        },
+        "ac0.16" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.16",
+          "members" : [ "ac0.13" ]
+        },
+        "ac0.18" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.18",
+          "members" : [ "at0183", "at0182", "at0181", "at0184" ]
+        },
+        "ac0.19" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.19",
+          "members" : [ "ac0.17" ]
+        },
+        "ac0.20" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.20",
+          "members" : [ "ac0.17" ]
         }
       }
     },
@@ -1714,6 +2196,36 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0002.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "ac0.2" ],
+                  "selectedTerminologies" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
           "nodeId" : "at0064.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -1731,10 +2243,44 @@
                   "terminologyId" : {
                     "value" : "local"
                   },
-                  "constraint" : [ "ac0.1" ],
+                  "constraint" : [ "ac0.3" ],
                   "selectedTerminologies" : [ ]
                 } ]
               } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0055.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "ac0.4" ],
+                  "selectedTerminologies" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
           } ],
@@ -1755,77 +2301,192 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "ar-sy" : {
-          "ac0.1" : {
+          "ac0.2" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
+            "code" : "ac0.2",
+            "description" : ""
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : ""
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
             "description" : ""
           }
         },
         "sl" : {
-          "ac0.1" : {
+          "ac0.2" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
+            "code" : "ac0.2",
+            "description" : ""
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : ""
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
             "description" : ""
           }
         },
         "en" : {
-          "ac0.1" : {
+          "ac0.2" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.1",
+            "code" : "ac0.2",
+            "description" : ""
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.3",
+            "description" : ""
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.4",
             "description" : ""
           }
         },
         "nb" : {
-          "ac0.1" : {
+          "ac0.2" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
+            "code" : "ac0.2",
+            "description" : ""
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : ""
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
             "description" : ""
           }
         },
         "pt-br" : {
-          "ac0.1" : {
+          "ac0.2" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
+            "code" : "ac0.2",
+            "description" : ""
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : ""
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
             "description" : ""
           }
         },
         "de" : {
-          "ac0.1" : {
+          "ac0.2" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
+            "code" : "ac0.2",
+            "description" : ""
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : ""
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
             "description" : ""
           }
         },
         "nl" : {
-          "ac0.1" : {
+          "ac0.2" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
+            "code" : "ac0.2",
+            "description" : ""
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : ""
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
             "description" : ""
           }
         },
         "sv" : {
-          "ac0.1" : {
+          "ac0.2" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
+            "code" : "ac0.2",
+            "description" : ""
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : ""
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
             "description" : ""
           }
         }
       },
-      "termBindings" : { },
+      "termBindings" : {
+        "SNOMED-CT" : {
+          "at0002.1" : "term:SNOMED-CT::272741003"
+        }
+      },
       "terminologyExtracts" : { },
       "valueSets" : {
         "ac0.1" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.1",
           "members" : [ "at0067", "at0068", "at0069", "at0070", "at0071", "at0072", "at0073", "at0074", "at0080", "at0081", "at0075", "at0076", "at0082", "at0077", "at0078", "at0079" ]
+        },
+        "ac0.2" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.2",
+          "members" : [ "at0003", "at0004" ]
+        },
+        "ac0.3" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.3",
+          "members" : [ "at0067", "at0068", "at0069", "at0070", "at0071", "at0072", "at0073", "at0074", "at0080", "at0081", "at0075", "at0076", "at0082", "at0077", "at0078", "at0079" ]
+        },
+        "ac0.4" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.4",
+          "members" : [ "at0062", "at0056", "at0057", "at0058", "at0059", "at0060", "at0063" ]
         }
       }
     },
@@ -2075,6 +2736,16 @@
         }
       }
     },
+    "annotations" : {
+      "@type" : "RESOURCE_ANNOTATIONS",
+      "documentation" : {
+        "en" : {
+          "/items[at0001.1]" : {
+            "question_string" : "Are there any of the following associated symptoms?"
+          }
+        }
+      }
+    },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.symptom_sign.v1",
     "differential" : true,
     "archetypeId" : {
@@ -2089,6 +2760,56 @@
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "items",
         "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0001.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
+                  "terminologyId" : {
+                    "value" : "local_terms"
+                  },
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "local_terms" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "local_terms",
+                    "code" : "43243",
+                    "value" : "Itch"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "088548",
+                    "value" : "Bleeding"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "482934",
+                    "value" : "Crusty or rough"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "848539",
+                    "value" : "Oozing"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "484392",
+                    "value" : "Painful"
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
           "occurrences" : "0..0",
@@ -2509,13 +3230,14 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
           "nodeId" : "at0163.1",
           "attributes" : [ ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "CLUSTER",
-          "occurrences" : "0..1",
+          "occurrences" : "0..0",
           "nodeId" : "at0147.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -2579,6 +3301,12 @@
             "text" : "(Synthesized)",
             "code" : "ac0.4",
             "description" : ""
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Symptom/Sign - List (1)",
+            "description" : "Reported observation of a physical or mental disturbance in an individual."
           }
         },
         "de" : {
