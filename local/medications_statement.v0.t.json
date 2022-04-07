@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.3.3",
+      "sem_ver" : "0.3.4",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "6a6e74398cddf9b09c521fce9e0bf19d",
+      "MD5-CAM-1.0.1" : "c20d24779dd5624d805530dfb5ab37f5",
       "PARENT:MD5-CAM-1.0.1" : "006E9F209FD9F3691A5B9EFF0BAC3B5B"
     },
     "details" : {
@@ -1152,38 +1152,6 @@
                   "members" : [ {
                     "@type" : "C_STRING",
                     "rmTypeName" : "STRING",
-                    "constraint" : [ "[iU]" ]
-                  }, {
-                    "@type" : "C_REAL",
-                    "rmTypeName" : "REAL",
-                    "constraint" : [ {
-                      "lowerIncluded" : false,
-                      "upperIncluded" : false,
-                      "lowerUnbounded" : true,
-                      "upperUnbounded" : true
-                    } ]
-                  } ]
-                }, {
-                  "@type" : "C_PRIMITIVE_TUPLE",
-                  "members" : [ {
-                    "@type" : "C_STRING",
-                    "rmTypeName" : "STRING",
-                    "constraint" : [ "[arb'U]{SQ-T}" ]
-                  }, {
-                    "@type" : "C_REAL",
-                    "rmTypeName" : "REAL",
-                    "constraint" : [ {
-                      "lowerIncluded" : false,
-                      "upperIncluded" : false,
-                      "lowerUnbounded" : true,
-                      "upperUnbounded" : true
-                    } ]
-                  } ]
-                }, {
-                  "@type" : "C_PRIMITIVE_TUPLE",
-                  "members" : [ {
-                    "@type" : "C_STRING",
-                    "rmTypeName" : "STRING",
                     "constraint" : [ "mL" ]
                   }, {
                     "@type" : "C_REAL",
@@ -1455,6 +1423,12 @@
             "text" : "Tablets",
             "description" : "standardized quality unit tablet",
             "code" : "[arb'U]{SQ-T}"
+          },
+          "ug" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "micrograms",
+            "description" : "microgram",
+            "code" : "ug"
           }
         },
         "nb" : {
@@ -1463,6 +1437,12 @@
             "text" : "*T (en)",
             "description" : "*standardized quality unit tablet (en)",
             "code" : "[arb'U]{SQ-T}"
+          },
+          "ug" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*m (en)",
+            "description" : "*microgram (en)",
+            "code" : "ug"
           }
         },
         "pt-br" : {
@@ -1471,6 +1451,12 @@
             "text" : "*T (en)",
             "description" : "*standardized quality unit tablet (en)",
             "code" : "[arb'U]{SQ-T}"
+          },
+          "ug" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*m (en)",
+            "description" : "*microgram (en)",
+            "code" : "ug"
           }
         },
         "de" : {
@@ -1479,6 +1465,12 @@
             "text" : "*T (en)",
             "description" : "*standardized quality unit tablet (en)",
             "code" : "[arb'U]{SQ-T}"
+          },
+          "ug" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*m (en)",
+            "description" : "*microgram (en)",
+            "code" : "ug"
           }
         },
         "sv" : {
@@ -1487,6 +1479,12 @@
             "text" : "*T (en)",
             "description" : "*standardized quality unit tablet (en)",
             "code" : "[arb'U]{SQ-T}"
+          },
+          "ug" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*m (en)",
+            "description" : "*microgram (en)",
+            "code" : "ug"
           }
         }
       },
