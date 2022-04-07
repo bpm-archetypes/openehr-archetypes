@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.3.0",
+      "sem_ver" : "0.4.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "b6e199e3ea3a4a46f5c481b580cf61bb",
+      "MD5-CAM-1.0.1" : "d8b0f89af01b39bed34cbca5b2577011",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -539,7 +539,7 @@
                     }, {
                       "@type" : "C_ARCHETYPE_ROOT",
                       "rmTypeName" : "CLUSTER",
-                      "occurrences" : "0..1",
+                      "occurrences" : "1..1",
                       "nodeId" : "at0006.1",
                       "attributes" : [ ],
                       "attributeTuples" : [ ],
@@ -894,8 +894,8 @@
                   "selectedTerminologies" : [ "local_terms" ],
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "local_terms",
-                    "code" : "24243",
-                    "value" : "Hearing Loss"
+                    "code" : "3244543",
+                    "value" : "Tinnitus"
                   } ]
                 } ]
               } ],
@@ -937,15 +937,15 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "local_terms",
                     "code" : "23435",
-                    "value" : "Hearing loss is worse on Right"
+                    "value" : "Tinnitus is worse on Right"
                   }, {
                     "terminologyId" : "local_terms",
                     "code" : "345235",
-                    "value" : "Hearing loss is worse on Left"
+                    "value" : "Tinnitus is worse on Left"
                   }, {
                     "terminologyId" : "local_terms",
                     "code" : "43543",
-                    "value" : "Hearing loss is same on both sides"
+                    "value" : "Tinnitus is same on both sides"
                   } ]
                 } ]
               } ],
@@ -1237,7 +1237,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
+          "occurrences" : "1..*",
           "nodeId" : "at0189.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -1246,7 +1246,33 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
               "occurrences" : "1..1",
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
+                  "terminologyId" : {
+                    "value" : "local_terms"
+                  },
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "local_terms" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "local_terms",
+                    "code" : "4234",
+                    "value" : "Hissing"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "543894",
+                    "value" : "Ringing"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "958683",
+                    "value" : "Pulsing"
+                  } ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             } ]
           } ],
@@ -1416,16 +1442,16 @@
                   "selectedTerminologies" : [ "local_terms" ],
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "local_terms",
-                    "code" : "34345",
-                    "value" : "Difficulty in 1 to 1 conversation in quiet room"
+                    "code" : "543654",
+                    "value" : "Can go about normal life"
                   }, {
                     "terminologyId" : "local_terms",
-                    "code" : "5tetr",
-                    "value" : "Difficulty in talking with a group of people in a quiet room"
+                    "code" : "43545",
+                    "value" : "Affects daily activities sometimes"
                   }, {
                     "terminologyId" : "local_terms",
-                    "code" : "w43543",
-                    "value" : "Difficulty in conversation in a noisy room (bar / restaurant)"
+                    "code" : "8767678",
+                    "value" : "Affects sleep"
                   } ]
                 } ]
               } ],
@@ -1541,7 +1567,7 @@
           "at0155.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0155.1",
-            "text" : "How much are you struggling?",
+            "text" : "Impact of the tinnitus",
             "description" : "Description of the impact of this symptom or sign.",
             "comment" : "Assessment of impact could consider the severity, duration and frequency of the symptom as well as the type of impact including, but not limited to, functional, social and emotional impact. Occurrences of this data element are set to 0..* to allow multiple types of impact to be separated out in a template if desired. Examples for functional impact from hearing loss may include: 'Difficulty Hearing in Quiet Environment'; 'Difficulty Hearing the TV or Radio'; 'Difficulty Hearing Group Conversation'; and 'Difficulty Hearing on Phone'."
           },
