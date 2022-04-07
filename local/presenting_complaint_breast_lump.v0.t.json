@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.4.0",
+      "sem_ver" : "0.4.1",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "3c1f21540375ce9ed3fed700b22857b4",
+      "MD5-CAM-1.0.1" : "0320ba484425f5c5fa505eaadfbbdb20",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -1502,7 +1502,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "CLUSTER",
-          "occurrences" : "0..1",
+          "occurrences" : "0..*",
           "nodeId" : "at0063.4",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -2687,11 +2687,11 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "local_terms",
                     "code" : "23541245",
-                    "value" : "Yes (Red Breast)"
+                    "value" : "Yes (Redness present)"
                   }, {
                     "terminologyId" : "local_terms",
                     "code" : "124352146",
-                    "value" : "No (Red Breast)"
+                    "value" : "No (Redness NOT present)"
                   } ]
                 } ]
               } ],
@@ -3229,6 +3229,12 @@
             "text" : "Is there any associated redness?",
             "description" : "The name of the reported symptom or sign.",
             "comment" : "Symptom name should be coded with a terminology, where possible."
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Symptom/Sign - Specific (1)",
+            "description" : "Reported observation of a physical or mental disturbance in an individual."
           }
         },
         "de" : {
@@ -4865,11 +4871,11 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "local_terms",
                     "code" : "123",
-                    "value" : "Yes (painful breast lump)"
+                    "value" : "Yes (Pain present)"
                   }, {
                     "terminologyId" : "local_terms",
                     "code" : "234",
-                    "value" : "No (painful breast lump)"
+                    "value" : "No (Pain NOT present)"
                   } ]
                 } ]
               } ],
@@ -5410,7 +5416,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Symptom/Sign (2)",
+            "text" : "Symptom/Sign - Specific (2)",
             "description" : "Reported observation of a physical or mental disturbance in an individual."
           },
           "at0001.1" : {
@@ -6474,6 +6480,16 @@
         }
       }
     },
+    "annotations" : {
+      "@type" : "RESOURCE_ANNOTATIONS",
+      "documentation" : {
+        "en" : {
+          "" : {
+            "title_string" : "Any other associated symptoms?"
+          }
+        }
+      }
+    },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.symptom_sign.v1",
     "differential" : true,
     "archetypeId" : {
@@ -6488,22 +6504,6 @@
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "items",
         "children" : [ {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "nodeId" : "at0001.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "1..1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
           "occurrences" : "0..0",
@@ -7036,15 +7036,8 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Symptom/Sign (3)",
+            "text" : "Symptom/Sign - General (1)",
             "description" : "Reported observation of a physical or mental disturbance in an individual."
-          },
-          "at0001.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001.1",
-            "text" : "Are there any other associated symptoms?",
-            "description" : "The name of the reported symptom or sign.",
-            "comment" : "Symptom name should be coded with a terminology, where possible."
           }
         },
         "de" : {
