@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.3.0",
+      "sem_ver" : "0.4.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "3caab8847aa3bb7cdaf0f86d143f4d6f",
+      "MD5-CAM-1.0.1" : "c40c39dccc6f7ceaa9991a5776cf6cda",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -241,7 +241,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "management_plan.v0",
+          "text" : "management_plan",
           "description" : "Interaction, contact or care event between a subject of care and healthcare provider(s)."
         }
       },
