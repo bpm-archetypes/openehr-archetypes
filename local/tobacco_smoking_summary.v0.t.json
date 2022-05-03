@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.2.0",
+      "sem_ver" : "0.2.1",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "625ad769f107aedd07e1c4433571b1c0",
+      "MD5-CAM-1.0.1" : "ef2ef308d7f371a6731cbd9d9e94dddd",
       "PARENT:MD5-CAM-1.0.1" : "7D30D55E7A5136F665655E293645D5E6"
     },
     "details" : {
@@ -249,6 +249,26 @@
           "misuse" : "Niet te gebruiken voor het vastleggen van gebeurtenis- of periode-gebasseerde informatie over het roken van tabak, zoals de daadwerkelijke dagelijkse dosis of het gemiddelde gebruik over een bepaalde periode - gebruik hiervoor het OBSERVATION.tobacco_smoking archetype.\r\n\r\nNiet te gebruiken voor het vastleggen van informatie over het gebruik van rookloos tabak - zoals bijvoorbeeld: snus; snuiftabak; pruimtabak; dip; and gutka. Gebruik hiervoor het archetype EVALUATION.smokeless_tobacco_summary.\r\n\r\nNiet te gebruiken voor het vastleggen van bewijs voor nicotineafhankelijkheid. Gebruik hiervoor het archetype OBSERVATION.fagerstrom.\r\n\r\nNiet te gebruiken voor het vastleggen van onbedoelde blootstelling aan tabaksrook of passief roken. Gebruik hiervoor het archetype EVALUATION.exposure.\r\n\r\nNiet te gebruiken voor het vastleggen van enige andere vorm van toediening van nicotine, zoals e-cigaretten, nicotine pleisters of nicotine kauwgom. Gebruik hiervoor losstaande archetypes.",
           "originalResourceUri" : { },
           "otherDetails" : { }
+        }
+      }
+    },
+    "annotations" : {
+      "@type" : "RESOURCE_ANNOTATIONS",
+      "documentation" : {
+        "en" : {
+          "/data[at0001]/items[at0074.1]" : {
+            "helpText" : "1 pack year = 20 cigarettes daily for 1 year"
+          }
+        },
+        "de" : {
+          "/data[at0001]/items[at0074.1]" : {
+            "helpText" : "1 Packung Jahr = 20 Zigaretten täglich für 1 Jahr"
+          }
+        },
+        "nl" : {
+          "/data[at0001]/items[at0074.1]" : {
+            "helpText" : "1 pakje jaar = 20 sigaretten per dag gedurende 1 jaar"
+          }
         }
       }
     },
@@ -1057,6 +1077,33 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
             "description" : ""
+          },
+          "at0015.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0015.1",
+            "text" : "Startdatum",
+            "description" : "Das Datum oder Teildatum, an dem die Person zuerst angefangen hat häufig oder regelmäßig, aber gewöhnlich nicht täglich, eine beliebige Tabakart zu rauchen.",
+            "comment" : "Kann ein Teildatum sein, z.B. nur ein Jahr. Dieses Datum könnte z.B. bedeuten, wann die Person jeden Freitagabend oder auf Partys mit dem Rauchen begonnen hat."
+          },
+          "at0016.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.1",
+            "text" : "Stopdatum",
+            "description" : "Das Datum, an dem die Person zuletzt aufgehört hat, Tabak jeglicher Art zu konsumieren.",
+            "comment" : "Kann ein Teildatum sein, z.B. nur ein Jahr. Dieses Datum könnte von Entscheidungshilfen genutzt werden, um festzustellen, ob die Person, zum Beispiel in den ersten 12 Monaten nach dem Aufhören, einem Rückfallrisiko ausgesetzt ist."
+          },
+          "at0074.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0074.1",
+            "text" : "Typischer Verbrauch",
+            "description" : "Schätzung der kumulierten Menge für alle Arten von Rauchtabak.",
+            "comment" : "Die Definition einer Packung kann im Protokoll dieses Archetyps mit dem Datenelement \"Definition Packung\" aufgezeichnet werden."
+          },
+          "at0089.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0089.1",
+            "text" : "Status",
+            "description" : "Aussage zum aktuellen Rauchverhalten bei allen Tabakarten."
           }
         },
         "fr" : {
@@ -1073,6 +1120,33 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
             "description" : ""
+          },
+          "at0015.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0015.1",
+            "text" : "Startdatum",
+            "description" : "De datum of gedeeltelijke datum waarop het individu begon met frequent of regelmatig, maar doorgaans niet dagelijks, tabak van enig type te roken.",
+            "comment" : "Kan een gedeeltelijke datum zijn, zoals een jaartal. Bijvoorbeeld, deze datum kan het moment vertegenwoordigen waarop het individu iedere vrijdag of op feestjes begon te roken."
+          },
+          "at0016.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.1",
+            "text" : "Stopdatum",
+            "description" : "De datum waarop het individu het laatst gestopt is met het gebruik van tabak van welk type dan ook.",
+            "comment" : "Kan een gedeeltelijke datum zijn, zoals een jaartal. Deze datum kan gebruikt worden in beslissingsondersteuning om te bepalen of het individu risico loopt op terugval, bijvoorbeeld in de eerste 12 maanden na stoppen."
+          },
+          "at0074.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0074.1",
+            "text" : "Typisch verbruik",
+            "description" : "Schatting van de totale hoeveelheid gerookte tabak van alle typen.",
+            "comment" : "De definitie van een 'pack' kan vastgelegd worden in het protocol van dit archetype met het 'Pack definitie' data element."
+          },
+          "at0089.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0089.1",
+            "text" : "Status",
+            "description" : "Uitspraak over het huidige rookgedrag voor alle typen tabak."
           }
         }
       },
