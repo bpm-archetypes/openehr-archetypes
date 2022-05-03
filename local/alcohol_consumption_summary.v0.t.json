@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.6.2",
+      "sem_ver" : "0.7.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "ca8ad2e4f905e2662e87bafc98a09865",
+      "MD5-CAM-1.0.1" : "b103b2a1f9e2dde482bef9481f524c0e",
       "PARENT:MD5-CAM-1.0.1" : "7D30D55E7A5136F665655E293645D5E6"
     },
     "details" : {
@@ -258,6 +258,15 @@
         "en" : {
           "/data[at0001]/items[at0064.1]/items[at0023.1]" : {
             "helpText" : "UK Standard drink = 8g of alcohol per drink"
+          },
+          "/data[at0001]/items[at0064.1]" : {
+            "validation" : "optional_if:at0089.1,at0003|prohibited_if:at0089.1,at0006|prohibited_if:at0089.1,at0005"
+          },
+          "/data[at0001]/items[at0016.1]" : {
+            "validation" : "optional_if:at0089.1,at0005|prohibited_if:at0089.1,at0006|prohibited_if:at0089.1,at0003"
+          },
+          "/data[at0001]/items[at0019.1]" : {
+            "validation" : "optional_if:at0089.1,at0005|optional_if:at0089.1,at0003|prohibited_if:at0089.1,at0006"
           }
         },
         "nl" : {
