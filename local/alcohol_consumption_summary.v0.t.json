@@ -21,7 +21,7 @@
       "custodian_namespace" : "",
       "sem_ver" : "0.6.1",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "415c6c9d651571dcef4faa5f5465402c",
+      "MD5-CAM-1.0.1" : "b8e3d1472cfb3bae45a7aac5a4a56e11",
       "PARENT:MD5-CAM-1.0.1" : "7D30D55E7A5136F665655E293645D5E6"
     },
     "details" : {
@@ -249,6 +249,26 @@
           "misuse" : "Niet te gebruiken om gebeurtenissen of periode-gebasserde informatie over alcoholgebruik vast te leggen, zoals bijvoorbeeld de daadwerkelijke dagelijkse / overmatige / gemiddelde consumptie over een bepaalde periode. Gebruik hiervoor het OBSERVATION.alcohol_intake archetype.\r\n\r\nNiet te gebruiken om een beoordeling van afhankelijkheid van alcohol vast te leggen. Gebruik hiervoor specifieke archetypes zoals OBSERVATION.audit.\r\n\r\nNiet te gebruiken voor het vastleggen van toediening van alcohol op andere wijzen, zoals inhaleren.",
           "originalResourceUri" : { },
           "otherDetails" : { }
+        }
+      }
+    },
+    "annotations" : {
+      "@type" : "RESOURCE_ANNOTATIONS",
+      "documentation" : {
+        "en" : {
+          "/data[at0001]/items[at0064.1]/items[at0023.1]" : {
+            "helpText" : "UK Standard drink = 8g of alcohol per drink"
+          }
+        },
+        "nl" : {
+          "/data[at0001]/items[at0064.1]/items[at0023.1]" : {
+            "helpText" : "UK Standard-drankje = 8 g alcohol per drankje"
+          }
+        },
+        "de" : {
+          "/data[at0001]/items[at0064.1]/items[at0023.1]" : {
+            "helpText" : "Britisches Standardgetränk = 8 g Alkohol pro Getränk"
+          }
         }
       }
     },
@@ -668,7 +688,17 @@
                     "children" : [ {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "DV_QUANTITY",
-                      "attributes" : [ ],
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "property",
+                        "children" : [ {
+                          "@type" : "C_TERMINOLOGY_CODE",
+                          "terminologyId" : {
+                            "value" : "openehr"
+                          },
+                          "constraint" : [ "382" ]
+                        } ]
+                      } ],
                       "attributeTuples" : [ {
                         "@type" : "C_ATTRIBUTE_TUPLE",
                         "members" : [ {
