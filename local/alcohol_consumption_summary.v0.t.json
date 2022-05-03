@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.6.0",
+      "sem_ver" : "0.6.1",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "c72865c286bf2ff6f90b34334774d100",
+      "MD5-CAM-1.0.1" : "415c6c9d651571dcef4faa5f5465402c",
       "PARENT:MD5-CAM-1.0.1" : "7D30D55E7A5136F665655E293645D5E6"
     },
     "details" : {
@@ -385,10 +385,14 @@
                       "occurrences" : "1..1",
                       "defaultValue" : {
                         "defining_code" : {
-                          "code_string" : "15240007",
+                          "terminology_id" : {
+                            "value" : "SNOMED-CT",
+                            "@type" : "TERMINOLOGY_ID"
+                          },
+                          "code_string" : "0000",
                           "@type" : "CODE_PHRASE"
                         },
-                        "value" : "Current",
+                        "value" : "tempCurrent",
                         "@type" : "DV_CODED_TEXT"
                       },
                       "attributes" : [ {
@@ -405,8 +409,8 @@
                           "selectedTerminologies" : [ "SNOMED-CT" ],
                           "includedExternalTerminologyCodes" : [ {
                             "terminologyId" : "SNOMED-CT",
-                            "code" : "15240007",
-                            "value" : "Current"
+                            "code" : "0000",
+                            "value" : "tempCurrent"
                           } ]
                         } ]
                       } ],
@@ -664,17 +668,7 @@
                     "children" : [ {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "DV_QUANTITY",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "property",
-                        "children" : [ {
-                          "@type" : "C_TERMINOLOGY_CODE",
-                          "terminologyId" : {
-                            "value" : "openehr"
-                          },
-                          "constraint" : [ "382" ]
-                        } ]
-                      } ],
+                      "attributes" : [ ],
                       "attributeTuples" : [ {
                         "@type" : "C_ATTRIBUTE_TUPLE",
                         "members" : [ {
@@ -1081,6 +1075,25 @@
             "text" : "(Synthesized)",
             "code" : "ac0.5",
             "description" : ""
+          },
+          "at0016.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.1",
+            "text" : "Quit date",
+            "description" : "The date when the individual last ceased consuming alcohol of any type.",
+            "comment" : "Can be a partial date, for example, only a year. This date could be used by decision support guidance to determine if the individual is at risk of relapse, for example in the first 12 months since quitting."
+          },
+          "at0089.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0089.1",
+            "text" : "Status",
+            "description" : "Statement about current consumption for all types of alcohol."
+          },
+          "at0023.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0023.1",
+            "text" : "Typical consumption",
+            "description" : "Estimate of number of alcohol units consumed in the specified time period."
           }
         },
         "nb" : {
