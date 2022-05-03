@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.6.1",
+      "sem_ver" : "0.6.2",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "b8e3d1472cfb3bae45a7aac5a4a56e11",
+      "MD5-CAM-1.0.1" : "ca8ad2e4f905e2662e87bafc98a09865",
       "PARENT:MD5-CAM-1.0.1" : "7D30D55E7A5136F665655E293645D5E6"
     },
     "details" : {
@@ -1166,6 +1166,19 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.5",
             "description" : ""
+          },
+          "at0016.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.1",
+            "text" : "Stopdadum",
+            "description" : "Das Datum, an dem die Person zuletzt den Konsum von Alkohol jeglicher Art eingestellt hat.",
+            "comment" : "Ein Teildatum kann z.B. nur ein Jahr sein. Dieses Datum könnte als Entscheidungshilfe verwendet werden, um festzustellen, ob die Person rückfallgefährdet ist, z.B. in den ersten 12 Monaten nach dem Aufhören."
+          },
+          "at0023.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0023.1",
+            "text" : "Typische Verwendung",
+            "description" : "Schätzung der Anzahl von Alkoholeinheiten, die im angegebenen Zeitraum konsumiert wurden."
           }
         },
         "fr" : {
@@ -1194,6 +1207,19 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.5",
             "description" : ""
+          },
+          "at0016.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.1",
+            "text" : "Stopdatum",
+            "description" : "De datum waarop het individu voor het laatst stopte met het drinken van alcohol van welk type dan ook.",
+            "comment" : "Kan een gedeeltelijke datum zijn, bijvoorbeeld een jaartal. Deze datum kan gebruikt worden in beslissingondersteuning om vast te stellen of het individu risico op terugval heeft, bijvoorbeeld in de eerste 12 maanden na het stoppen."
+          },
+          "at0023.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0023.1",
+            "text" : "Typische consumptie",
+            "description" : "Geschatte aantal alcohol eenheden geconsumeerd in de bepaalde periode."
           }
         }
       },
