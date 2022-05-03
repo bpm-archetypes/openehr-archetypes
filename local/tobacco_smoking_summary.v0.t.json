@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.2.1",
+      "sem_ver" : "0.3.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "ef2ef308d7f371a6731cbd9d9e94dddd",
+      "MD5-CAM-1.0.1" : "5dc07b60a0e6da445b7c20c65a5e54ea",
       "PARENT:MD5-CAM-1.0.1" : "7D30D55E7A5136F665655E293645D5E6"
     },
     "details" : {
@@ -257,7 +257,14 @@
       "documentation" : {
         "en" : {
           "/data[at0001]/items[at0074.1]" : {
-            "helpText" : "1 pack year = 20 cigarettes daily for 1 year"
+            "helpText" : "1 pack year = 20 cigarettes daily for 1 year",
+            "validation" : "required_if:at0089.1,at0003|required_if:at0089.1,at0005|prohibited_if:at0089.1,at0006"
+          },
+          "/data[at0001]/items[at0015.1]" : {
+            "validation" : "required_if:at0089.1,at0003|required_if:at0089.1,at0005|prohibited_if:at0089.1,at0006"
+          },
+          "/data[at0001]/items[at0016.1]" : {
+            "validation" : "required_if:at0089.1,at0005|prohibited_if:at0089.1,at0006|prohibited_if:at0089.1,at0003"
           }
         },
         "de" : {
@@ -990,11 +997,12 @@
                       "rmTypeName" : "INTEGER",
                       "occurrences" : "1..1",
                       "constraint" : [ {
-                        "lower" : 0,
+                        "lower" : 20,
+                        "upper" : 20,
                         "lowerIncluded" : true,
-                        "upperIncluded" : false,
+                        "upperIncluded" : true,
                         "lowerUnbounded" : false,
-                        "upperUnbounded" : true
+                        "upperUnbounded" : false
                       } ]
                     } ]
                   } ],
