@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.6.4",
+      "sem_ver" : "0.6.5",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "fe08f5b9e6ffff38cc7aa86dc8630962",
+      "MD5-CAM-1.0.1" : "5ab719615089e5ee046fb722b469e004",
       "PARENT:MD5-CAM-1.0.1" : "9A5E23F53786AAE75946A1E3EF5D46EE"
     },
     "details" : {
@@ -422,7 +422,7 @@
                           }, {
                             "terminologyId" : "SNOMED-CT",
                             "code" : "444292000",
-                            "value" : "Paternal grantfather"
+                            "value" : "Paternal grandfather"
                           }, {
                             "terminologyId" : "SNOMED-CT",
                             "code" : "699111006",
