@@ -21,7 +21,7 @@
       "custodian_namespace" : "",
       "sem_ver" : "0.4.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "bec5f2d1a3ab504e2040fc1e294e5557",
+      "MD5-CAM-1.0.1" : "ba987031778ab68770a86b7b55b1ee9a",
       "PARENT:MD5-CAM-1.0.1" : "7D30D55E7A5136F665655E293645D5E6"
     },
     "details" : {
@@ -258,13 +258,13 @@
         "en" : {
           "/data[at0001]/items[at0074.1]" : {
             "helpText" : "1 pack year = 20 cigarettes daily for 1 year",
-            "validation" : "optional_if:at0089.1,at0003|optional_if:at0089.1,at0005|prohibited_if:at0089.1,at0006"
+            "validation" : "prohibited_if:at0089.1,at0006"
           },
           "/data[at0001]/items[at0015.1]" : {
-            "validation" : "optional_if:at0089.1,at0003|optional_if:at0089.1,at0005|prohibited_if:at0089.1,at0006"
+            "validation" : "prohibited_if:at0089.1,at0006"
           },
           "/data[at0001]/items[at0016.1]" : {
-            "validation" : "optional_if:at0089.1,at0005|prohibited_if:at0089.1,at0006|prohibited_if:at0089.1,at0003"
+            "validation" : "prohibited_if:at0089.1,at0006,at0003"
           }
         },
         "de" : {
