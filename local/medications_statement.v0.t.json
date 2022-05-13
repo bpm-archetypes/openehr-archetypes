@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.3.4",
+      "sem_ver" : "0.3.5",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "c20d24779dd5624d805530dfb5ab37f5",
+      "MD5-CAM-1.0.1" : "6fc57bdbb7e47bb4c163b5fc1bcaa177",
       "PARENT:MD5-CAM-1.0.1" : "006E9F209FD9F3691A5B9EFF0BAC3B5B"
     },
     "details" : {
@@ -571,10 +571,10 @@
                               "rmTypeName" : "TERMINOLOGY_CODE",
                               "occurrences" : "0..1",
                               "terminologyId" : {
-                                "value" : "SNOMED-CT-drug-or-medicament_leaf-nodes"
+                                "value" : "SNOMED-CT-PLACEHOLDER-FOR-UK_LIST-drug-or-medicament_leaf-nodes"
                               },
                               "constraint" : [ "ac0.1" ],
-                              "selectedTerminologies" : [ "SNOMED-CT-drug-or-medicament_leaf-nodes" ]
+                              "selectedTerminologies" : [ "SNOMED-CT-PLACEHOLDER-FOR-UK_LIST-drug-or-medicament_leaf-nodes" ]
                             } ]
                           } ],
                           "attributeTuples" : [ ]
@@ -843,9 +843,6 @@
         }
       },
       "termBindings" : {
-        "SNOMED-CT-drug-or-medicament_leaf-nodes" : {
-          "ac0.1" : "terminology://fhir.hl7.org/ValueSet/$expand?url=http://snomed.info/sct?fhir_vs=ecl/%3C%20410942007%20MINUS%20%3E%28%3C410942007%29&activeOnly=true"
-        },
         "SNOMED-CT-clinical-finding" : {
           "ac0.4" : "terminology://fhir.hl7.org/ValueSet/$expand?url=http://snomed.info/sct?fhir_vs=ecl/%3C404684003&activeOnly=true"
         },
@@ -854,6 +851,9 @@
         },
         "SNOMEDCT-drugs-not-taken-completed" : {
           "ac0.10" : "terminology://fhir.hl7.org/ValueSet/$expand?url=http://snomed.info/sct?fhir_vs=ecl/%3C%20266710000&activeOnly=true"
+        },
+        "SNOMED-CT-PLACEHOLDER-FOR-UK_LIST-drug-or-medicament_leaf-nodes" : {
+          "ac0.1" : "terminology://fhir.hl7.org/ValueSet/$expand?url=http://snomed.info/sct?fhir_vs=ecl/%3C%20410942007%20MINUS%20%3E%28%3C410942007%29&activeOnly=true"
         }
       },
       "terminologyExtracts" : { },
