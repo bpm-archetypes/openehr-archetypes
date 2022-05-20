@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0",
+      "sem_ver" : "1.0.1",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "08b36a262c914d337e207c23cb4bafbc",
+      "MD5-CAM-1.0.1" : "4133bfe5358359136ca4e4c2ddd2cfd0",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -498,32 +498,32 @@
                       "rmTypeName" : "TERMINOLOGY_CODE",
                       "occurrences" : "0..1",
                       "terminologyId" : {
-                        "value" : "local_terms"
+                        "value" : "SNOMED-CT"
                       },
                       "constraint" : [ ],
-                      "selectedTerminologies" : [ "local_terms" ],
+                      "selectedTerminologies" : [ "SNOMED-CT" ],
                       "includedExternalTerminologyCodes" : [ {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "SNOMED-CT",
                         "code" : "1234",
                         "value" : "Book for Open Reduction Internal Fixation"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "SNOMED-CT",
                         "code" : "2345",
                         "value" : "Apply Fiberglass plaster"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "SNOMED-CT",
                         "code" : "3456",
                         "value" : "Review back in clinic in 6 weeks"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "SNOMED-CT",
                         "code" : "4567",
                         "value" : "Review back in clinic in 2 weeks"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "SNOMED-CT",
                         "code" : "5678",
                         "value" : "Remove Fiberglass plaster"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "SNOMED-CT",
                         "code" : "6789",
                         "value" : "Refer back to GP for routine care"
                       } ]
@@ -559,16 +559,7 @@
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0007.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_DATE_TIME",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
+              "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
           } ],
