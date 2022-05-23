@@ -85,7 +85,7 @@ Initieel ontwerp van dit archetype was gesubsidieerd door het iCareNet Antenatal
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"7D30D55E7A5136F665655E293645D5E6">
+		["MD5-CAM-1.0.1"] = <"dcaa4d0709dbbca0428969c24bf7a961">
 		["build_uid"] = <"124fb209-767d-4563-abb2-d2c1716f209e">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -95,7 +95,7 @@ definition
 		category matches {
 			DV_CODED_TEXT matches {
 				defining_code matches {
-					[openehr::433]
+					[openehr::431]
 				}
 			}
 		}
