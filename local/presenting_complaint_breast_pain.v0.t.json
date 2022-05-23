@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.5.0",
+      "sem_ver" : "0.6.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "bea6f67bf3aaa4fbd81657e648f9c76b",
+      "MD5-CAM-1.0.1" : "e2caa1b68c4cdbf2682e18d082cbf48d",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -978,7 +978,6 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "occurrences" : "1..1",
           "nodeId" : "at0152.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -1271,11 +1270,11 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "local_terms",
                     "code" : "490835948",
-                    "value" : "Cyclical pain"
+                    "value" : "Cyclical with menstruation"
                   }, {
                     "terminologyId" : "local_terms",
                     "code" : "34985948",
-                    "value" : "Non-cyclical pain"
+                    "value" : "Non-cyclical with menstruation"
                   } ]
                 } ]
               } ],
@@ -1286,7 +1285,6 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "CLUSTER",
-          "occurrences" : "1..1",
           "nodeId" : "at0018.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -1331,6 +1329,14 @@
                         "terminologyId" : "local_terms",
                         "code" : "432598",
                         "value" : "Analgesic medication"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "89324837",
+                        "value" : "Lying on side"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "292493284",
+                        "value" : "Wearing different sports bra"
                       } ]
                     } ]
                   } ],
@@ -1372,194 +1378,6 @@
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0056.1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "CLUSTER",
-          "occurrences" : "1..1",
-          "nodeId" : "at0018.2",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "items",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "occurrences" : "1..1",
-              "nodeId" : "at0019.2",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_CODED_TEXT",
-                  "occurrences" : "1..1",
-                  "defaultValue" : {
-                    "defining_code" : {
-                      "terminology_id" : {
-                        "value" : "local_terms",
-                        "@type" : "TERMINOLOGY_ID"
-                      },
-                      "code_string" : "342452",
-                      "@type" : "CODE_PHRASE"
-                    },
-                    "value" : "Lying on side",
-                    "@type" : "DV_CODED_TEXT"
-                  },
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "defining_code",
-                    "children" : [ {
-                      "@type" : "C_TERMINOLOGY_CODE",
-                      "rmTypeName" : "TERMINOLOGY_CODE",
-                      "occurrences" : "0..1",
-                      "terminologyId" : {
-                        "value" : "local_terms"
-                      },
-                      "constraint" : [ ],
-                      "selectedTerminologies" : [ "local_terms" ],
-                      "includedExternalTerminologyCodes" : [ {
-                        "terminologyId" : "local_terms",
-                        "code" : "342452",
-                        "value" : "Lying on side"
-                      } ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "occurrences" : "1..1",
-              "nodeId" : "at0017.2",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_CODED_TEXT",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "defining_code",
-                    "children" : [ {
-                      "@type" : "C_TERMINOLOGY_CODE",
-                      "rmTypeName" : "TERMINOLOGY_CODE",
-                      "occurrences" : "1..1",
-                      "terminologyId" : {
-                        "value" : "local"
-                      },
-                      "constraint" : [ "ac0.8" ],
-                      "selectedTerminologies" : [ ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
-              "nodeId" : "at0056.2",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "CLUSTER",
-          "occurrences" : "1..1",
-          "nodeId" : "at0018.3",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "items",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "occurrences" : "1..1",
-              "nodeId" : "at0019.3",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_CODED_TEXT",
-                  "occurrences" : "1..1",
-                  "defaultValue" : {
-                    "defining_code" : {
-                      "terminology_id" : {
-                        "value" : "local_terms",
-                        "@type" : "TERMINOLOGY_ID"
-                      },
-                      "code_string" : "6643545",
-                      "@type" : "CODE_PHRASE"
-                    },
-                    "value" : "Wearing different support bra",
-                    "@type" : "DV_CODED_TEXT"
-                  },
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "defining_code",
-                    "children" : [ {
-                      "@type" : "C_TERMINOLOGY_CODE",
-                      "rmTypeName" : "TERMINOLOGY_CODE",
-                      "occurrences" : "0..1",
-                      "terminologyId" : {
-                        "value" : "local_terms"
-                      },
-                      "constraint" : [ ],
-                      "selectedTerminologies" : [ "local_terms" ],
-                      "includedExternalTerminologyCodes" : [ {
-                        "terminologyId" : "local_terms",
-                        "code" : "6643545",
-                        "value" : "Wearing different support bra"
-                      } ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "occurrences" : "1..1",
-              "nodeId" : "at0017.3",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_CODED_TEXT",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "defining_code",
-                    "children" : [ {
-                      "@type" : "C_TERMINOLOGY_CODE",
-                      "rmTypeName" : "TERMINOLOGY_CODE",
-                      "occurrences" : "1..1",
-                      "terminologyId" : {
-                        "value" : "local"
-                      },
-                      "constraint" : [ "ac0.9" ],
-                      "selectedTerminologies" : [ ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
-              "nodeId" : "at0056.3",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -1742,34 +1560,10 @@
             "code" : "ac0.6",
             "description" : ""
           },
-          "at0018.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0018",
-            "text" : "*Modifying factor(en) (2)",
-            "description" : "*Detail about how a specific factor effects the identified symptom or sign during this episode.(en)"
-          },
-          "at0018.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0018",
-            "text" : "*Modifying factor(en) (3)",
-            "description" : "*Detail about how a specific factor effects the identified symptom or sign during this episode.(en)"
-          },
           "ac0.7" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.7",
-            "description" : ""
-          },
-          "ac0.8" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.8",
-            "description" : ""
-          },
-          "ac0.9" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.9",
             "description" : ""
           }
         },
@@ -1798,48 +1592,10 @@
             "code" : "ac0.6",
             "description" : ""
           },
-          "at0018.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0018.2",
-            "text" : "Modifying factor (2)",
-            "description" : "Detail about how a specific factor effects the identified symptom or sign during this episode."
-          },
-          "at0018.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0018.3",
-            "text" : "Modifying factor (3)",
-            "description" : "Detail about how a specific factor effects the identified symptom or sign during this episode."
-          },
-          "at0152.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0152.1",
-            "text" : "When did the pain first start?",
-            "description" : "The onset for this episode of the symptom or sign.",
-            "comment" : "While partial dates are permitted, the exact date and time of onset can be recorded, if appropriate. If this symptom or sign is experienced for the first time or is a re-occurrence, this date is used to represent the onset of this episode. If this symptom or sign is ongoing, this data element may be redundant if it has been recorded previously."
-          },
-          "at0003.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003.1",
-            "text" : "Is the pain cyclical with menstruation",
-            "description" : "Narrative description about the pattern of the symptom or sign during this episode.",
-            "comment" : "For example: pain could be described as constant or intermittent."
-          },
           "ac0.7" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
             "code" : "ac0.7",
-            "description" : ""
-          },
-          "ac0.8" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.8",
-            "description" : ""
-          },
-          "ac0.9" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.9",
             "description" : ""
           }
         },
@@ -1868,34 +1624,10 @@
             "code" : "ac0.6",
             "description" : ""
           },
-          "at0018.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0018",
-            "text" : "Einflussfaktor (2)",
-            "description" : "Nähere Informationen zur Art und Weise der Beeinflussung des identifizierten Symptoms/Krankheitsanzeichens durch einen bestimmten Faktor während dieser Episode."
-          },
-          "at0018.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0018",
-            "text" : "Einflussfaktor (3)",
-            "description" : "Nähere Informationen zur Art und Weise der Beeinflussung des identifizierten Symptoms/Krankheitsanzeichens durch einen bestimmten Faktor während dieser Episode."
-          },
           "ac0.7" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.7",
-            "description" : ""
-          },
-          "ac0.8" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.8",
-            "description" : ""
-          },
-          "ac0.9" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.9",
             "description" : ""
           }
         },
@@ -1924,34 +1656,10 @@
             "code" : "ac0.6",
             "description" : ""
           },
-          "at0018.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0018",
-            "text" : "Modifiserende faktor (2)",
-            "description" : "Detaljer om hvordan en spesifikk faktor påvirker det identifiserte symptomet eller sykdomstegnet i løpet av denne episoden."
-          },
-          "at0018.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0018",
-            "text" : "Modifiserende faktor (3)",
-            "description" : "Detaljer om hvordan en spesifikk faktor påvirker det identifiserte symptomet eller sykdomstegnet i løpet av denne episoden."
-          },
           "ac0.7" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.7",
-            "description" : ""
-          },
-          "ac0.8" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.8",
-            "description" : ""
-          },
-          "ac0.9" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.9",
             "description" : ""
           }
         },
@@ -1980,34 +1688,10 @@
             "code" : "ac0.6",
             "description" : ""
           },
-          "at0018.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0018",
-            "text" : "Vaikuttajan kerroin (2)",
-            "description" : "Detail about how a specific factor effects the identified symptom or sign during this episode.(en)"
-          },
-          "at0018.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0018",
-            "text" : "Vaikuttajan kerroin (3)",
-            "description" : "Detail about how a specific factor effects the identified symptom or sign during this episode.(en)"
-          },
           "ac0.7" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.7",
-            "description" : ""
-          },
-          "ac0.8" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.8",
-            "description" : ""
-          },
-          "ac0.9" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.9",
             "description" : ""
           }
         },
@@ -2036,34 +1720,10 @@
             "code" : "ac0.6",
             "description" : ""
           },
-          "at0018.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0018",
-            "text" : "Påverkande faktor (2)",
-            "description" : "Detalj om en specifik faktor som påverkar det identifierade symtomet eller tecknet under denna episod."
-          },
-          "at0018.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0018",
-            "text" : "Påverkande faktor (3)",
-            "description" : "Detalj om en specifik faktor som påverkar det identifierade symtomet eller tecknet under denna episod."
-          },
           "ac0.7" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.7",
-            "description" : ""
-          },
-          "ac0.8" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.8",
-            "description" : ""
-          },
-          "ac0.9" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.9",
             "description" : ""
           }
         },
@@ -2092,34 +1752,10 @@
             "code" : "ac0.6",
             "description" : ""
           },
-          "at0018.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0018",
-            "text" : "Fator modificador (2)",
-            "description" : "Detalhe sobre como um fator específico afeta o sintoma ou sinal identificado durante este episódio."
-          },
-          "at0018.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0018",
-            "text" : "Fator modificador (3)",
-            "description" : "Detalhe sobre como um fator específico afeta o sintoma ou sinal identificado durante este episódio."
-          },
           "ac0.7" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.7",
-            "description" : ""
-          },
-          "ac0.8" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.8",
-            "description" : ""
-          },
-          "ac0.9" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.9",
             "description" : ""
           }
         },
@@ -2148,34 +1784,10 @@
             "code" : "ac0.6",
             "description" : ""
           },
-          "at0018.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0018",
-            "text" : "*Modifying factor(en) (2)",
-            "description" : "*Detail about how a specific factor effects the identified symptom or sign during this episode.(en)"
-          },
-          "at0018.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0018",
-            "text" : "*Modifying factor(en) (3)",
-            "description" : "*Detail about how a specific factor effects the identified symptom or sign during this episode.(en)"
-          },
           "ac0.7" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.7",
-            "description" : ""
-          },
-          "ac0.8" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.8",
-            "description" : ""
-          },
-          "ac0.9" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.9",
             "description" : ""
           }
         }
@@ -2717,13 +2329,6 @@
             "text" : "(Synthesized)",
             "code" : "ac0.4",
             "description" : ""
-          },
-          "at0001.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001.1",
-            "text" : "Where is the pain located?",
-            "description" : "Identification of a single physical site either on, or within, the human body.",
-            "comment" : "This data element is the only mandated data point in this archetype and should be used as the primary data point to record an anatomical location with a commonly used name. It is strongly recommended that 'Body site name' be recorded as specifically as is anatomically possible. For example: record 'upper eyelid' rather than recording 'eyelid' with 'upper' as a qualifier; 'fifth rib' rather than 'rib' with a numeric qualifier. Use the other data elements for laterality, aspect, region and anatomical line to provide more detail.\r\n\r\nThis data element should be coded with a terminology capable of triggering decision support, where possible - an appropriate termset for use here could comprise individual concepts or a list of precoordinated terms. Free text should be used only if there is no appropriate terminology available.\r\n\r\nIf body site name is already identified in the parent archetype, then this data element may be redundant. Alternatively, a use case has been identified where the value may be duplicated into this element to support semantic querying using this archetype, rather than the data element within the parent."
           }
         },
         "nb" : {
