@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.6.0",
+      "sem_ver" : "0.6.1",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "4424a4acb85e62b148ee351ac8c10fb3",
+      "MD5-CAM-1.0.1" : "e5946fc455b8c3d8cb6ee9af60487e3b",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -978,7 +978,6 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "occurrences" : "1..1",
           "nodeId" : "at0152.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -1218,7 +1217,6 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "occurrences" : "1..1",
           "nodeId" : "at0180.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -1304,15 +1302,13 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "CLUSTER",
-          "occurrences" : "1..1",
-          "nodeId" : "at0165.1",
+          "nodeId" : "at0165",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "items",
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
-              "occurrences" : "1..1",
               "nodeId" : "at0170.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -1335,12 +1331,16 @@
                       "selectedTerminologies" : [ "local_terms" ],
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "local_terms",
-                        "code" : "34235",
-                        "value" : "Yes - Lump is due to trauma"
+                        "code" : "4238723897",
+                        "value" : "Trauma"
                       }, {
                         "terminologyId" : "local_terms",
-                        "code" : "543534",
-                        "value" : "No - Lump is NOT due to trauma"
+                        "code" : "3454534",
+                        "value" : "Menopause"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "40294343",
+                        "value" : "Infection"
                       } ]
                     } ]
                   } ],
@@ -1353,13 +1353,16 @@
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0171.1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "nodeId" : "at0185.1",
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_DURATION",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             } ]
           } ],
@@ -1513,20 +1516,6 @@
           }
         },
         "en" : {
-          "at0152.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0152.1",
-            "text" : "When did you first notice the lump?",
-            "description" : "The onset for this episode of the symptom or sign.",
-            "comment" : "While partial dates are permitted, the exact date and time of onset can be recorded, if appropriate. If this symptom or sign is experienced for the first time or is a re-occurrence, this date is used to represent the onset of this episode. If this symptom or sign is ongoing, this data element may be redundant if it has been recorded previously."
-          },
-          "at0180.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0180.1",
-            "text" : "Has there been any change in Size?",
-            "description" : "Description progression of the symptom or sign at the time of reporting.",
-            "comment" : "Occurrences of this data element are set to 0..* to allow multiple types of progression to be separated out in a template if desired - for example, severity or frequency."
-          },
           "ac0.3" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
@@ -1544,13 +1533,6 @@
             "text" : "(Synthesized)",
             "code" : "ac0.5",
             "description" : ""
-          },
-          "at0170.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0170.1",
-            "text" : "Is the Lump due to trauma?",
-            "description" : "Name of the health event, symptom, reported sign or other factor.",
-            "comment" : "For example: onset of another symptom; lying down; or walking up a hill."
           }
         },
         "de" : {
@@ -1989,56 +1971,6 @@
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "nodeId" : "at0001.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "1..1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "defining_code",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "TERMINOLOGY_CODE",
-                  "occurrences" : "0..1",
-                  "terminologyId" : {
-                    "value" : "local_terms"
-                  },
-                  "constraint" : [ ],
-                  "selectedTerminologies" : [ "local_terms" ],
-                  "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "local_terms",
-                    "code" : "123",
-                    "value" : "Left breast"
-                  }, {
-                    "terminologyId" : "local_terms",
-                    "code" : "234",
-                    "value" : "Right Breast"
-                  }, {
-                    "terminologyId" : "local_terms",
-                    "code" : "345",
-                    "value" : "Left axilla"
-                  }, {
-                    "terminologyId" : "local_terms",
-                    "code" : "456",
-                    "value" : "Right axilla"
-                  }, {
-                    "terminologyId" : "local_terms",
-                    "code" : "567",
-                    "value" : "Both Breasts"
-                  } ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
           "occurrences" : "0..0",
           "nodeId" : "at0065.1",
           "attributes" : [ ],
@@ -2191,13 +2123,6 @@
           }
         },
         "en" : {
-          "at0001.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001.1",
-            "text" : "Where is the lump located?",
-            "description" : "Identification of a single physical site either on, or within, the human body.",
-            "comment" : "This data element is the only mandated data point in this archetype and should be used as the primary data point to record an anatomical location with a commonly used name. It is strongly recommended that 'Body site name' be recorded as specifically as is anatomically possible. For example: record 'upper eyelid' rather than recording 'eyelid' with 'upper' as a qualifier; 'fifth rib' rather than 'rib' with a numeric qualifier. Use the other data elements for laterality, aspect, region and anatomical line to provide more detail.\r\n\r\nThis data element should be coded with a terminology capable of triggering decision support, where possible - an appropriate termset for use here could comprise individual concepts or a list of precoordinated terms. Free text should be used only if there is no appropriate terminology available.\r\n\r\nIf body site name is already identified in the parent archetype, then this data element may be redundant. Alternatively, a use case has been identified where the value may be duplicated into this element to support semantic querying using this archetype, rather than the data element within the parent."
-          },
           "ac0.2" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
