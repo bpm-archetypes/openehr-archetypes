@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.3.1",
+      "sem_ver" : "0.3.2",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "ce1b8b62afca3a71bb4435e01cb0e752",
+      "MD5-CAM-1.0.1" : "15ee2ed172548a53df70c41e24642b47",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -976,7 +976,6 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "occurrences" : "1..1",
           "nodeId" : "at0152.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -1239,87 +1238,15 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "local_terms",
                     "code" : "438327",
-                    "value" : "Yes - Lesion has been changing size"
+                    "value" : "Stable"
                   }, {
                     "terminologyId" : "local_terms",
                     "code" : "4924329",
-                    "value" : "No - Lesion has NOT been changing size"
-                  } ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "1..1",
-          "nodeId" : "at0180.2",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "defining_code",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "TERMINOLOGY_CODE",
-                  "occurrences" : "1..1",
-                  "terminologyId" : {
-                    "value" : "local_terms"
-                  },
-                  "constraint" : [ ],
-                  "selectedTerminologies" : [ "local_terms" ],
-                  "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "local_terms",
-                    "code" : "4234",
-                    "value" : "Yes - Shape has been changing"
+                    "value" : "Changing size, shape or colour"
                   }, {
                     "terminologyId" : "local_terms",
-                    "code" : "439249",
-                    "value" : "No - Shape has NOT been changing"
-                  } ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "1..1",
-          "nodeId" : "at0180.3",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "defining_code",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "TERMINOLOGY_CODE",
-                  "occurrences" : "1..1",
-                  "terminologyId" : {
-                    "value" : "local_terms"
-                  },
-                  "constraint" : [ ],
-                  "selectedTerminologies" : [ "local_terms" ],
-                  "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "local_terms",
-                    "code" : "423432",
-                    "value" : "Yes - Lesion is changing in colour"
-                  }, {
-                    "terminologyId" : "local_terms",
-                    "code" : "9423832",
-                    "value" : "No - Lesion is NOT changing in colour"
+                    "code" : "2432535",
+                    "value" : "Improving"
                   } ]
                 } ]
               } ],
@@ -1476,16 +1403,7 @@
           "rmTypeName" : "ELEMENT",
           "occurrences" : "0..0",
           "nodeId" : "at0161.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_DATE_TIME",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
+          "attributes" : [ ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
@@ -1528,7 +1446,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "CLUSTER",
-          "occurrences" : "1..1",
+          "occurrences" : "0..1",
           "nodeId" : "at0147.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -1569,30 +1487,9 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.5",
             "description" : ""
-          },
-          "at0180.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0180",
-            "text" : "*Progression(en) (2)",
-            "description" : "*Description progression of the symptom or sign at the time of reporting.(en)",
-            "comment" : "*Occurrences of this data element are set to 0..* to allow multiple types of progression to be separated out in a template if desired - for example, severity or frequency.(en)"
-          },
-          "at0180.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0180",
-            "text" : "*Progression(en) (3)",
-            "description" : "*Description progression of the symptom or sign at the time of reporting.(en)",
-            "comment" : "*Occurrences of this data element are set to 0..* to allow multiple types of progression to be separated out in a template if desired - for example, severity or frequency.(en)"
           }
         },
         "en" : {
-          "at0180.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0180.1",
-            "text" : "Has the lesion been changing in size?",
-            "description" : "Description progression of the symptom or sign at the time of reporting.",
-            "comment" : "Occurrences of this data element are set to 0..* to allow multiple types of progression to be separated out in a template if desired - for example, severity or frequency."
-          },
           "ac0.3" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
@@ -1610,20 +1507,6 @@
             "text" : "(Synthesized)",
             "code" : "ac0.5",
             "description" : ""
-          },
-          "at0180.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0180.2",
-            "text" : "Has the lesion been changing in shape?",
-            "description" : "Description progression of the symptom or sign at the time of reporting.",
-            "comment" : "Occurrences of this data element are set to 0..* to allow multiple types of progression to be separated out in a template if desired - for example, severity or frequency."
-          },
-          "at0180.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0180.3",
-            "text" : "Has the lesion been changing in colour?",
-            "description" : "Description progression of the symptom or sign at the time of reporting.",
-            "comment" : "Occurrences of this data element are set to 0..* to allow multiple types of progression to be separated out in a template if desired - for example, severity or frequency."
           }
         },
         "de" : {
@@ -1644,20 +1527,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.5",
             "description" : ""
-          },
-          "at0180.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0180",
-            "text" : "Verlauf (2)",
-            "description" : "Beschreibung des Verlaufs des Symptoms/Krankheitsanzeichens zum Zeitpunkt der Meldung.",
-            "comment" : "Das Auftreten dieses Datenelements ist auf 0...* gesetzt, um bei Bedarf mehrere Arten von Verläufen in einem Template voneinander zu trennen - z.B. Schweregrad oder Häufigkeit."
-          },
-          "at0180.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0180",
-            "text" : "Verlauf (3)",
-            "description" : "Beschreibung des Verlaufs des Symptoms/Krankheitsanzeichens zum Zeitpunkt der Meldung.",
-            "comment" : "Das Auftreten dieses Datenelements ist auf 0...* gesetzt, um bei Bedarf mehrere Arten von Verläufen in einem Template voneinander zu trennen - z.B. Schweregrad oder Häufigkeit."
           }
         },
         "nb" : {
@@ -1678,20 +1547,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.5",
             "description" : ""
-          },
-          "at0180.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0180",
-            "text" : "Progresjon (2)",
-            "description" : "Beskrivelse av symptomets eller sykdomstegnets progresjon ved rapporteringstidspunktet.",
-            "comment" : "Dataelementet er definert som 0..* for å tillate at flere typer progresjon trekkes ut i et templat om ønsket. For eksempel: alvorlighet eller frekvens."
-          },
-          "at0180.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0180",
-            "text" : "Progresjon (3)",
-            "description" : "Beskrivelse av symptomets eller sykdomstegnets progresjon ved rapporteringstidspunktet.",
-            "comment" : "Dataelementet er definert som 0..* for å tillate at flere typer progresjon trekkes ut i et templat om ønsket. For eksempel: alvorlighet eller frekvens."
           }
         },
         "fi" : {
@@ -1712,20 +1567,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.5",
             "description" : ""
-          },
-          "at0180.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0180",
-            "text" : "Progressio (2)",
-            "description" : "Description progression of the symptom or sign at the time of reporting.(en)",
-            "comment" : "*Occurrences of this data element are set to 0..* to allow multiple types of progression to be separated out in a template if desired - for example, severity or frequency.(en)"
-          },
-          "at0180.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0180",
-            "text" : "Progressio (3)",
-            "description" : "Description progression of the symptom or sign at the time of reporting.(en)",
-            "comment" : "*Occurrences of this data element are set to 0..* to allow multiple types of progression to be separated out in a template if desired - for example, severity or frequency.(en)"
           }
         },
         "sv" : {
@@ -1746,20 +1587,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.5",
             "description" : ""
-          },
-          "at0180.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0180",
-            "text" : "Progression (2)",
-            "description" : "Beskrivning av progressionen av symtomet eller tecknet vid rapporteringstidpunkten.",
-            "comment" : "Förekomster i det här fältet är inställda på 0.. * för att tillåta flera typer av progression att separeras i en mall om så önskas, exempelvis svårighetsgrad eller frekvens."
-          },
-          "at0180.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0180",
-            "text" : "Progression (3)",
-            "description" : "Beskrivning av progressionen av symtomet eller tecknet vid rapporteringstidpunkten.",
-            "comment" : "Förekomster i det här fältet är inställda på 0.. * för att tillåta flera typer av progression att separeras i en mall om så önskas, exempelvis svårighetsgrad eller frekvens."
           }
         },
         "pt-br" : {
@@ -1780,20 +1607,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.5",
             "description" : ""
-          },
-          "at0180.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0180",
-            "text" : "Progressão (2)",
-            "description" : "Descrição da progressão do sintoma ou sinal no momento do relato.",
-            "comment" : "Ocorrências deste elemento de dado são setadas para 0..* para permitir múltiplos tipos de progressão para serem separadas no template se desejado - por exemplo, gravidade ou frequência."
-          },
-          "at0180.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0180",
-            "text" : "Progressão (3)",
-            "description" : "Descrição da progressão do sintoma ou sinal no momento do relato.",
-            "comment" : "Ocorrências deste elemento de dado são setadas para 0..* para permitir múltiplos tipos de progressão para serem separadas no template se desejado - por exemplo, gravidade ou frequência."
           }
         },
         "nl" : {
@@ -1814,18 +1627,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.5",
             "description" : ""
-          },
-          "at0180.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0180",
-            "text" : "Beloop (2)",
-            "description" : "Beloop van het symptoom op het moment van verslaglegging."
-          },
-          "at0180.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0180",
-            "text" : "Beloop (3)",
-            "description" : "Beloop van het symptoom op het moment van verslaglegging."
           }
         }
       },
