@@ -21,7 +21,7 @@
       "custodian_namespace" : "",
       "sem_ver" : "0.5.2",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "928cc49420aa29765dead5f1e31396e1",
+      "MD5-CAM-1.0.1" : "9693a4b0ad1227674e48039963ae07c2",
       "PARENT:MD5-CAM-1.0.1" : "A198E225F67F0E4A49653AC9C6EBCC0A"
     },
     "details" : {
@@ -527,6 +527,28 @@
               "nodeId" : "at0002.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "name",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "local"
+                      },
+                      "constraint" : [ "ac0.30" ],
+                      "selectedTerminologies" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "value",
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
@@ -549,28 +571,6 @@
                         "code" : "373572006",
                         "value" : "Clinical finding absent"
                       } ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
-              }, {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "name",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_CODED_TEXT",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "defining_code",
-                    "children" : [ {
-                      "@type" : "C_TERMINOLOGY_CODE",
-                      "rmTypeName" : "TERMINOLOGY_CODE",
-                      "occurrences" : "1..1",
-                      "terminologyId" : {
-                        "value" : "local"
-                      },
-                      "constraint" : [ "ac0.30" ],
-                      "selectedTerminologies" : [ ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -1133,6 +1133,16 @@
           "misuse" : "*Not to be used to record symptoms as described by the individual - use the CLUSTER.symptom archetype, usually within the OBSERVATION.story archetype.\r\n\r\nNot to be used to record examination findings - use the family of examination-related CLUSTER archetypes, usually nested within the OBSERVATION.exam archetype.\r\n\r\nNot to be used to record laboratory test results or related diagnoses, for example pathological diagnoses - use an appropriate archetype from the laboratory family of OBSERVATION archetypes.\r\n\r\nNot to be used to record imaging examination results or imaging diagnoses - use an appropriate archetype from the imaging family of OBSERVATION archetypes.\r\n\r\nNot to be used to record 'Differential Diagnoses' - use the EVALUATION.differential_diagnosis archetype.\r\n\r\nNot to be used to record 'Reason for Encounter' or 'Presenting Complaint' - use the EVALUATION.reason_for_encounter archetype.\r\n\r\nNot to be used to record procedures - use the ACTION.procedure archetype.\r\n\r\nNot to be used to record details about pregnancy - use the EVALUATION.pregnancy_bf_status and EVALUATION.pregnancy and related archetypes.\r\n\r\nNot to be used to record statements about health risk or potential problems - use the EVALUATION.health_risk archetype.\r\n\r\nNot to be used to record statements about adverse reactions, allergies or intolerances - use the EVALUATION.adverse_reaction archetype.\r\n\r\nNot to be used for the explicit recording of an absence (or negative presence) of a problem or diagnosis, for example ‘No known problem or diagnoses’ or ‘No known diabetes’. Use the EVALUATION.exclusion-problem_diagnosis archetype to express a positive statement about exclusion of a problem or diagnosis.(en)",
           "originalResourceUri" : { },
           "otherDetails" : { }
+        }
+      }
+    },
+    "annotations" : {
+      "@type" : "RESOURCE_ANNOTATIONS",
+      "documentation" : {
+        "en" : {
+          "/protocol[at0032]/items[at0070]" : {
+            "notvisible" : "See decision log"
+          }
         }
       }
     },
