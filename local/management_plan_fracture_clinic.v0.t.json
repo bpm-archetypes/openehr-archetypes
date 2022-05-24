@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.1",
+      "sem_ver" : "1.1.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "4133bfe5358359136ca4e4c2ddd2cfd0",
+      "MD5-CAM-1.0.1" : "8fe9c87cedd3298e28435ac2aa5973a7",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -498,32 +498,32 @@
                       "rmTypeName" : "TERMINOLOGY_CODE",
                       "occurrences" : "0..1",
                       "terminologyId" : {
-                        "value" : "SNOMED-CT"
+                        "value" : "http://snomed.info/sct/11000261105"
                       },
                       "constraint" : [ ],
-                      "selectedTerminologies" : [ "SNOMED-CT" ],
+                      "selectedTerminologies" : [ "http://snomed.info/sct/11000261105" ],
                       "includedExternalTerminologyCodes" : [ {
-                        "terminologyId" : "SNOMED-CT",
+                        "terminologyId" : "http://snomed.info/sct/11000261105",
                         "code" : "1234",
                         "value" : "Book for Open Reduction Internal Fixation"
                       }, {
-                        "terminologyId" : "SNOMED-CT",
+                        "terminologyId" : "http://snomed.info/sct/11000261105",
                         "code" : "2345",
                         "value" : "Apply Fiberglass plaster"
                       }, {
-                        "terminologyId" : "SNOMED-CT",
+                        "terminologyId" : "http://snomed.info/sct/11000261105",
                         "code" : "3456",
                         "value" : "Review back in clinic in 6 weeks"
                       }, {
-                        "terminologyId" : "SNOMED-CT",
+                        "terminologyId" : "http://snomed.info/sct/11000261105",
                         "code" : "4567",
                         "value" : "Review back in clinic in 2 weeks"
                       }, {
-                        "terminologyId" : "SNOMED-CT",
+                        "terminologyId" : "http://snomed.info/sct/11000261105",
                         "code" : "5678",
                         "value" : "Remove Fiberglass plaster"
                       }, {
-                        "terminologyId" : "SNOMED-CT",
+                        "terminologyId" : "http://snomed.info/sct/11000261105",
                         "code" : "6789",
                         "value" : "Refer back to GP for routine care"
                       } ]
