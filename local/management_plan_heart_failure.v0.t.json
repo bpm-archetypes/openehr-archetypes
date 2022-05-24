@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.1.0",
+      "sem_ver" : "1.2.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "c001824d85d8e97cbfda541e08882c29",
+      "MD5-CAM-1.0.1" : "03e1dc5bbd8ff55094e23c77f8048b10",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -504,27 +504,27 @@
                       "selectedTerminologies" : [ "http://snomed.info/sct/11000261105" ],
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "http://snomed.info/sct/11000261105",
-                        "code" : "1234",
+                        "code" : "1341000261103",
                         "value" : "Admit to hospital"
                       }, {
                         "terminologyId" : "http://snomed.info/sct/11000261105",
-                        "code" : "2345",
+                        "code" : "1351000261101",
                         "value" : "Continue home monitoring"
                       }, {
                         "terminologyId" : "http://snomed.info/sct/11000261105",
-                        "code" : "3456",
+                        "code" : "1361000261104",
                         "value" : "Community Nurse home visit"
                       }, {
                         "terminologyId" : "http://snomed.info/sct/11000261105",
-                        "code" : "4567",
+                        "code" : "1371000261105",
                         "value" : "Discharge from pathway"
                       }, {
                         "terminologyId" : "http://snomed.info/sct/11000261105",
-                        "code" : "5678",
+                        "code" : "1381000261108",
                         "value" : "Book for specialist clinic"
                       }, {
                         "terminologyId" : "http://snomed.info/sct/11000261105",
-                        "code" : "6789",
+                        "code" : "1391000261106",
                         "value" : "Book for Echocardiogram"
                       } ]
                     } ]
