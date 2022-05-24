@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.1.0",
+      "sem_ver" : "1.2.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "8fe9c87cedd3298e28435ac2aa5973a7",
+      "MD5-CAM-1.0.1" : "3383f44608b78e3f3513d7d32653b064",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -504,27 +504,27 @@
                       "selectedTerminologies" : [ "http://snomed.info/sct/11000261105" ],
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "http://snomed.info/sct/11000261105",
-                        "code" : "1234",
+                        "code" : "641000261106",
                         "value" : "Book for Open Reduction Internal Fixation"
                       }, {
                         "terminologyId" : "http://snomed.info/sct/11000261105",
-                        "code" : "2345",
+                        "code" : "1291000261101",
                         "value" : "Apply Fiberglass plaster"
                       }, {
                         "terminologyId" : "http://snomed.info/sct/11000261105",
-                        "code" : "3456",
+                        "code" : "1301000261100",
                         "value" : "Review back in clinic in 6 weeks"
                       }, {
                         "terminologyId" : "http://snomed.info/sct/11000261105",
-                        "code" : "4567",
+                        "code" : "1311000261102",
                         "value" : "Review back in clinic in 2 weeks"
                       }, {
                         "terminologyId" : "http://snomed.info/sct/11000261105",
-                        "code" : "5678",
+                        "code" : "1321000261109",
                         "value" : "Remove Fiberglass plaster"
                       }, {
                         "terminologyId" : "http://snomed.info/sct/11000261105",
-                        "code" : "6789",
+                        "code" : "1331000261107",
                         "value" : "Refer back to GP for routine care"
                       } ]
                     } ]
