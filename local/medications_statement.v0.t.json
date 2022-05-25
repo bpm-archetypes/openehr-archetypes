@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "3.0.0",
+      "sem_ver" : "3.1.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "d0f7902c7dcfbda6f823e3032259fc82",
+      "MD5-CAM-1.0.1" : "9de7b9b5246d392eb55c179e5ae03997",
       "PARENT:MD5-CAM-1.0.1" : "85c0a1abfd76a31619abf922a214968c"
     },
     "details" : {
@@ -3174,7 +3174,15 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "en" : { },
+        "en" : {
+          "at0144.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0144.1",
+            "text" : "Dose",
+            "description" : "The value of the amount of medication administered at one time, as a real number, or range of real numbers, and associated with the Dose unit.",
+            "comment" : "For example: 1, 1.5, 0.125 or 1-2, 12.5-20.5"
+          }
+        },
         "nb" : { },
         "pt-br" : { },
         "de" : { },
