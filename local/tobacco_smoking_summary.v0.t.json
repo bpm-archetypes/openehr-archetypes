@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.5.2",
+      "sem_ver" : "0.5.3",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "03e6ee2512c6536e10f1993628755f6b",
+      "MD5-CAM-1.0.1" : "f80ce7e5778215bcd11ed4817dd48bdf",
       "PARENT:MD5-CAM-1.0.1" : "7efc3d1a56da6d3e837ce38960965a36"
     },
     "details" : {
@@ -318,10 +318,23 @@
                       "rmTypeName" : "TERMINOLOGY_CODE",
                       "occurrences" : "1..1",
                       "terminologyId" : {
-                        "value" : "local"
+                        "value" : "SNOMED-CT"
                       },
-                      "constraint" : [ "ac0.2" ],
-                      "selectedTerminologies" : [ ]
+                      "constraint" : [ ],
+                      "selectedTerminologies" : [ "SNOMED-CT" ],
+                      "includedExternalTerminologyCodes" : [ {
+                        "terminologyId" : "SNOMED-CT",
+                        "code" : "266919005",
+                        "value" : "Never Smoked"
+                      }, {
+                        "terminologyId" : "SNOMED-CT",
+                        "code" : "77176002",
+                        "value" : "Current Smoker"
+                      }, {
+                        "terminologyId" : "SNOMED-CT",
+                        "code" : "8517006",
+                        "value" : "Former Smoker"
+                      } ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -1029,12 +1042,6 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : {
-          "ac0.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.2",
-            "description" : ""
-          },
           "at0015.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0015.1",
@@ -1063,29 +1070,9 @@
             "description" : "Statement about current smoking behaviour for all types of tobacco."
           }
         },
-        "nb" : {
-          "ac0.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.2",
-            "description" : ""
-          }
-        },
-        "sv" : {
-          "ac0.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.2",
-            "description" : ""
-          }
-        },
+        "nb" : { },
+        "sv" : { },
         "de" : {
-          "ac0.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.2",
-            "description" : ""
-          },
           "at0015.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0015.1",
@@ -1114,21 +1101,8 @@
             "description" : "Aussage zum aktuellen Rauchverhalten bei allen Tabakarten."
           }
         },
-        "fr" : {
-          "ac0.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.2",
-            "description" : ""
-          }
-        },
+        "fr" : { },
         "nl" : {
-          "ac0.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.2",
-            "description" : ""
-          },
           "at0015.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0015.1",
@@ -1170,6 +1144,21 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.2",
           "members" : [ "at0006", "at0003", "at0005" ]
+        },
+        "ac0.4" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.4",
+          "members" : [ "at0006", "at0003", "at0005" ]
+        },
+        "ac0.5" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.5",
+          "members" : [ "ac0.3" ]
+        },
+        "ac0.6" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.6",
+          "members" : [ "ac0.3" ]
         }
       }
     },
