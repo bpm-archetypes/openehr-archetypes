@@ -57,7 +57,7 @@ The intent of this COMPOSITION is for use as a persistent summary, however it ha
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"913c2dff26074038458f4b1e50962b5f">
+		["MD5-CAM-1.0.1"] = <"383245026a00ca012cbbe3ff6bbcf591">
 		["build_uid"] = <"31752f6d-a53f-4bb6-9af7-4bb983dd7b46">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -67,7 +67,7 @@ definition
 		category matches {
 			DV_CODED_TEXT matches {
 				defining_code matches {
-					[openehr::431]
+					[openehr::433]
 				}
 			}
 		}
