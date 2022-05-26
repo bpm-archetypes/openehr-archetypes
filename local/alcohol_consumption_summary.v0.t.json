@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.7.2",
+      "sem_ver" : "0.7.3",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "2a31174abd5debeed8c3c6a22ffa88f0",
+      "MD5-CAM-1.0.1" : "7b73f2954d0632f5b76be46ba422a6b7",
       "PARENT:MD5-CAM-1.0.1" : "7efc3d1a56da6d3e837ce38960965a36"
     },
     "details" : {
@@ -320,10 +320,23 @@
                       "rmTypeName" : "TERMINOLOGY_CODE",
                       "occurrences" : "1..1",
                       "terminologyId" : {
-                        "value" : "local"
+                        "value" : "SNOMED-CT"
                       },
-                      "constraint" : [ "ac0.2" ],
-                      "selectedTerminologies" : [ ]
+                      "constraint" : [ ],
+                      "selectedTerminologies" : [ "SNOMED-CT" ],
+                      "includedExternalTerminologyCodes" : [ {
+                        "terminologyId" : "SNOMED-CT",
+                        "code" : "219006",
+                        "value" : "Current Drinker"
+                      }, {
+                        "terminologyId" : "SNOMED-CT",
+                        "code" : "82581004",
+                        "value" : "Former Drinker"
+                      }, {
+                        "terminologyId" : "SNOMED-CT",
+                        "code" : "783261004",
+                        "value" : "Lifetime Non-Drinker"
+                      } ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -1103,12 +1116,6 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : {
-          "ac0.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.2",
-            "description" : ""
-          },
           "ac0.5" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
@@ -1136,12 +1143,6 @@
           }
         },
         "nb" : {
-          "ac0.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.2",
-            "description" : ""
-          },
           "ac0.5" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -1150,12 +1151,6 @@
           }
         },
         "sv" : {
-          "ac0.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.2",
-            "description" : ""
-          },
           "ac0.5" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -1164,12 +1159,6 @@
           }
         },
         "de" : {
-          "ac0.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.2",
-            "description" : ""
-          },
           "ac0.5" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -1191,12 +1180,6 @@
           }
         },
         "fr" : {
-          "ac0.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.2",
-            "description" : ""
-          },
           "ac0.5" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -1205,12 +1188,6 @@
           }
         },
         "nl" : {
-          "ac0.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.2",
-            "description" : ""
-          },
           "ac0.5" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -1259,6 +1236,21 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.5",
           "members" : [ "at0083", "at0084" ]
+        },
+        "ac0.7" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.7",
+          "members" : [ "at0003", "at0005", "at0006" ]
+        },
+        "ac0.8" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.8",
+          "members" : [ "ac0.6" ]
+        },
+        "ac0.9" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.9",
+          "members" : [ "ac0.6" ]
         }
       }
     },
