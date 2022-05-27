@@ -235,9 +235,10 @@ Niet te gebruiken voor het vastleggen van toediening van alcohol op andere wijze
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"CC297465A592B5BE0321B62E37D9E7EE">
+		["MD5-CAM-1.0.1"] = <"74d25f01e5c53c36cdee2b363c69411e">
 		["build_uid"] = <"fbe8337b-d5f5-4c8e-8986-beaba8eb82e8">
 		["revision"] = <"1.0.6">
+		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 	>
 
 definition
@@ -607,6 +608,7 @@ definition
 	}
 
 ontology
+	terminologies_available = <"SNOMED-CT", ...>
 	term_definitions = <
 		["en"] = <
 			items = <
@@ -2027,6 +2029,14 @@ ontology
 					text = <"Versterkte wijn">
 					description = <"Wijn met toegevoegde gedestileerde drank.">
 				>
+			>
+		>
+	>
+	term_binding = <
+		["SNOMED-CT"] = <
+			items = <
+				["at0000"] = <[SNOMED-CT::897148007]>
+				["at0023"] = <[SNOMED-CT::228958009]>
 			>
 		>
 	>
