@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "3.1.1",
+      "sem_ver" : "3.1.2",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "d86230c73b9544e458f167f82367b6d4",
+      "MD5-CAM-1.0.1" : "a6a9df466ce86bbae48c723ee023a6a1",
       "PARENT:MD5-CAM-1.0.1" : "c01367650b1fb954f21f1ce757e3fbd0"
     },
     "details" : {
@@ -513,6 +513,22 @@
           "misuse" : "Niet te gebruiken voor het vastleggen van gegevens over een medicatie opdracht, gebruik hiervoor INSTRUCTION.medication_order.\r\nNiet te gebruiken voor het vastleggen van gegevens over specifieke medicatie gerelateerde activiteiten, zoals toediening of afgifte, gebruik hiervoor ACTION.medication.",
           "originalResourceUri" : { },
           "otherDetails" : { }
+        }
+      }
+    },
+    "annotations" : {
+      "@type" : "RESOURCE_ANNOTATIONS",
+      "documentation" : {
+        "en" : {
+          "/data[at0001]/events[at0002.1]" : {
+            "validation" : "prohibited_if:medications.medication_list.exclusion_-_global.global_exclusion_of_medication_use.|code,787481004"
+          },
+          "/data[at0001]/events[at0002.1]/data[at0003]/items[at0018.1]" : {
+            "validation" : "validation"
+          },
+          "/data[at0001]/events[at0002.1]/data[at0003]/items[at0021.1]" : {
+            "validation" : "prohibited_if:medications.medication_list.medication_statement.*.status.|code,at0011"
+          }
         }
       }
     },
@@ -1051,6 +1067,16 @@
         }
       }
     },
+    "annotations" : {
+      "@type" : "RESOURCE_ANNOTATIONS",
+      "documentation" : {
+        "en" : {
+          "" : {
+            "validation" : "prohibited_if:medications.medication_list.medication_statement.*.timing.is_this_taken_daily.|code,at0003"
+          }
+        }
+      }
+    },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.timing_daily.v1",
     "differential" : true,
     "archetypeId" : {
@@ -1440,6 +1466,16 @@
           "copyright" : "© openEHR Foundation",
           "originalResourceUri" : { },
           "otherDetails" : { }
+        }
+      }
+    },
+    "annotations" : {
+      "@type" : "RESOURCE_ANNOTATIONS",
+      "documentation" : {
+        "en" : {
+          "" : {
+            "validation" : "prohibited_if:medications.medication_list.medication_statement.*.timing.is_this_taken_daily.|code,at0002"
+          }
         }
       }
     },
