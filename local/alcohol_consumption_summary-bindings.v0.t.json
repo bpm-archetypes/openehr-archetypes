@@ -21,8 +21,8 @@
       "custodian_namespace" : "",
       "sem_ver" : "6.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "0c8e4c91bacdfbcdf275edf69ba2ee5f",
-      "PARENT:MD5-CAM-1.0.1" : "dcaa4d0709dbbca0428969c24bf7a961"
+      "MD5-CAM-1.0.1" : "038f4b2e75d252e69b100470290a4d59",
+      "PARENT:MD5-CAM-1.0.1" : "7efc3d1a56da6d3e837ce38960965a36"
     },
     "details" : {
       "de" : {
@@ -155,7 +155,9 @@
       "ipAcknowledgements" : { },
       "references" : { },
       "conversionDetails" : { },
-      "otherDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "1f2656ba51e17b761343c8dd1351dc44"
+      },
       "details" : {
         "de" : {
           "@type" : "RESOURCE_DESCRIPTION_ITEM",
@@ -1234,12 +1236,6 @@
             "text" : "Quit date",
             "description" : "The date when the individual last ceased consuming alcohol of any type.",
             "comment" : "Can be a partial date, for example, only a year. This date could be used by decision support guidance to determine if the individual is at risk of relapse, for example in the first 12 months since quitting."
-          },
-          "at0000" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Alcohol consumption summary",
-            "description" : "Summary or persistent information about the typical alcohol consumption of an individual."
           }
         },
         "nb" : {
@@ -1254,12 +1250,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.0.2",
             "description" : ""
-          },
-          "at0000" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Alkoholanamnese",
-            "description" : "Sammendrag eller detaljer om et individs tidligere og nåværende bruk av alkohol."
           }
         },
         "sv" : {
@@ -1274,12 +1264,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.0.2",
             "description" : ""
-          },
-          "at0000" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Sammanfattning av konsumtion av alkohol",
-            "description" : "Sammanfattning eller beständig information om den enskilda personens typiska alkoholkonsumtion."
           }
         },
         "de" : {
@@ -1294,12 +1278,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.0.2",
             "description" : ""
-          },
-          "at0000" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Zusammenfassung des Alkoholkonsums",
-            "description" : "Zusammenfassende oder fortdauernde Informationen über den typischen Alkoholkonsum einer Person."
           }
         },
         "fr" : {
@@ -1314,12 +1292,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.0.2",
             "description" : ""
-          },
-          "at0000" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Résumé de la consommation d'alcool",
-            "description" : "Informations sommaires ou persistantes sur la consommation d'alcool typique d'un individu."
           }
         },
         "nl" : {
@@ -1334,12 +1306,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.0.2",
             "description" : ""
-          },
-          "at0000" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Alcohol consumptie overzicht",
-            "description" : "Overzicht van aanhoudende informatie over het typische alcoholgebruik van een individu."
           }
         }
       },
