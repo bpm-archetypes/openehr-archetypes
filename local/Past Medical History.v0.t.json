@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.5.3",
+      "sem_ver" : "0.5.4",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "861d1d4af0b2d1bec5756681ca719b28",
+      "MD5-CAM-1.0.1" : "7a0163f03c94da77ebaea4448deb359a",
       "PARENT:MD5-CAM-1.0.1" : "A198E225F67F0E4A49653AC9C6EBCC0A"
     },
     "details" : {
@@ -327,7 +327,15 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "en" : { },
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Past Medical History",
+            "description" : "Framework for consistent modelling of content within a template for a Problem list.",
+            "comment" : "Intended to be used within the COMPOSITION.problem_list."
+          }
+        },
         "pt-br" : { },
         "es-ar" : { },
         "de" : { }
@@ -527,28 +535,6 @@
               "nodeId" : "at0002.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "name",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_CODED_TEXT",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "defining_code",
-                    "children" : [ {
-                      "@type" : "C_TERMINOLOGY_CODE",
-                      "rmTypeName" : "TERMINOLOGY_CODE",
-                      "occurrences" : "1..1",
-                      "terminologyId" : {
-                        "value" : "local"
-                      },
-                      "constraint" : [ "ac0.30" ],
-                      "selectedTerminologies" : [ ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
-              }, {
-                "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "value",
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
@@ -571,6 +557,28 @@
                         "code" : "373572006",
                         "value" : "Clinical finding absent"
                       } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "name",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "local"
+                      },
+                      "constraint" : [ "ac0.34" ],
+                      "selectedTerminologies" : [ ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -602,10 +610,10 @@
             "text" : "Global exclusion of problems/diagnoses",
             "description" : "Overall statement of exclusion of all problems or diagnoses at the time of recording."
           },
-          "ac0.30" : {
+          "ac0.34" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.30",
+            "code" : "ac0.34",
             "description" : ""
           }
         },
@@ -616,10 +624,10 @@
             "text" : "Overordnet eksklusjon av problemer/diagnoser",
             "description" : "Overordnet eksklusjonsutsagn om alle problemer eller diagnoser ved registreringstidspunktet."
           },
-          "ac0.30" : {
+          "ac0.34" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.30",
+            "code" : "ac0.34",
             "description" : ""
           }
         },
@@ -630,10 +638,10 @@
             "text" : "Exclusão global de problemas / diagnósticos",
             "description" : "Declaração geral de exclusão de todos os problemas ou diagnósticos no momento da gravação."
           },
-          "ac0.30" : {
+          "ac0.34" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.30",
+            "code" : "ac0.34",
             "description" : ""
           }
         },
@@ -644,10 +652,10 @@
             "text" : "Allgemeiner Ausschluss von Problemen/Diagnosen",
             "description" : "Zur Dokumentation einer Gesamterklärung zum Ausschluss über alle Erkrankungen oder Diagnosen zum Zeitpunkt der Dokumentation."
           },
-          "ac0.30" : {
+          "ac0.34" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.30",
+            "code" : "ac0.34",
             "description" : ""
           }
         },
@@ -658,10 +666,10 @@
             "text" : "Generellt uteslutande av problem/diagnoser",
             "description" : "*Overall statement of exclusion of all problems or diagnoses at the time of recording.(en)"
           },
-          "ac0.30" : {
+          "ac0.34" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.30",
+            "code" : "ac0.34",
             "description" : ""
           }
         },
@@ -672,10 +680,10 @@
             "text" : "Exclusion globale des problèmes/diagnostics",
             "description" : "Une déclaration globale d'exclusion de tous les problèmes ou diagnostics au moment de l'enregistrement."
           },
-          "ac0.30" : {
+          "ac0.34" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.30",
+            "code" : "ac0.34",
             "description" : ""
           }
         }
@@ -831,6 +839,26 @@
         "ac0.30" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.30",
+          "members" : [ "at0003" ]
+        },
+        "ac0.31" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.31",
+          "members" : [ "at0003" ]
+        },
+        "ac0.32" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.32",
+          "members" : [ "at0003" ]
+        },
+        "ac0.33" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.33",
+          "members" : [ "at0003" ]
+        },
+        "ac0.34" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.34",
           "members" : [ "at0003" ]
         }
       }
@@ -1218,6 +1246,12 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0077.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0003.1",
               "attributes" : [ ],
@@ -1255,6 +1289,12 @@
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0072.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0030.1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             }, {
@@ -1375,6 +1415,20 @@
             "text" : "(Synthesized)",
             "code" : "ac0.3",
             "description" : ""
+          },
+          "at0077.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0077.1",
+            "text" : "Date of onset",
+            "description" : "Estimated or actual date/time that signs or symptoms of the problem/diagnosis were first observed.",
+            "comment" : "Data captured/imported as \"Age at onset\" should be converted to a date using the subject's date of birth."
+          },
+          "at0030.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0030.1",
+            "text" : "Date of resolution",
+            "description" : "Estimated or actual date/time of resolution or remission for this problem or diagnosis, as determined by a healthcare professional.",
+            "comment" : "Partial dates are acceptable. If the subject of care is under the age of one year, then the complete date or a minimum of the month and year is necessary to enable accurate age calculations - for example, if used to drive decision support. Data captured/imported as \"Age at time of resolution\" should be converted to a date using the subject's date of birth.\r\n"
           }
         },
         "ar-sy" : {
@@ -2588,6 +2642,33 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0077.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0081", "at0094", "at0079" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
           "occurrences" : "0..0",
           "nodeId" : "at0063.1",
           "attributes" : [ {
@@ -2700,6 +2781,20 @@
             "text" : "(Synthesized)",
             "code" : "ac0.9",
             "description" : ""
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1",
+            "text" : "Active diagnosis?",
+            "description" : "Category that supports division of problems and diagnoses into Active or Inactive problem lists.",
+            "comment" : "The Active/Inactive and Current/Past data elements have similar clinical impact but represent slightly different semantics. Both are actively used in different clinical settings, but usually not together. If a Current/Past qualifier is recorded, then this data element is likely to be redundant. An exception where a condition can be current but inactive is asthma that is not causing acute symptoms."
+          },
+          "at0077.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0077.1",
+            "text" : "Acuity",
+            "description" : "Category reflecting the speed of onset and/or duration and persistence of the problem or diagnosis.",
+            "comment" : "Definitions of acute vs chronic will differ for each diagnosis."
           }
         },
         "sl" : {
@@ -3107,7 +3202,8 @@
         "SNOMED-CT" : {
           "at0004.1" : "term:SNOMED-CT::106229004",
           "at0060.1" : "term:SNOMED-CT::410511007",
-          "at0001.1" : "term:SNOMED-CT::288526004"
+          "at0001.1" : "term:SNOMED-CT::288526004",
+          "at0077.1" : "term:SNOMED-CT::288524001"
         }
       },
       "terminologyExtracts" : { },
