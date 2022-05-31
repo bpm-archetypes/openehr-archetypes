@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.4.1",
+      "sem_ver" : "0.4.2",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "f85121bcd67acbbaf63ad9444941530d",
+      "MD5-CAM-1.0.1" : "ea44cfaaee6b729382f75ca730b69011",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -927,6 +927,7 @@
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
                   "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
                   "terminologyId" : {
                     "value" : "local_terms"
                   },
@@ -935,15 +936,15 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "local_terms",
                     "code" : "98423984",
-                    "value" : "Description Option 1"
+                    "value" : "Description option 1"
                   }, {
                     "terminologyId" : "local_terms",
                     "code" : "4993429",
-                    "value" : "Description Option 2"
+                    "value" : "Description option 2"
                   }, {
                     "terminologyId" : "local_terms",
                     "code" : "43923834",
-                    "value" : "Description Option 3 which could be longer"
+                    "value" : "Description option 3"
                   } ]
                 } ]
               } ],
@@ -983,6 +984,7 @@
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
                   "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
                   "terminologyId" : {
                     "value" : "local_terms"
                   },
@@ -999,7 +1001,7 @@
                   }, {
                     "terminologyId" : "local_terms",
                     "code" : "942383499",
-                    "value" : "Onset type option 3 which is a bit longer"
+                    "value" : "Onset type option 3"
                   } ]
                 } ]
               } ],
@@ -1214,6 +1216,7 @@
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
                   "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
                   "terminologyId" : {
                     "value" : "local_terms"
                   },
@@ -1230,7 +1233,7 @@
                   }, {
                     "terminologyId" : "local_terms",
                     "code" : "757845484",
-                    "value" : "Character option 3 which is also a longer string"
+                    "value" : "Character option 3"
                   } ]
                 } ]
               } ],
@@ -1284,6 +1287,7 @@
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
                   "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
                   "terminologyId" : {
                     "value" : "local_terms"
                   },
@@ -1300,7 +1304,7 @@
                   }, {
                     "terminologyId" : "local_terms",
                     "code" : "75675839942358",
-                    "value" : "Pattern option 3 with longer text string"
+                    "value" : "Pattern option 3"
                   } ]
                 } ]
               } ],
@@ -1384,6 +1388,7 @@
                     "children" : [ {
                       "@type" : "C_TERMINOLOGY_CODE",
                       "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "0..1",
                       "terminologyId" : {
                         "value" : "local_terms"
                       },
@@ -1501,6 +1506,7 @@
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
                   "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
                   "terminologyId" : {
                     "value" : "local_terms"
                   },
@@ -1517,7 +1523,7 @@
                   }, {
                     "terminologyId" : "local_terms",
                     "code" : "1252881177009",
-                    "value" : "Impact option 3 with a longer string"
+                    "value" : "Impact option 3"
                   } ]
                 } ]
               } ],
@@ -1979,19 +1985,27 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "local_terms",
                     "code" : "1239824398",
-                    "value" : "Site Option 1"
+                    "value" : "Site option 1"
                   }, {
                     "terminologyId" : "local_terms",
                     "code" : "29053298",
-                    "value" : "Site Option 2"
+                    "value" : "Site option 2"
                   }, {
                     "terminologyId" : "local_terms",
                     "code" : "40923059",
-                    "value" : "Site Option 3"
+                    "value" : "Site option 3"
                   }, {
                     "terminologyId" : "local_terms",
                     "code" : "4209423095",
-                    "value" : "Site Option 4"
+                    "value" : "Site option 4"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "56774848",
+                    "value" : "Site option 5"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "87689009990",
+                    "value" : "Site option 6"
                   } ]
                 } ]
               } ],
@@ -2037,6 +2051,34 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0055.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "ac0.2" ],
+                  "selectedTerminologies" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
           "occurrences" : "0..0",
           "nodeId" : "at0023.1",
           "attributes" : [ ],
@@ -2055,6 +2097,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.1",
             "description" : ""
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : ""
           }
         },
         "sl" : {
@@ -2062,6 +2110,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.1",
+            "description" : ""
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
             "description" : ""
           }
         },
@@ -2071,6 +2125,12 @@
             "text" : "(Synthesized)",
             "code" : "ac0.1",
             "description" : ""
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.2",
+            "description" : ""
           }
         },
         "nb" : {
@@ -2078,6 +2138,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.1",
+            "description" : ""
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
             "description" : ""
           }
         },
@@ -2087,6 +2153,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.1",
             "description" : ""
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : ""
           }
         },
         "de" : {
@@ -2094,6 +2166,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.1",
+            "description" : ""
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
             "description" : ""
           }
         },
@@ -2103,6 +2181,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.1",
             "description" : ""
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : ""
           }
         },
         "sv" : {
@@ -2110,6 +2194,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.1",
+            "description" : ""
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
             "description" : ""
           }
         }
@@ -2121,6 +2211,11 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.1",
           "members" : [ "at0067", "at0068", "at0069", "at0070", "at0071", "at0072", "at0073", "at0074", "at0080", "at0081", "at0075", "at0076", "at0082", "at0077", "at0078", "at0079" ]
+        },
+        "ac0.2" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.2",
+          "members" : [ "at0062", "at0056", "at0057", "at0058", "at0059", "at0060", "at0063" ]
         }
       }
     },
