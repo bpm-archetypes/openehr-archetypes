@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0",
+      "sem_ver" : "1.0.2",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "6180cce0d8dce4bd1861b7dfbdacd92b",
+      "MD5-CAM-1.0.1" : "70a34c0e1a4f61e7e490a809f5968482",
       "PARENT:MD5-CAM-1.0.1" : "A198E225F67F0E4A49653AC9C6EBCC0A"
     },
     "details" : {
@@ -157,7 +157,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "Diagnosis List.v0",
+          "text" : "Problem Diagnosis List.v0",
           "description" : "A persistent and managed list of any combination of diagnoses, problems and/or procedures that may influence clinical decision-making and care provision for the subject of care."
         }
       },
@@ -331,7 +331,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Diagnosis List",
+            "text" : "Problem/Diagnosis List",
             "description" : "Framework for consistent modelling of content within a template for a Problem list.",
             "comment" : "Intended to be used within the COMPOSITION.problem_list."
           }
