@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.2",
+      "sem_ver" : "1.1.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "70a34c0e1a4f61e7e490a809f5968482",
+      "MD5-CAM-1.0.1" : "8290c261e5909b376bbd1cc7023756c3",
       "PARENT:MD5-CAM-1.0.1" : "A198E225F67F0E4A49653AC9C6EBCC0A"
     },
     "details" : {
@@ -157,7 +157,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "Problem Diagnosis List.v0",
+          "text" : "Problem Diagnosis List",
           "description" : "A persistent and managed list of any combination of diagnoses, problems and/or procedures that may influence clinical decision-making and care provision for the subject of care."
         }
       },
