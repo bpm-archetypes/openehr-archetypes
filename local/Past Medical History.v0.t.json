@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.1.0",
+      "sem_ver" : "1.1.1",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "8290c261e5909b376bbd1cc7023756c3",
+      "MD5-CAM-1.0.1" : "36a31014e549fb1adb35198224f4145f",
       "PARENT:MD5-CAM-1.0.1" : "A198E225F67F0E4A49653AC9C6EBCC0A"
     },
     "details" : {
@@ -203,7 +203,7 @@
   "rmName" : "openehr",
   "rmRelease" : "1.1.0",
   "generated" : true,
-  "templateId" : "Past Medical History.v0",
+  "templateId" : "problem_list.v0",
   "otherMetaData" : { },
   "templateOverlays" : [ {
     "@type" : "TEMPLATE_OVERLAY",
