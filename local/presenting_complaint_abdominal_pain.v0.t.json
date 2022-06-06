@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.4.2",
+      "sem_ver" : "0.4.3",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "12d2ec0749f7a742cf1fb0d0b54ffb59",
+      "MD5-CAM-1.0.1" : "d56db605dd87ac1ef7e5c37205ecd73f",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -895,7 +895,7 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "local_terms",
                     "code" : "12345",
-                    "value" : "My presenting complaint"
+                    "value" : "Abdominal Pain"
                   } ]
                 } ]
               } ],
@@ -936,16 +936,45 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "local_terms",
                     "code" : "98423984",
-                    "value" : "Description option 1"
+                    "value" : "Pain radiating through to back"
                   }, {
                     "terminologyId" : "local_terms",
                     "code" : "4993429",
-                    "value" : "Description option 2"
+                    "value" : "Pain radiating into chest"
                   }, {
                     "terminologyId" : "local_terms",
                     "code" : "43923834",
-                    "value" : "Description option 3"
+                    "value" : "Pain radiating into pelvis"
                   } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0175.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "ac0.3" ],
+                  "selectedTerminologies" : [ ]
                 } ]
               } ],
               "attributeTuples" : [ ]
@@ -993,15 +1022,11 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "local_terms",
                     "code" : "088834",
-                    "value" : "Onset type option 1"
+                    "value" : "Pain comes on suddenly"
                   }, {
                     "terminologyId" : "local_terms",
                     "code" : "943283248",
-                    "value" : "Onset type option 2"
-                  }, {
-                    "terminologyId" : "local_terms",
-                    "code" : "942383499",
-                    "value" : "Onset type option 3"
+                    "value" : "Pain comes on gradually"
                   } ]
                 } ]
               } ],
@@ -1012,7 +1037,6 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
           "nodeId" : "at0028.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -1101,6 +1125,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
           "nodeId" : "at0021.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -1118,7 +1143,7 @@
                   "terminologyId" : {
                     "value" : "local"
                   },
-                  "constraint" : [ "ac0.1" ],
+                  "constraint" : [ "ac0.4" ],
                   "selectedTerminologies" : [ ]
                 } ]
               } ],
@@ -1201,7 +1226,6 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..1",
           "nodeId" : "at0189.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -1225,15 +1249,19 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "local_terms",
                     "code" : "438587539",
-                    "value" : "Character option 1"
+                    "value" : "Sharp"
                   }, {
                     "terminologyId" : "local_terms",
                     "code" : "94843739",
-                    "value" : "Character option 2"
+                    "value" : "Throbbing"
                   }, {
                     "terminologyId" : "local_terms",
                     "code" : "757845484",
-                    "value" : "Character option 3"
+                    "value" : "Gnawing"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "13571590",
+                    "value" : "Colicky"
                   } ]
                 } ]
               } ],
@@ -1296,15 +1324,15 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "local_terms",
                     "code" : "47554358",
-                    "value" : "Pattern option 1"
+                    "value" : "Pain is Constant"
                   }, {
                     "terminologyId" : "local_terms",
                     "code" : "484573849",
-                    "value" : "Pattern option 2"
+                    "value" : "Pain is intermittant"
                   }, {
                     "terminologyId" : "local_terms",
-                    "code" : "75675839942358",
-                    "value" : "Pattern option 3"
+                    "code" : "75675839",
+                    "value" : "Pain fluctuates"
                   } ]
                 } ]
               } ],
@@ -1345,15 +1373,15 @@
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "local_terms",
                         "code" : "64564375",
-                        "value" : "Modifying factor 1"
+                        "value" : "Taking anti-acid medication"
                       }, {
                         "terminologyId" : "local_terms",
                         "code" : "5643574358",
-                        "value" : "Modifying factor 2"
+                        "value" : "Lying on Side"
                       }, {
                         "terminologyId" : "local_terms",
                         "code" : "534573458",
-                        "value" : "Modifying factor 3"
+                        "value" : "Sitting hunched over"
                       } ]
                     } ]
                   } ],
@@ -1397,15 +1425,19 @@
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "local_terms",
                         "code" : "12362354",
-                        "value" : "Precipitating factor 1"
+                        "value" : "Moving"
                       }, {
                         "terminologyId" : "local_terms",
                         "code" : "43543765",
-                        "value" : "Precipitating factor 2"
+                        "value" : "Eating"
                       }, {
                         "terminologyId" : "local_terms",
                         "code" : "54687354",
-                        "value" : "Precipitating factor 3"
+                        "value" : "Eating a fatty meal"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "2408672",
+                        "value" : "Lying Flat"
                       } ]
                     } ]
                   } ],
@@ -1462,15 +1494,11 @@
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "local_terms",
                         "code" : "786347856",
-                        "value" : "Resolving factor 1"
+                        "value" : "Opening Bowels"
                       }, {
                         "terminologyId" : "local_terms",
                         "code" : "3242535",
-                        "value" : "Resolving factor 2"
-                      }, {
-                        "terminologyId" : "local_terms",
-                        "code" : "877587",
-                        "value" : "Resolving factor 3"
+                        "value" : "Passing Flatus"
                       } ]
                     } ]
                   } ],
@@ -1491,7 +1519,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..1",
+          "occurrences" : "0..0",
           "nodeId" : "at0155.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -1539,9 +1567,16 @@
           "attributes" : [ ],
           "attributeTuples" : [ ]
         }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0057.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "CLUSTER",
-          "occurrences" : "0..1",
+          "occurrences" : "0..*",
           "nodeId" : "at0147.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -1565,114 +1600,162 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "ar-sy" : {
-          "ac0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
-            "description" : ""
-          },
           "ac0.2" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
+            "description" : ""
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : ""
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
             "description" : ""
           }
         },
         "en" : {
-          "ac0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.1",
-            "description" : ""
-          },
           "ac0.2" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
             "code" : "ac0.2",
+            "description" : ""
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.3",
+            "description" : ""
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.4",
             "description" : ""
           }
         },
         "de" : {
-          "ac0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
-            "description" : ""
-          },
           "ac0.2" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
+            "description" : ""
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : ""
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
             "description" : ""
           }
         },
         "nb" : {
-          "ac0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
-            "description" : ""
-          },
           "ac0.2" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
+            "description" : ""
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : ""
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
             "description" : ""
           }
         },
         "fi" : {
-          "ac0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
-            "description" : ""
-          },
           "ac0.2" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
+            "description" : ""
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : ""
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
             "description" : ""
           }
         },
         "sv" : {
-          "ac0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
-            "description" : ""
-          },
           "ac0.2" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
+            "description" : ""
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : ""
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
             "description" : ""
           }
         },
         "pt-br" : {
-          "ac0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
-            "description" : ""
-          },
           "ac0.2" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
+            "description" : ""
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : ""
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
             "description" : ""
           }
         },
         "nl" : {
-          "ac0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
-            "description" : ""
-          },
           "ac0.2" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
+            "description" : ""
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : ""
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
             "description" : ""
           }
         }
@@ -1695,6 +1778,16 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.2",
           "members" : [ "at0183", "at0182", "at0181", "at0184" ]
+        },
+        "ac0.3" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.3",
+          "members" : [ "at0176", "at0178", "at0177" ]
+        },
+        "ac0.4" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.4",
+          "members" : [ "at0023", "at0024", "at0025" ]
         }
       }
     },
@@ -1985,27 +2078,39 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "local_terms",
                     "code" : "1239824398",
-                    "value" : "Site option 1"
+                    "value" : "Right Upper Quadrant"
                   }, {
                     "terminologyId" : "local_terms",
                     "code" : "29053298",
-                    "value" : "Site option 2"
+                    "value" : "Epigastric"
                   }, {
                     "terminologyId" : "local_terms",
                     "code" : "40923059",
-                    "value" : "Site option 3"
+                    "value" : "Left Upper Quadrant"
                   }, {
                     "terminologyId" : "local_terms",
                     "code" : "4209423095",
-                    "value" : "Site option 4"
+                    "value" : "Right Flank"
                   }, {
                     "terminologyId" : "local_terms",
                     "code" : "56774848",
-                    "value" : "Site option 5"
+                    "value" : "Central"
                   }, {
                     "terminologyId" : "local_terms",
                     "code" : "87689009990",
-                    "value" : "Site option 6"
+                    "value" : "Left Flank"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "2305897013",
+                    "value" : "Right Iliac Fossa"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "23508735879",
+                    "value" : "Suprapubic"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "13058715",
+                    "value" : "Left Iliac Fossa"
                   } ]
                 } ]
               } ],
@@ -2023,6 +2128,36 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0002.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "ac0.3" ],
+                  "selectedTerminologies" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
           "nodeId" : "at0064.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -2040,7 +2175,7 @@
                   "terminologyId" : {
                     "value" : "local"
                   },
-                  "constraint" : [ "ac0.1" ],
+                  "constraint" : [ "ac0.4" ],
                   "selectedTerminologies" : [ ]
                 } ]
               } ],
@@ -2051,6 +2186,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
           "nodeId" : "at0055.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -2068,7 +2204,7 @@
                   "terminologyId" : {
                     "value" : "local"
                   },
-                  "constraint" : [ "ac0.2" ],
+                  "constraint" : [ "ac0.5" ],
                   "selectedTerminologies" : [ ]
                 } ]
               } ],
@@ -2092,119 +2228,171 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "ar-sy" : {
-          "ac0.1" : {
+          "ac0.3" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
+            "code" : "ac0.3",
             "description" : ""
           },
-          "ac0.2" : {
+          "ac0.4" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.2",
+            "code" : "ac0.4",
+            "description" : ""
+          },
+          "ac0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.5",
             "description" : ""
           }
         },
         "sl" : {
-          "ac0.1" : {
+          "ac0.3" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
+            "code" : "ac0.3",
             "description" : ""
           },
-          "ac0.2" : {
+          "ac0.4" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.2",
+            "code" : "ac0.4",
+            "description" : ""
+          },
+          "ac0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.5",
             "description" : ""
           }
         },
         "en" : {
-          "ac0.1" : {
+          "ac0.3" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.1",
+            "code" : "ac0.3",
             "description" : ""
           },
-          "ac0.2" : {
+          "ac0.4" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.2",
+            "code" : "ac0.4",
+            "description" : ""
+          },
+          "ac0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.5",
             "description" : ""
           }
         },
         "nb" : {
-          "ac0.1" : {
+          "ac0.3" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
+            "code" : "ac0.3",
             "description" : ""
           },
-          "ac0.2" : {
+          "ac0.4" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.2",
+            "code" : "ac0.4",
+            "description" : ""
+          },
+          "ac0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.5",
             "description" : ""
           }
         },
         "pt-br" : {
-          "ac0.1" : {
+          "ac0.3" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
+            "code" : "ac0.3",
             "description" : ""
           },
-          "ac0.2" : {
+          "ac0.4" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.2",
+            "code" : "ac0.4",
+            "description" : ""
+          },
+          "ac0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.5",
             "description" : ""
           }
         },
         "de" : {
-          "ac0.1" : {
+          "ac0.3" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
+            "code" : "ac0.3",
             "description" : ""
           },
-          "ac0.2" : {
+          "ac0.4" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.2",
+            "code" : "ac0.4",
+            "description" : ""
+          },
+          "ac0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.5",
             "description" : ""
           }
         },
         "nl" : {
-          "ac0.1" : {
+          "ac0.3" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
+            "code" : "ac0.3",
             "description" : ""
           },
-          "ac0.2" : {
+          "ac0.4" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.2",
+            "code" : "ac0.4",
+            "description" : ""
+          },
+          "ac0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.5",
             "description" : ""
           }
         },
         "sv" : {
-          "ac0.1" : {
+          "ac0.3" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
+            "code" : "ac0.3",
             "description" : ""
           },
-          "ac0.2" : {
+          "ac0.4" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.2",
+            "code" : "ac0.4",
+            "description" : ""
+          },
+          "ac0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.5",
             "description" : ""
           }
         }
       },
-      "termBindings" : { },
+      "termBindings" : {
+        "SNOMED-CT" : {
+          "at0002.1" : "term:SNOMED-CT::272741003"
+        }
+      },
       "terminologyExtracts" : { },
       "valueSets" : {
         "ac0.1" : {
@@ -2215,6 +2403,21 @@
         "ac0.2" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.2",
+          "members" : [ "at0062", "at0056", "at0057", "at0058", "at0059", "at0060", "at0063" ]
+        },
+        "ac0.3" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.3",
+          "members" : [ "at0003", "at0004" ]
+        },
+        "ac0.4" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.4",
+          "members" : [ "at0067", "at0068", "at0069", "at0070", "at0071", "at0072", "at0073", "at0074", "at0080", "at0081", "at0075", "at0076", "at0082", "at0077", "at0078", "at0079" ]
+        },
+        "ac0.5" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.5",
           "members" : [ "at0062", "at0056", "at0057", "at0058", "at0059", "at0060", "at0063" ]
         }
       }
@@ -2504,19 +2707,71 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "local_terms",
                     "code" : "766437577309",
-                    "value" : "Associated sign or symptom option 1"
+                    "value" : "Vomiting"
                   }, {
                     "terminologyId" : "local_terms",
                     "code" : "456453877",
-                    "value" : "Associated sign or symptom option 2"
+                    "value" : "Vomiting with blood"
                   }, {
                     "terminologyId" : "local_terms",
                     "code" : "65677567",
-                    "value" : "Associated sign or symptom option 3"
+                    "value" : "Diarrhoea"
                   }, {
                     "terminologyId" : "local_terms",
                     "code" : "756475475",
-                    "value" : "Other - please use comment to enter details"
+                    "value" : "Bloody Diarrhoea"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "305713598",
+                    "value" : "Malena"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "2308570",
+                    "value" : "Nausea"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "23058713",
+                    "value" : "Constipation"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "130575135",
+                    "value" : "Sweating"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "130587135",
+                    "value" : "Dizziness"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "120587135",
+                    "value" : "Mouth Ulcers"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "24068726",
+                    "value" : "Skin Rash"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "42697865",
+                    "value" : "Fatigue"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "13085971350",
+                    "value" : "Anorexia"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "130598735",
+                    "value" : "Dysuria"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "1305987135",
+                    "value" : "Urinary Frequency"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "1309657365",
+                    "value" : "Haematuria"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "908230857",
+                    "value" : "Fever"
                   } ]
                 } ]
               } ],
