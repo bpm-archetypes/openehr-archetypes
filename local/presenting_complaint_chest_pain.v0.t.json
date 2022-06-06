@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.4.3",
+      "sem_ver" : "0.4.4",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "877ced8fcf230b8f56115c596d91a64f",
+      "MD5-CAM-1.0.1" : "13775ec8e4aa4b0b057a5b9e3e413859",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -913,7 +913,6 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
           "nodeId" : "at0002.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -937,15 +936,15 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "local_terms",
                     "code" : "98423984",
-                    "value" : "Description option 1"
+                    "value" : "Pain radiating through to the back"
                   }, {
                     "terminologyId" : "local_terms",
                     "code" : "4993429",
-                    "value" : "Description option 2"
+                    "value" : "Pain radiating to jaw/neck"
                   }, {
                     "terminologyId" : "local_terms",
                     "code" : "43923834",
-                    "value" : "Description option 3"
+                    "value" : "Pain radiating to left arm"
                   } ]
                 } ]
               } ],
@@ -956,7 +955,6 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
           "nodeId" : "at0175.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -974,7 +972,7 @@
                   "terminologyId" : {
                     "value" : "local"
                   },
-                  "constraint" : [ "ac0.3" ],
+                  "constraint" : [ "ac0.6" ],
                   "selectedTerminologies" : [ ]
                 } ]
               } ],
@@ -1071,7 +1069,6 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
           "nodeId" : "at0028.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -1298,6 +1295,14 @@
                     "terminologyId" : "local_terms",
                     "code" : "46739293",
                     "value" : "Aching"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "0847508",
+                    "value" : "Burning"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "124976",
+                    "value" : "Tearing"
                   } ]
                 } ]
               } ],
@@ -1467,11 +1472,15 @@
                       }, {
                         "terminologyId" : "local_terms",
                         "code" : "4836289",
-                        "value" : "Leaning forward"
+                        "value" : "Lying flat"
                       }, {
                         "terminologyId" : "local_terms",
                         "code" : "479900088",
                         "value" : "Deep breaths"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "234087",
+                        "value" : "Eating"
                       } ]
                     } ]
                   } ],
@@ -1532,7 +1541,15 @@
                       }, {
                         "terminologyId" : "local_terms",
                         "code" : "3242535",
-                        "value" : "Lying on back"
+                        "value" : "Leaning forwards"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "2385708",
+                        "value" : "GTN spray"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "2385708",
+                        "value" : "Rest"
                       } ]
                     } ]
                   } ],
@@ -1643,7 +1660,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "CLUSTER",
-          "occurrences" : "0..1",
+          "occurrences" : "0..*",
           "nodeId" : "at0063.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -1664,12 +1681,6 @@
             "code" : "ac0.2",
             "description" : ""
           },
-          "ac0.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.3",
-            "description" : ""
-          },
           "ac0.4" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -1680,6 +1691,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.5",
+            "description" : ""
+          },
+          "ac0.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.6",
             "description" : ""
           }
         },
@@ -1690,12 +1707,6 @@
             "code" : "ac0.2",
             "description" : ""
           },
-          "ac0.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.3",
-            "description" : ""
-          },
           "ac0.4" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
@@ -1706,6 +1717,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
             "code" : "ac0.5",
+            "description" : ""
+          },
+          "ac0.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.6",
             "description" : ""
           }
         },
@@ -1716,12 +1733,6 @@
             "code" : "ac0.2",
             "description" : ""
           },
-          "ac0.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.3",
-            "description" : ""
-          },
           "ac0.4" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -1732,6 +1743,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.5",
+            "description" : ""
+          },
+          "ac0.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.6",
             "description" : ""
           }
         },
@@ -1742,12 +1759,6 @@
             "code" : "ac0.2",
             "description" : ""
           },
-          "ac0.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.3",
-            "description" : ""
-          },
           "ac0.4" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -1758,6 +1769,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.5",
+            "description" : ""
+          },
+          "ac0.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.6",
             "description" : ""
           }
         },
@@ -1768,12 +1785,6 @@
             "code" : "ac0.2",
             "description" : ""
           },
-          "ac0.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.3",
-            "description" : ""
-          },
           "ac0.4" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -1784,6 +1795,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.5",
+            "description" : ""
+          },
+          "ac0.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.6",
             "description" : ""
           }
         },
@@ -1794,12 +1811,6 @@
             "code" : "ac0.2",
             "description" : ""
           },
-          "ac0.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.3",
-            "description" : ""
-          },
           "ac0.4" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -1810,6 +1821,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.5",
+            "description" : ""
+          },
+          "ac0.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.6",
             "description" : ""
           }
         },
@@ -1820,12 +1837,6 @@
             "code" : "ac0.2",
             "description" : ""
           },
-          "ac0.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.3",
-            "description" : ""
-          },
           "ac0.4" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -1836,6 +1847,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.5",
+            "description" : ""
+          },
+          "ac0.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.6",
             "description" : ""
           }
         },
@@ -1846,12 +1863,6 @@
             "code" : "ac0.2",
             "description" : ""
           },
-          "ac0.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.3",
-            "description" : ""
-          },
           "ac0.4" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -1862,6 +1873,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.5",
+            "description" : ""
+          },
+          "ac0.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.6",
             "description" : ""
           }
         }
@@ -1899,6 +1916,11 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.5",
           "members" : [ "at0023", "at0024", "at0025" ]
+        },
+        "ac0.6" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.6",
+          "members" : [ "at0176", "at0178", "at0177" ]
         }
       }
     },
@@ -2797,8 +2819,32 @@
                     "value" : "Shortness of Breath"
                   }, {
                     "terminologyId" : "local_terms",
+                    "code" : "02894750",
+                    "value" : "Vomiting"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "31508175",
+                    "value" : "Cough"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "23598135",
+                    "value" : "Fever"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "13085608",
+                    "value" : "Haemoptysis"
+                  }, {
+                    "terminologyId" : "local_terms",
                     "code" : "756475475",
                     "value" : "Other - please use comment to enter details"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "49856987",
+                    "value" : "Dizziness"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "203845670",
+                    "value" : "Syncope"
                   } ]
                 } ]
               } ],
