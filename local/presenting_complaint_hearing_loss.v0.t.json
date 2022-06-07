@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.3.2",
+      "sem_ver" : "0.3.3",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "4e035ff525f2c7621320955d2a2109a9",
+      "MD5-CAM-1.0.1" : "b6528b485096979a264a4fbf10207e15",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -1485,6 +1485,12 @@
           } ],
           "attributeTuples" : [ ]
         }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0163.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "CLUSTER",
           "occurrences" : "1..1",
@@ -1560,6 +1566,12 @@
             "text" : "(Synthesized)",
             "code" : "ac0.6",
             "description" : ""
+          },
+          "at0163.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0163.1",
+            "text" : "Overall Comment",
+            "description" : "Additional narrative about the symptom or sign not captured in other fields."
           }
         },
         "de" : {
