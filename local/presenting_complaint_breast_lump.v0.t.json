@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.6.4",
+      "sem_ver" : "0.6.5",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "4c56dbe2f3af0240fb8f2eceaf372782",
+      "MD5-CAM-1.0.1" : "dfc91b20fa95b24533aa829164d0c76e",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -888,13 +888,13 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "local_terms"
+                    "value" : "SNOMED-CT"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "local_terms" ],
+                  "selectedTerminologies" : [ "SNOMED-CT" ],
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "local_terms",
-                    "code" : "12345",
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "89164003",
                     "value" : "Breast Lump"
                   } ]
                 } ]
@@ -1325,17 +1325,17 @@
                       "rmTypeName" : "TERMINOLOGY_CODE",
                       "occurrences" : "0..1",
                       "terminologyId" : {
-                        "value" : "local_terms"
+                        "value" : "SNOMED-CT"
                       },
                       "constraint" : [ ],
-                      "selectedTerminologies" : [ "local_terms" ],
+                      "selectedTerminologies" : [ "SNOMED-CT" ],
                       "includedExternalTerminologyCodes" : [ {
-                        "terminologyId" : "local_terms",
-                        "code" : "4238723897",
+                        "terminologyId" : "SNOMED-CT",
+                        "code" : "417746004",
                         "value" : "Trauma"
                       }, {
-                        "terminologyId" : "local_terms",
-                        "code" : "40294343",
+                        "terminologyId" : "SNOMED-CT",
+                        "code" : "40733004",
                         "value" : "Infection"
                       } ]
                     } ]
@@ -1977,6 +1977,48 @@
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0001.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
+                  "terminologyId" : {
+                    "value" : "SNOMED-CT"
+                  },
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "SNOMED-CT" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "80248007",
+                    "value" : "Left Breast"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "73056007",
+                    "value" : "Right Breast"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "63762007",
+                    "value" : "Both Breasts"
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
           "occurrences" : "0..0",
           "nodeId" : "at0065.1",
           "attributes" : [ ],
@@ -2587,21 +2629,21 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "local_terms"
+                    "value" : "SNOMED-CT"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "local_terms" ],
+                  "selectedTerminologies" : [ "SNOMED-CT" ],
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "local_terms",
-                    "code" : "23541245",
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "444827008",
                     "value" : "Redness"
                   }, {
-                    "terminologyId" : "local_terms",
-                    "code" : "124352146",
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "22253000",
                     "value" : "Pain"
                   }, {
-                    "terminologyId" : "local_terms",
-                    "code" : "23423545",
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "74964007",
                     "value" : "Other - please describe in comment"
                   } ]
                 } ]
