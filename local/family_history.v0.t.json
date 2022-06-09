@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.6.7",
+      "sem_ver" : "0.6.8",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "5ab719615089e5ee046fb722b469e004",
+      "MD5-CAM-1.0.1" : "a9b2e080e261791513f33de6ff9d4c1d",
       "PARENT:MD5-CAM-1.0.1" : "383245026a00ca012cbbe3ff6bbcf591"
     },
     "details" : {
@@ -627,10 +627,23 @@
                               "rmTypeName" : "TERMINOLOGY_CODE",
                               "occurrences" : "1..1",
                               "terminologyId" : {
-                                "value" : "local"
+                                "value" : "SNOMED-CT"
                               },
-                              "constraint" : [ "ac0.3" ],
-                              "selectedTerminologies" : [ ]
+                              "constraint" : [ ],
+                              "selectedTerminologies" : [ "SNOMED-CT" ],
+                              "includedExternalTerminologyCodes" : [ {
+                                "terminologyId" : "SNOMED-CT",
+                                "code" : "373066001",
+                                "value" : "Direct cause or closely related"
+                              }, {
+                                "terminologyId" : "SNOMED-CT",
+                                "code" : "373067005",
+                                "value" : "Unrelated"
+                              }, {
+                                "terminologyId" : "SNOMED-CT",
+                                "code" : "82334004",
+                                "value" : "Indeterminate"
+                              } ]
                             } ]
                           } ],
                           "attributeTuples" : [ ]
@@ -699,54 +712,12 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "en" : {
-          "ac0.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.3",
-            "description" : ""
-          }
-        },
-        "pt-br" : {
-          "ac0.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.3",
-            "description" : ""
-          }
-        },
-        "nb" : {
-          "ac0.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.3",
-            "description" : ""
-          }
-        },
-        "zh-cn" : {
-          "ac0.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.3",
-            "description" : ""
-          }
-        },
-        "de" : {
-          "ac0.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.3",
-            "description" : ""
-          }
-        },
-        "fr" : {
-          "ac0.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.3",
-            "description" : ""
-          }
-        }
+        "en" : { },
+        "pt-br" : { },
+        "nb" : { },
+        "zh-cn" : { },
+        "de" : { },
+        "fr" : { }
       },
       "termBindings" : {
         "SNOMED-CT" : {
@@ -767,6 +738,21 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.3",
           "members" : [ "at0061", "at0062", "at0063" ]
+        },
+        "ac0.5" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.5",
+          "members" : [ "at0061", "at0062", "at0063" ]
+        },
+        "ac0.6" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.6",
+          "members" : [ "ac0.4" ]
+        },
+        "ac0.7" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.7",
+          "members" : [ "ac0.4" ]
         }
       }
     },
@@ -986,28 +972,6 @@
               "nodeId" : "at0002.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "name",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_CODED_TEXT",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "defining_code",
-                    "children" : [ {
-                      "@type" : "C_TERMINOLOGY_CODE",
-                      "rmTypeName" : "TERMINOLOGY_CODE",
-                      "occurrences" : "1..1",
-                      "terminologyId" : {
-                        "value" : "local"
-                      },
-                      "constraint" : [ "ac0.62" ],
-                      "selectedTerminologies" : [ ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
-              }, {
-                "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "value",
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
@@ -1030,6 +994,28 @@
                         "code" : "160266009",
                         "value" : "No family history of clinical finding"
                       } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "name",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "local"
+                      },
+                      "constraint" : [ "ac0.66" ],
+                      "selectedTerminologies" : [ ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -1061,10 +1047,10 @@
             "text" : "Global exclusion of family history",
             "description" : "Overall statement of exclusion of all significant health-related problems in relatives or family members of the individual at the time of recording."
           },
-          "ac0.62" : {
+          "ac0.66" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.62",
+            "code" : "ac0.66",
             "description" : ""
           }
         },
@@ -1075,10 +1061,10 @@
             "text" : "Overordnet eksklusjon av familiære sykdommer",
             "description" : "Overordnet eksklusjonsutsagn om alle betydningsfulle helserelaterte problemer hos familiemedlemmer eller slektninger av individet ved registreringstidspunktet."
           },
-          "ac0.62" : {
+          "ac0.66" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.62",
+            "code" : "ac0.66",
             "description" : ""
           }
         },
@@ -1089,10 +1075,10 @@
             "text" : "Exclusão global da história familiar",
             "description" : "Declaração geral de exclusão de todos os problemas significativos relacionados à saúde em parentes ou familiares do indivíduo no momento da gravação."
           },
-          "ac0.62" : {
+          "ac0.66" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.62",
+            "code" : "ac0.66",
             "description" : ""
           }
         },
@@ -1103,10 +1089,10 @@
             "text" : "Allgemeiner Ausschluss von Familienanamnese",
             "description" : "Zur Dokumentation einer Gesamterklärung zum Ausschluss über alle wichtigen gesundheitlichen Problemen bei Verwandten oder Familienmitgliedern des Patienten zum Zeitpunkt der Dokumentation."
           },
-          "ac0.62" : {
+          "ac0.66" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.62",
+            "code" : "ac0.66",
             "description" : ""
           }
         },
@@ -1117,10 +1103,10 @@
             "text" : "Generellt uteslutande av ärftlighet",
             "description" : "*Overall statement of exclusion of all significant health-related problems in relatives or family members of the individual at the time of recording.(en)"
           },
-          "ac0.62" : {
+          "ac0.66" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.62",
+            "code" : "ac0.66",
             "description" : ""
           }
         },
@@ -1131,10 +1117,10 @@
             "text" : "Exclusion globale de l'histoire familiale",
             "description" : "Déclaration globale d'exclusion de tous les problèmes de santé importants chez les parents ou les membres de la famille de la personne au moment de l'enregistrement."
           },
-          "ac0.62" : {
+          "ac0.66" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.62",
+            "code" : "ac0.66",
             "description" : ""
           }
         }
@@ -1450,6 +1436,26 @@
         "ac0.62" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.62",
+          "members" : [ "at0004" ]
+        },
+        "ac0.63" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.63",
+          "members" : [ "at0004" ]
+        },
+        "ac0.64" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.64",
+          "members" : [ "at0004" ]
+        },
+        "ac0.65" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.65",
+          "members" : [ "at0004" ]
+        },
+        "ac0.66" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.66",
           "members" : [ "at0004" ]
         }
       }
