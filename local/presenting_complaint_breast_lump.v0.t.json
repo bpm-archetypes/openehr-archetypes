@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.6.2",
+      "sem_ver" : "0.6.3",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "b11b90c9afaddb6dc96ea9ff5511bfea",
+      "MD5-CAM-1.0.1" : "4a76fd9781ca9e2549d41ed7130e7ce7",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -1333,10 +1333,6 @@
                         "terminologyId" : "local_terms",
                         "code" : "4238723897",
                         "value" : "Trauma"
-                      }, {
-                        "terminologyId" : "local_terms",
-                        "code" : "3454534",
-                        "value" : "Menopause"
                       }, {
                         "terminologyId" : "local_terms",
                         "code" : "40294343",
