@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.2",
+      "sem_ver" : "1.0.3",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "1a0c23579d32f51450108ee09f7883f4",
+      "MD5-CAM-1.0.1" : "8a2de7dd9a5cc0389801a13ec16b516b",
       "PARENT:MD5-CAM-1.0.1" : "c408e9813ee6329a63805c577b4b5813"
     },
     "details" : {
@@ -592,10 +592,31 @@
                       "rmTypeName" : "TERMINOLOGY_CODE",
                       "occurrences" : "1..1",
                       "terminologyId" : {
-                        "value" : "local"
+                        "value" : "SNOMED-CT"
                       },
-                      "constraint" : [ "ac0.15" ],
-                      "selectedTerminologies" : [ ]
+                      "constraint" : [ ],
+                      "selectedTerminologies" : [ "SNOMED-CT" ],
+                      "includedExternalTerminologyCodes" : [ {
+                        "terminologyId" : "SNOMED-CT",
+                        "code" : "415684004",
+                        "value" : "Suspected"
+                      }, {
+                        "terminologyId" : "SNOMED-CT",
+                        "code" : "410592001",
+                        "value" : "Likely"
+                      }, {
+                        "terminologyId" : "SNOMED-CT",
+                        "code" : "410605003",
+                        "value" : "Confirmed"
+                      }, {
+                        "terminologyId" : "SNOMED-CT",
+                        "code" : "723506003",
+                        "value" : "Resolved"
+                      }, {
+                        "terminologyId" : "SNOMED-CT",
+                        "code" : "723511001",
+                        "value" : "Refuted"
+                      } ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -621,10 +642,23 @@
                       "rmTypeName" : "TERMINOLOGY_CODE",
                       "occurrences" : "1..1",
                       "terminologyId" : {
-                        "value" : "local"
+                        "value" : "SNOMED-CT"
                       },
-                      "constraint" : [ "ac0.16" ],
-                      "selectedTerminologies" : [ ]
+                      "constraint" : [ ],
+                      "selectedTerminologies" : [ "SNOMED-CT" ],
+                      "includedExternalTerminologyCodes" : [ {
+                        "terminologyId" : "SNOMED-CT",
+                        "code" : "62482003",
+                        "value" : "Low"
+                      }, {
+                        "terminologyId" : "SNOMED-CT",
+                        "code" : "75540009",
+                        "value" : "High"
+                      }, {
+                        "terminologyId" : "SNOMED-CT",
+                        "code" : "82334004",
+                        "value" : "Indeterminate"
+                      } ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -838,10 +872,23 @@
                           "rmTypeName" : "TERMINOLOGY_CODE",
                           "occurrences" : "1..1",
                           "terminologyId" : {
-                            "value" : "local"
+                            "value" : "SNOMED-CT"
                           },
-                          "constraint" : [ "ac0.14" ],
-                          "selectedTerminologies" : [ ]
+                          "constraint" : [ ],
+                          "selectedTerminologies" : [ "SNOMED-CT" ],
+                          "includedExternalTerminologyCodes" : [ {
+                            "terminologyId" : "SNOMED-CT",
+                            "code" : "255604002",
+                            "value" : "Mild"
+                          }, {
+                            "terminologyId" : "SNOMED-CT",
+                            "code" : "6736007",
+                            "value" : "Moderate"
+                          }, {
+                            "terminologyId" : "SNOMED-CT",
+                            "code" : "24484000",
+                            "value" : "Severe"
+                          } ]
                         } ]
                       } ],
                       "attributeTuples" : [ ]
@@ -991,106 +1038,11 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "en" : {
-          "ac0.14" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.14",
-            "description" : ""
-          },
-          "ac0.15" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.15",
-            "description" : ""
-          },
-          "ac0.16" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.16",
-            "description" : ""
-          }
-        },
-        "pt-br" : {
-          "ac0.14" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.14",
-            "description" : ""
-          },
-          "ac0.15" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.15",
-            "description" : ""
-          },
-          "ac0.16" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.16",
-            "description" : ""
-          }
-        },
-        "nb" : {
-          "ac0.14" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.14",
-            "description" : ""
-          },
-          "ac0.15" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.15",
-            "description" : ""
-          },
-          "ac0.16" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.16",
-            "description" : ""
-          }
-        },
-        "de" : {
-          "ac0.14" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.14",
-            "description" : ""
-          },
-          "ac0.15" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.15",
-            "description" : ""
-          },
-          "ac0.16" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.16",
-            "description" : ""
-          }
-        },
-        "sv" : {
-          "ac0.14" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.14",
-            "description" : ""
-          },
-          "ac0.15" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.15",
-            "description" : ""
-          },
-          "ac0.16" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.16",
-            "description" : ""
-          }
-        }
+        "en" : { },
+        "pt-br" : { },
+        "nb" : { },
+        "de" : { },
+        "sv" : { }
       },
       "termBindings" : {
         "SNOMED-CT-clinical-finding" : {
@@ -1169,6 +1121,51 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.16",
           "members" : [ "at0102", "at0103", "at0124" ]
+        },
+        "ac0.18" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.18",
+          "members" : [ "at0127", "at0064", "at0065", "at0067", "at0066" ]
+        },
+        "ac0.19" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.19",
+          "members" : [ "ac0.17" ]
+        },
+        "ac0.20" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.20",
+          "members" : [ "ac0.17" ]
+        },
+        "ac0.22" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.22",
+          "members" : [ "at0102", "at0103", "at0124" ]
+        },
+        "ac0.23" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.23",
+          "members" : [ "ac0.21" ]
+        },
+        "ac0.24" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.24",
+          "members" : [ "ac0.21" ]
+        },
+        "ac0.26" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.26",
+          "members" : [ "at0093", "at0092", "at0090" ]
+        },
+        "ac0.27" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.27",
+          "members" : [ "ac0.25" ]
+        },
+        "ac0.28" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.28",
+          "members" : [ "ac0.25" ]
         }
       }
     },
@@ -1542,28 +1539,6 @@
               "nodeId" : "at0002.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "name",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_CODED_TEXT",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "defining_code",
-                    "children" : [ {
-                      "@type" : "C_TERMINOLOGY_CODE",
-                      "rmTypeName" : "TERMINOLOGY_CODE",
-                      "occurrences" : "1..1",
-                      "terminologyId" : {
-                        "value" : "local"
-                      },
-                      "constraint" : [ "ac0.80" ],
-                      "selectedTerminologies" : [ ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
-              }, {
-                "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "value",
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
@@ -1586,6 +1561,28 @@
                         "code" : "716186003",
                         "value" : "No known allergy"
                       } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "name",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "local"
+                      },
+                      "constraint" : [ "ac0.84" ],
+                      "selectedTerminologies" : [ ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -1617,10 +1614,10 @@
             "text" : "Global exclusion of adverse reactions",
             "description" : "Overall statement of exclusion about all adverse reactions at the time of recording."
           },
-          "ac0.80" : {
+          "ac0.84" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.80",
+            "code" : "ac0.84",
             "description" : ""
           }
         },
@@ -1631,10 +1628,10 @@
             "text" : "Overordnet eksklusjon av overfølsomhetsreaksjoner",
             "description" : "Overordnet eksklusjonsutsagn om alle overfølsomhetsreaksjoner ved registreringstidspunktet."
           },
-          "ac0.80" : {
+          "ac0.84" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.80",
+            "code" : "ac0.84",
             "description" : ""
           }
         },
@@ -1645,10 +1642,10 @@
             "text" : "Exclusão global de reações adversas",
             "description" : "Declaração geral de exclusão sobre todas as reações adversas no momento do registro."
           },
-          "ac0.80" : {
+          "ac0.84" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.80",
+            "code" : "ac0.84",
             "description" : ""
           }
         },
@@ -1659,10 +1656,10 @@
             "text" : "Allgemeiner Ausschluss von unerwünschten Nebenwirkungen",
             "description" : "Zur Dokumentation einer Gesamterklärung zum Ausschluss aller unerwünschten Nebenwirkungen zum Zeitpunkt der Aufzeichnung."
           },
-          "ac0.80" : {
+          "ac0.84" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.80",
+            "code" : "ac0.84",
             "description" : ""
           }
         },
@@ -1673,10 +1670,10 @@
             "text" : "Generellt uteslutande av biverkningar",
             "description" : "*Overall statement of exclusion about all adverse reactions at the time of recording.(en)"
           },
-          "ac0.80" : {
+          "ac0.84" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.80",
+            "code" : "ac0.84",
             "description" : ""
           }
         },
@@ -1687,10 +1684,10 @@
             "text" : "Exclusion globale des effets indésirables",
             "description" : "Déclaration globale d'exclusion concernant tous les effets indésirables au moment de l'enregistrement."
           },
-          "ac0.80" : {
+          "ac0.84" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.80",
+            "code" : "ac0.84",
             "description" : ""
           }
         }
@@ -2097,6 +2094,26 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.80",
           "members" : [ "at0007" ]
+        },
+        "ac0.81" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.81",
+          "members" : [ "at0007" ]
+        },
+        "ac0.82" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.82",
+          "members" : [ "at0007" ]
+        },
+        "ac0.83" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.83",
+          "members" : [ "at0007" ]
+        },
+        "ac0.84" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.84",
+          "members" : [ "at0007" ]
         }
       }
     },
@@ -2294,28 +2311,6 @@
               "nodeId" : "at0003.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "name",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_CODED_TEXT",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "defining_code",
-                    "children" : [ {
-                      "@type" : "C_TERMINOLOGY_CODE",
-                      "rmTypeName" : "TERMINOLOGY_CODE",
-                      "occurrences" : "1..1",
-                      "terminologyId" : {
-                        "value" : "local"
-                      },
-                      "constraint" : [ "ac0.25" ],
-                      "selectedTerminologies" : [ ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
-              }, {
-                "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "value",
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
@@ -2333,6 +2328,28 @@
                       },
                       "constraint" : [ "ac0.21" ],
                       "selectedTerminologies" : [ "SNOMED-CT-allergies NOT FINAL - see notion for UK specific valueset" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "name",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "local"
+                      },
+                      "constraint" : [ "ac0.27" ],
+                      "selectedTerminologies" : [ ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -2364,10 +2381,10 @@
             "text" : "Adverse reaction substance",
             "description" : "The Adverse reaction substance/agent to which the 'Exclusion statement' applies. For example: 'Penicillin', 'Peanuts' or 'Latex'."
           },
-          "ac0.25" : {
+          "ac0.27" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.25",
+            "code" : "ac0.27",
             "description" : ""
           }
         },
@@ -2378,10 +2395,10 @@
             "text" : "Substans for overfølsomhetsreaksjon",
             "description" : "Substansen \"Eksklusjonsutsagn\" omhandler. For eksempel \"pencillin\", \"peanøtter\" eller \"latex\"."
           },
-          "ac0.25" : {
+          "ac0.27" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.25",
+            "code" : "ac0.27",
             "description" : ""
           }
         },
@@ -2392,10 +2409,10 @@
             "text" : "Nebenwirkungen auslösende Substanz/Allergen",
             "description" : "Die Bennenung der Nebenwirkungen auslösenden Substanz/des Allergens, welche/s ausgeschlossen wird. Zum Beispiel: \"Penicillin\", \"Erdnüsse\" oder \"Latex\"."
           },
-          "ac0.25" : {
+          "ac0.27" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.25",
+            "code" : "ac0.27",
             "description" : ""
           }
         },
@@ -2406,10 +2423,10 @@
             "text" : "Substans som orsakat biverkning",
             "description" : "Den substans eller agent som orsakat den biverkning som åsyftas i \"Specificering av uteslutande\"."
           },
-          "ac0.25" : {
+          "ac0.27" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.25",
+            "code" : "ac0.27",
             "description" : ""
           }
         }
@@ -2539,6 +2556,16 @@
         "ac0.25" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.25",
+          "members" : [ "at0008" ]
+        },
+        "ac0.26" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.26",
+          "members" : [ "at0008" ]
+        },
+        "ac0.27" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.27",
           "members" : [ "at0008" ]
         }
       }
