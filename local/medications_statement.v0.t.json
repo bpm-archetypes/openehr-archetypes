@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "3.2.0",
+      "sem_ver" : "3.2.1",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "5a3b503b7dba46ff7ed45362b6d2a235",
+      "MD5-CAM-1.0.1" : "2f8f1101cd7e146056711633919dba3f",
       "PARENT:MD5-CAM-1.0.1" : "c01367650b1fb954f21f1ce757e3fbd0"
     },
     "details" : {
@@ -3435,18 +3435,18 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "1..1",
                   "terminologyId" : {
-                    "value" : "SNOMED-CT"
+                    "value" : "http://snomed.info/sct/11000261105"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "SNOMED-CT" ],
+                  "selectedTerminologies" : [ "http://snomed.info/sct/11000261105" ],
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "SNOMED-CT",
+                    "terminologyId" : "http://snomed.info/sct/11000261105",
                     "code" : "69620002",
                     "value" : "daily"
                   }, {
-                    "terminologyId" : "SNOMED-CT",
-                    "code" : "27789000",
-                    "value" : "infrequent (non-daily)"
+                    "terminologyId" : "http://snomed.info/sct/11000261105",
+                    "code" : "1281000261104",
+                    "value" : "non-daily"
                   } ]
                 } ]
               } ],
