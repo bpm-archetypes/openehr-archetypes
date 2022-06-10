@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.3.0",
+      "sem_ver" : "1.3.1",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "c3cb29dd7245bbb8bac253c9d0316e0f",
+      "MD5-CAM-1.0.1" : "d5ebc33704e6edf8419eff4abfa07d1e",
       "PARENT:MD5-CAM-1.0.1" : "A198E225F67F0E4A49653AC9C6EBCC0A"
     },
     "details" : {
@@ -332,7 +332,7 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Problem/Diagnosis List",
-            "description" : "Framework for consistent modelling of content within a template for a Problem list.",
+            "description" : "A persistent and managed list of any combination of diagnoses, problems and/or procedures that may influence clinical decision-making and care provision for the subject of care.",
             "comment" : "Intended to be used within the COMPOSITION.problem_list."
           }
         },
@@ -535,6 +535,28 @@
               "nodeId" : "at0002.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "name",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "local"
+                      },
+                      "constraint" : [ "ac0.38" ],
+                      "selectedTerminologies" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "value",
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
@@ -557,28 +579,6 @@
                         "code" : "443508001",
                         "value" : "No history of clinical finding in subject"
                       } ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
-              }, {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "name",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_CODED_TEXT",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "defining_code",
-                    "children" : [ {
-                      "@type" : "C_TERMINOLOGY_CODE",
-                      "rmTypeName" : "TERMINOLOGY_CODE",
-                      "occurrences" : "1..1",
-                      "terminologyId" : {
-                        "value" : "local"
-                      },
-                      "constraint" : [ "ac0.38" ],
-                      "selectedTerminologies" : [ ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -3595,6 +3595,28 @@
               "nodeId" : "at0003.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "name",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "local"
+                      },
+                      "constraint" : [ "ac0.15" ],
+                      "selectedTerminologies" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "value",
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
@@ -3612,28 +3634,6 @@
                       },
                       "constraint" : [ "ac0.11" ],
                       "selectedTerminologies" : [ "SNOMEDCT-disease" ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
-              }, {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "name",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_CODED_TEXT",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "defining_code",
-                    "children" : [ {
-                      "@type" : "C_TERMINOLOGY_CODE",
-                      "rmTypeName" : "TERMINOLOGY_CODE",
-                      "occurrences" : "1..1",
-                      "terminologyId" : {
-                        "value" : "local"
-                      },
-                      "constraint" : [ "ac0.15" ],
-                      "selectedTerminologies" : [ ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
