@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.6.5",
+      "sem_ver" : "0.6.6",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "dfc91b20fa95b24533aa829164d0c76e",
+      "MD5-CAM-1.0.1" : "d34ce2fc796be072715cc493105ed0c6",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -1232,21 +1232,21 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "1..1",
                   "terminologyId" : {
-                    "value" : "local_terms"
+                    "value" : "http://snomed.info/sct/11000261105"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "local_terms" ],
+                  "selectedTerminologies" : [ "http://snomed.info/sct/11000261105" ],
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "local_terms",
-                    "code" : "123",
+                    "terminologyId" : "http://snomed.info/sct/11000261105",
+                    "code" : "1481000261100",
                     "value" : "Bigger in the last month"
                   }, {
-                    "terminologyId" : "local_terms",
-                    "code" : "234",
+                    "terminologyId" : "http://snomed.info/sct/11000261105",
+                    "code" : "1491000261102",
                     "value" : "Smaller in the last month"
                   }, {
-                    "terminologyId" : "local_terms",
-                    "code" : "456",
+                    "terminologyId" : "http://snomed.info/sct/11000261105",
+                    "code" : "1501000261109",
                     "value" : "No change in Size"
                   } ]
                 } ]
