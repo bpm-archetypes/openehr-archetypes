@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.4.3",
+      "sem_ver" : "0.4.4",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "5e359006d641db8e37308d9fa57f9109",
+      "MD5-CAM-1.0.1" : "8e92e031519c4fa431ccb87118bf0003",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -888,13 +888,13 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "local_terms"
+                    "value" : "SNOMED-CT"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "local_terms" ],
+                  "selectedTerminologies" : [ "SNOMED-CT" ],
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "local_terms",
-                    "code" : "3244543",
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "60862001",
                     "value" : "Tinnitus"
                   } ]
                 } ]
@@ -929,20 +929,20 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "local_terms"
+                    "value" : "SNOMED-CT"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "local_terms" ],
+                  "selectedTerminologies" : [ "SNOMED-CT" ],
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "SNOMED-CT",
                     "code" : "23435",
                     "value" : "Tinnitus is worse on Right"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "SNOMED-CT",
                     "code" : "345235",
                     "value" : "Tinnitus is worse on Left"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "SNOMED-CT",
                     "code" : "43543",
                     "value" : "Tinnitus is same on both sides"
                   } ]
@@ -1252,20 +1252,20 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "local_terms"
+                    "value" : "SNOMED-CT"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "local_terms" ],
+                  "selectedTerminologies" : [ "SNOMED-CT" ],
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "local_terms",
-                    "code" : "4234",
-                    "value" : "Hissing"
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "162353002",
+                    "value" : "Hissing in ear"
                   }, {
-                    "terminologyId" : "local_terms",
-                    "code" : "543894",
-                    "value" : "Ringing"
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "162352007",
+                    "value" : "Ringing in ear"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "SNOMED-CT",
                     "code" : "958683",
                     "value" : "Pulsing"
                   } ]
@@ -1434,22 +1434,22 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "local_terms"
+                    "value" : "SNOMED-CT"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "local_terms" ],
+                  "selectedTerminologies" : [ "SNOMED-CT" ],
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "local_terms",
-                    "code" : "543654",
-                    "value" : "Can go about normal life"
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "103310001",
+                    "value" : "Can go about normal life (pt not affected)"
                   }, {
-                    "terminologyId" : "local_terms",
-                    "code" : "43545",
-                    "value" : "Affects daily activities sometimes"
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "413298002",
+                    "value" : "Disability affecting daily living"
                   }, {
-                    "terminologyId" : "local_terms",
-                    "code" : "8767678",
-                    "value" : "Affects sleep"
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "301345002",
+                    "value" : "Difficulty Sleeping"
                   } ]
                 } ]
               } ],
@@ -2084,21 +2084,21 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "local_terms"
+                    "value" : "SNOMED-CT"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "local_terms" ],
+                  "selectedTerminologies" : [ "SNOMED-CT" ],
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "local_terms",
-                    "code" : "1234",
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "89644007",
                     "value" : "Left Ear"
                   }, {
-                    "terminologyId" : "local_terms",
-                    "code" : "234324",
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "25577004",
                     "value" : "Right Ear"
                   }, {
-                    "terminologyId" : "local_terms",
-                    "code" : "3r5432",
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "34338003",
                     "value" : "Both Ears"
                   } ]
                 } ]
