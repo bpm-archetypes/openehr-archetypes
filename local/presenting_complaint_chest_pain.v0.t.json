@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.4.9",
+      "sem_ver" : "0.4.10",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "101a6ee6919d3866f9e536ce183af416",
+      "MD5-CAM-1.0.1" : "e8dbfee3d3d7df90e293c1b2a8fef987",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -2871,19 +2871,19 @@
                     "value" : "Fever"
                   }, {
                     "terminologyId" : "SNOMED-CT",
-                    "code" : "1",
+                    "code" : "66857006",
                     "value" : "Haemoptysis"
                   }, {
                     "terminologyId" : "SNOMED-CT",
-                    "code" : "4",
+                    "code" : "404640003",
                     "value" : "Dizziness"
                   }, {
                     "terminologyId" : "SNOMED-CT",
-                    "code" : "2",
+                    "code" : "271594007",
                     "value" : "Syncope"
                   }, {
                     "terminologyId" : "SNOMED-CT",
-                    "code" : "7",
+                    "code" : "74964007",
                     "value" : "Other - please use comment to enter details"
                   } ]
                 } ]
