@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.4.4",
+      "sem_ver" : "0.4.5",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "8e92e031519c4fa431ccb87118bf0003",
+      "MD5-CAM-1.0.1" : "bbd36d9b470bbe96fffcfdd30823d8fe",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -929,21 +929,21 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "SNOMED-CT"
+                    "value" : "local_terms"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "SNOMED-CT" ],
+                  "selectedTerminologies" : [ "local_terms" ],
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "SNOMED-CT",
-                    "code" : "23435",
+                    "terminologyId" : "local_terms",
+                    "code" : "1",
                     "value" : "Tinnitus is worse on Right"
                   }, {
-                    "terminologyId" : "SNOMED-CT",
-                    "code" : "345235",
+                    "terminologyId" : "local_terms",
+                    "code" : "2",
                     "value" : "Tinnitus is worse on Left"
                   }, {
-                    "terminologyId" : "SNOMED-CT",
-                    "code" : "43543",
+                    "terminologyId" : "local_terms",
+                    "code" : "3",
                     "value" : "Tinnitus is same on both sides"
                   } ]
                 } ]
@@ -1266,7 +1266,7 @@
                     "value" : "Ringing in ear"
                   }, {
                     "terminologyId" : "SNOMED-CT",
-                    "code" : "958683",
+                    "code" : "1",
                     "value" : "Pulsing"
                   } ]
                 } ]
