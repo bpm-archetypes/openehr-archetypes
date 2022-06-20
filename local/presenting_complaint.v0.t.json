@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.3.8",
+      "sem_ver" : "0.3.9",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "b42c57de104a38a2fbe88c40f8957b2c",
+      "MD5-CAM-1.0.1" : "9a53b158e3f43c8b427c88a3330d740b",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -1553,6 +1553,27 @@
             "code" : "at0031.1",
             "text" : "Previous episodes",
             "description" : "The number of times this symptom or sign has previously occurred."
+          },
+          "at0170.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0170.1",
+            "text" : "Precipitating factor",
+            "description" : "Name of the health event, symptom, reported sign or other factor.",
+            "comment" : "For example: onset of another symptom; lying down; or walking up a hill."
+          },
+          "at0193.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0193.1",
+            "text" : "Resolving factor",
+            "description" : "Name of the health event, symptom, reported sign or other factor.",
+            "comment" : "For example: upright posture; or resting."
+          },
+          "at0019.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0019.1",
+            "text" : "Modifying factor",
+            "description" : "Name of the modifying factor.",
+            "comment" : "Examples of modifying factor: lying on multiple pillows, eating or administration of a specific medication."
           }
         },
         "de" : { },
