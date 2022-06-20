@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.5.0",
+      "sem_ver" : "0.5.1",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "a9847a0b9d8a0cb504595d65e41345e1",
+      "MD5-CAM-1.0.1" : "76df72d3224de8cc9cc5e516fe0eec12",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -1680,6 +1680,27 @@
             "text" : "Episode resolution",
             "description" : "The timing of the cessation of this episode of the symptom or sign.",
             "comment" : "If 'Date/time of onset' and 'Duration' are used in systems, this data element may be calculated, or alternatively, considered redundant. While partial dates are permitted, the exact date and time of resolution can be recorded, if appropriate."
+          },
+          "at0170.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0170.1",
+            "text" : "Precipitating factor",
+            "description" : "Name of the health event, symptom, reported sign or other factor.",
+            "comment" : "For example: onset of another symptom; lying down; or walking up a hill."
+          },
+          "at0193.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0193.1",
+            "text" : "Resolving factor",
+            "description" : "Name of the health event, symptom, reported sign or other factor.",
+            "comment" : "For example: upright posture; or resting."
+          },
+          "at0019.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0019.1",
+            "text" : "Modifying factor",
+            "description" : "Name of the modifying factor.",
+            "comment" : "Examples of modifying factor: lying on multiple pillows, eating or administration of a specific medication."
           }
         },
         "de" : { },
