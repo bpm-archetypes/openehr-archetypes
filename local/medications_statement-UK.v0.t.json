@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "3.2.1",
+      "sem_ver" : "4.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "bd0f67fb74c09153219cd90482ecf585",
+      "MD5-CAM-1.0.1" : "81622372e4cfa61c712a58009855783a",
       "PARENT:MD5-CAM-1.0.1" : "c01367650b1fb954f21f1ce757e3fbd0"
     },
     "details" : {
@@ -587,10 +587,10 @@
                               "rmTypeName" : "TERMINOLOGY_CODE",
                               "occurrences" : "0..1",
                               "terminologyId" : {
-                                "value" : "SNOMED-CT-PLACEHOLDER-FOR-UK_LIST-drug-or-medicament_leaf-nodes"
+                                "value" : "SNOMED-CT-UK-Drug-extension"
                               },
                               "constraint" : [ "ac0.1" ],
-                              "selectedTerminologies" : [ "SNOMED-CT-PLACEHOLDER-FOR-UK_LIST-drug-or-medicament_leaf-nodes" ]
+                              "selectedTerminologies" : [ "SNOMED-CT-UK-Drug-extension" ]
                             } ]
                           } ],
                           "attributeTuples" : [ ]
@@ -887,8 +887,8 @@
         "SNOMEDCT-drugs-not-taken-completed" : {
           "ac0.10" : "terminology://fhir.hl7.org/ValueSet/$expand?url=http://snomed.info/sct?fhir_vs=ecl/%3C%20266710000&activeOnly=true"
         },
-        "SNOMED-CT-PLACEHOLDER-FOR-UK_LIST-drug-or-medicament_leaf-nodes" : {
-          "ac0.1" : "terminology://fhir.hl7.org/ValueSet/$expand?url=http://snomed.info/sct?fhir_vs=ecl/%3C%20410942007%20MINUS%20%3E%28%3C410942007%29&activeOnly=true"
+        "SNOMED-CT-UK-Drug-extension" : {
+          "ac0.1" : "terminology://fhir/ValueSet/$expand?url=http://snomed.info/sct/83821000000107?fhir_vs=ecl/%3C%219191801000001103OR%3C%2110363801000001108OR%3C%2110363901000001102OR%3C%2110363701000001104&activeOnly=true"
         }
       },
       "terminologyExtracts" : { },
