@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.4.0",
+      "sem_ver" : "0.4.1",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "b212c4deca494e493a21706adc5762cd",
+      "MD5-CAM-1.0.1" : "28fe8c2a34b7e7ff147749767840e70a",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -1538,13 +1538,6 @@
           }
         },
         "en" : {
-          "at0155.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0155.1",
-            "text" : "How much are you struggling to hear?",
-            "description" : "Description of the impact of this symptom or sign.",
-            "comment" : "Assessment of impact could consider the severity, duration and frequency of the symptom as well as the type of impact including, but not limited to, functional, social and emotional impact. Occurrences of this data element are set to 0..* to allow multiple types of impact to be separated out in a template if desired. Examples for functional impact from hearing loss may include: 'Difficulty Hearing in Quiet Environment'; 'Difficulty Hearing the TV or Radio'; 'Difficulty Hearing Group Conversation'; and 'Difficulty Hearing on Phone'."
-          },
           "ac0.3" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
