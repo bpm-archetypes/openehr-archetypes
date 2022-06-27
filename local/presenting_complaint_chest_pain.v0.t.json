@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.6.1",
+      "sem_ver" : "0.6.2",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "8f17d41cef4604714ae37ea6f5feccba",
+      "MD5-CAM-1.0.1" : "52ffeadc4258c190e9da5397d94154a7",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -568,7 +568,7 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Presenting complaint",
-            "description" : "The subjective clinical history of the subject of care as recorded directly by the subject, or reported to a clinician by the subject or a carer."
+            "description" : "The clinical history of primary symptom(s) that a patient states as the reason for seeking medical care."
           }
         },
         "es-ar" : { },
