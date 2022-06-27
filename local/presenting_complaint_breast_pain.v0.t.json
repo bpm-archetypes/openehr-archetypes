@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.7.1",
+      "sem_ver" : "0.7.2",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "a03da58a9d8ec36092c1ec6011eed0ef",
+      "MD5-CAM-1.0.1" : "0e6ced0900df8392d590b7e4ef8907dd",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -563,7 +563,14 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "ar-sy" : { },
-        "en" : { },
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Presenting complaint",
+            "description" : "The subjective clinical history of the subject of care as recorded directly by the subject, or reported to a clinician by the subject or a carer."
+          }
+        },
         "es-ar" : { },
         "ko" : { },
         "nb" : { },
