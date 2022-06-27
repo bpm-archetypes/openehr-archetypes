@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.5.2",
+      "sem_ver" : "0.5.3",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "60f7d07737372ed514acd30075ae2087",
+      "MD5-CAM-1.0.1" : "09e2522b9d049dd9f668c4f34f88f8c8",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -563,7 +563,14 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "ar-sy" : { },
-        "en" : { },
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Presenting complaint",
+            "description" : "The subjective clinical history of the subject of care as recorded directly by the subject, or reported to a clinician by the subject or a carer."
+          }
+        },
         "es-ar" : { },
         "ko" : { },
         "nb" : { },
@@ -4110,7 +4117,37 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "4C7933C02F879864FC54A31737ABEBD3"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "Anvendes for registrering av fravær av et spesifikk symptom som definert i \"openEHR-EHR-CLUSTER.symptom.v1 archetype\".",
+          "keywords" : [ "Symptom", "fravær", "eksklusjon" ],
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record a positive statement to explicitly record that a symptom or sign was reported as not present.",
+          "keywords" : [ "symptom, absence, exclusion" ],
+          "use" : "Use to record a positive statement to explicitly record that a symptom or sign was reported as not present.\r\nUse to record exlicitly that a symptom or sign was absolutely not present. If this is not absolutely required, consider use of the 'Nil significant' data element within the CLUSTER.symptom_sign archetype.\r\n\r\nThis archetype has been specifically designed to be used in the 'Structured detail' SLOT within the OBSERVATION.story archetype, but can also be used within other OBSERVATION or CLUSTER archetypes, where clinically appropriate.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.exclusion_symptom_sign.v0",
     "differential" : true,
