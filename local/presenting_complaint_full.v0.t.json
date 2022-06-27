@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.1",
+      "sem_ver" : "1.0.2",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "a16365fb9aa0d96e7020b8c616c2b878",
+      "MD5-CAM-1.0.1" : "07672bf40d6948468bf720f0ea8428db",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -902,7 +902,7 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "12345",
-                    "value" : "My presenting complaint"
+                    "value" : "Kitchen sink (all fields)"
                   } ]
                 } ]
               } ],
