@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.5.0",
+      "sem_ver" : "0.6.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "42896e0d5e0813db451aeebf98ae0bf9",
+      "MD5-CAM-1.0.1" : "392e8e1916c5c34a1cef504c7e45f746",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -241,7 +241,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "presenting_complaint.v0",
+          "text" : "presenting_complaint",
           "description" : "Interaction, contact or care event between a subject of care and healthcare provider(s)."
         }
       },
