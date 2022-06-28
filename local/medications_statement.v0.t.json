@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "3.3.0",
+      "sem_ver" : "3.3.1",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "41014bafe5eb5e7df8ff842be8e0c066",
+      "MD5-CAM-1.0.1" : "18e8fdedebdcf9da056685bc888a5063",
       "PARENT:MD5-CAM-1.0.1" : "c01367650b1fb954f21f1ce757e3fbd0"
     },
     "details" : {
@@ -888,7 +888,7 @@
           "ac0.10" : "terminology://fhir.hl7.org/ValueSet/$expand?url=http://snomed.info/sct?fhir_vs=ecl/%3C%20266710000&activeOnly=true"
         },
         "SNOMED-CT-PLACEHOLDER-FOR-UK_LIST-drug-or-medicament_leaf-nodes" : {
-          "ac0.1" : "terminology://fhir.hl7.org/ValueSet/$expand?url=http://snomed.info/sct?fhir_vs=ecl/%3C%2130425011000036101OR%3C%2130560011000036108OR%3C%2130450011000036109OR%3C%2130497011000036103"
+          "ac0.1" : "terminology://fhir.hl7.org/ValueSet/$expand?url=http://snomed.info/sct?fhir_vs=ecl/%3C%2130425011000036101OR%3C%2130560011000036108OR%3C%2130450011000036109OR%3C%2130497011000036103OR%3C%20410942007"
         }
       },
       "terminologyExtracts" : { },
