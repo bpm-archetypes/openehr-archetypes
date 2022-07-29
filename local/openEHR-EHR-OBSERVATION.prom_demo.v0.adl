@@ -1,0 +1,98 @@
+archetype (adl_version=1.4; uid=7e7eceb3-524a-46d2-afe7-f475ea4a71e2)
+	openEHR-EHR-OBSERVATION.prom_demo.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2022-07-29">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"a17de86397bbf3e9cca4a0a9017bd1ac">
+		["build_uid"] = <"6cb7d464-47e3-3858-8a66-4c4b359fb0cc">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- PROM_demo
+		data matches {
+			HISTORY[at0001] matches {    -- History
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..*} matches {    -- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {    -- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0004] occurrences matches {0..1} matches {    -- Anxiety
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0005,    -- Mild
+													at0006,    -- Moderate
+													at0007]    -- Severe
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"PROM_demo">
+					description = <"PROM_demo">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Anxiety">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Mild">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Moderate">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Severe">
+					description = <"">
+				>
+			>
+		>
+	>
